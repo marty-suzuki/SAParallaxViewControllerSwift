@@ -1,8 +1,0 @@
-source 'https://github.com/CocoaPods/Specs.git'
-
-
-target 'SAParallaxViewControllerSwift', :exclusive => true do
-  pod "SAParallaxViewControllerSwift", :path => "../"
-
-  
-end

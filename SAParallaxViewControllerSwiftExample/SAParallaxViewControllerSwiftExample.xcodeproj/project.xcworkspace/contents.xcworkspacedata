@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SAParallaxViewControllerSwift.xcodeproj">
+      location = "self:SAParallaxViewControllerSwiftExample.xcodeproj">
    </FileRef>
 </Workspace>

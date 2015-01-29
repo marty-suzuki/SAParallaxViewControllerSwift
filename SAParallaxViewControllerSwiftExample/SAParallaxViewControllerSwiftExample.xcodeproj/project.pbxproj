@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37E219071A7A997800896D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E219061A7A997800896D72 /* AppDelegate.swift */; };
+		37E219091A7A997800896D72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E219081A7A997800896D72 /* ViewController.swift */; };
+		37E2190C1A7A997800896D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E2190A1A7A997800896D72 /* Main.storyboard */; };
+		37E2190E1A7A997800896D72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E2190D1A7A997800896D72 /* Images.xcassets */; };
+		37E219111A7A997800896D72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E2190F1A7A997800896D72 /* LaunchScreen.xib */; };
+		37E2191D1A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2191C1A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.swift */; };
+		37E2192A1A7A9BD000896D72 /* SAParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E219291A7A9BD000896D72 /* SAParallaxViewController.swift */; };
+		37E2192C1A7A9DA900896D72 /* SAParallaxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2192B1A7A9DA900896D72 /* SAParallaxViewCell.swift */; };
+		37E2192E1A7A9DCF00896D72 /* SAParallaxViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2192D1A7A9DCF00896D72 /* SAParallaxViewLayout.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37E219171A7A997800896D72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37E218F91A7A997800896D72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37E219001A7A997800896D72;
+			remoteInfo = SAParallaxViewControllerSwiftExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37E219011A7A997800896D72 /* SAParallaxViewControllerSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAParallaxViewControllerSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E219051A7A997800896D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E219061A7A997800896D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		37E219081A7A997800896D72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37E2190B1A7A997800896D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37E2190D1A7A997800896D72 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		37E219101A7A997800896D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		37E219161A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAParallaxViewControllerSwiftExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E2191B1A7A997800896D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E2191C1A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAParallaxViewControllerSwiftExampleTests.swift; sourceTree = "<group>"; };
+		37E219291A7A9BD000896D72 /* SAParallaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxViewController.swift; sourceTree = "<group>"; };
+		37E2192B1A7A9DA900896D72 /* SAParallaxViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxViewCell.swift; sourceTree = "<group>"; };
+		37E2192D1A7A9DCF00896D72 /* SAParallaxViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxViewLayout.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37E218FE1A7A997800896D72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E219131A7A997800896D72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37E218F81A7A997800896D72 = {
+			isa = PBXGroup;
+			children = (
+				37E219031A7A997800896D72 /* SAParallaxViewControllerSwiftExample */,
+				37E219191A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests */,
+				37E219021A7A997800896D72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37E219021A7A997800896D72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37E219011A7A997800896D72 /* SAParallaxViewControllerSwiftExample.app */,
+				37E219161A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37E219031A7A997800896D72 /* SAParallaxViewControllerSwiftExample */ = {
+			isa = PBXGroup;
+			children = (
+				37E219281A7A9BD000896D72 /* SAParallaxViewControllerSwift */,
+				37E219061A7A997800896D72 /* AppDelegate.swift */,
+				37E219081A7A997800896D72 /* ViewController.swift */,
+				37E2190A1A7A997800896D72 /* Main.storyboard */,
+				37E2190D1A7A997800896D72 /* Images.xcassets */,
+				37E2190F1A7A997800896D72 /* LaunchScreen.xib */,
+				37E219041A7A997800896D72 /* Supporting Files */,
+			);
+			path = SAParallaxViewControllerSwiftExample;
+			sourceTree = "<group>";
+		};
+		37E219041A7A997800896D72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37E219051A7A997800896D72 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37E219191A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				37E2191C1A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.swift */,
+				37E2191A1A7A997800896D72 /* Supporting Files */,
+			);
+			path = SAParallaxViewControllerSwiftExampleTests;
+			sourceTree = "<group>";
+		};
+		37E2191A1A7A997800896D72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37E2191B1A7A997800896D72 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37E219281A7A9BD000896D72 /* SAParallaxViewControllerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				37E219291A7A9BD000896D72 /* SAParallaxViewController.swift */,
+				37E2192B1A7A9DA900896D72 /* SAParallaxViewCell.swift */,
+				37E2192D1A7A9DCF00896D72 /* SAParallaxViewLayout.swift */,
+			);
+			name = SAParallaxViewControllerSwift;
+			path = ../../SAParallaxViewControllerSwift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37E219001A7A997800896D72 /* SAParallaxViewControllerSwiftExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E219201A7A997800896D72 /* Build configuration list for PBXNativeTarget "SAParallaxViewControllerSwiftExample" */;
+			buildPhases = (
+				37E218FD1A7A997800896D72 /* Sources */,
+				37E218FE1A7A997800896D72 /* Frameworks */,
+				37E218FF1A7A997800896D72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAParallaxViewControllerSwiftExample;
+			productName = SAParallaxViewControllerSwiftExample;
+			productReference = 37E219011A7A997800896D72 /* SAParallaxViewControllerSwiftExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37E219151A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E219231A7A997800896D72 /* Build configuration list for PBXNativeTarget "SAParallaxViewControllerSwiftExampleTests" */;
+			buildPhases = (
+				37E219121A7A997800896D72 /* Sources */,
+				37E219131A7A997800896D72 /* Frameworks */,
+				37E219141A7A997800896D72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37E219181A7A997800896D72 /* PBXTargetDependency */,
+			);
+			name = SAParallaxViewControllerSwiftExampleTests;
+			productName = SAParallaxViewControllerSwiftExampleTests;
+			productReference = 37E219161A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37E218F91A7A997800896D72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "鈴木大貴";
+				TargetAttributes = {
+					37E219001A7A997800896D72 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					37E219151A7A997800896D72 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 37E219001A7A997800896D72;
+					};
+				};
+			};
+			buildConfigurationList = 37E218FC1A7A997800896D72 /* Build configuration list for PBXProject "SAParallaxViewControllerSwiftExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37E218F81A7A997800896D72;
+			productRefGroup = 37E219021A7A997800896D72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37E219001A7A997800896D72 /* SAParallaxViewControllerSwiftExample */,
+				37E219151A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37E218FF1A7A997800896D72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E2190C1A7A997800896D72 /* Main.storyboard in Resources */,
+				37E219111A7A997800896D72 /* LaunchScreen.xib in Resources */,
+				37E2190E1A7A997800896D72 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E219141A7A997800896D72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37E218FD1A7A997800896D72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E2192A1A7A9BD000896D72 /* SAParallaxViewController.swift in Sources */,
+				37E2192E1A7A9DCF00896D72 /* SAParallaxViewLayout.swift in Sources */,
+				37E219091A7A997800896D72 /* ViewController.swift in Sources */,
+				37E219071A7A997800896D72 /* AppDelegate.swift in Sources */,
+				37E2192C1A7A9DA900896D72 /* SAParallaxViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E219121A7A997800896D72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E2191D1A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37E219181A7A997800896D72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37E219001A7A997800896D72 /* SAParallaxViewControllerSwiftExample */;
+			targetProxy = 37E219171A7A997800896D72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37E2190A1A7A997800896D72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37E2190B1A7A997800896D72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		37E2190F1A7A997800896D72 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37E219101A7A997800896D72 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37E2191E1A7A997800896D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		37E2191F1A7A997800896D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37E219211A7A997800896D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SAParallaxViewControllerSwiftExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		37E219221A7A997800896D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SAParallaxViewControllerSwiftExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		37E219241A7A997800896D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SAParallaxViewControllerSwiftExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAParallaxViewControllerSwiftExample.app/SAParallaxViewControllerSwiftExample";
+			};
+			name = Debug;
+		};
+		37E219251A7A997800896D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SAParallaxViewControllerSwiftExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAParallaxViewControllerSwiftExample.app/SAParallaxViewControllerSwiftExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37E218FC1A7A997800896D72 /* Build configuration list for PBXProject "SAParallaxViewControllerSwiftExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E2191E1A7A997800896D72 /* Debug */,
+				37E2191F1A7A997800896D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37E219201A7A997800896D72 /* Build configuration list for PBXNativeTarget "SAParallaxViewControllerSwiftExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E219211A7A997800896D72 /* Debug */,
+				37E219221A7A997800896D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		37E219231A7A997800896D72 /* Build configuration list for PBXNativeTarget "SAParallaxViewControllerSwiftExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E219241A7A997800896D72 /* Debug */,
+				37E219251A7A997800896D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37E218F91A7A997800896D72 /* Project object */;
+}
