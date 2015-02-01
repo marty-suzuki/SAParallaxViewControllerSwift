@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3717D09A1A7E7C76000A1E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3717D0991A7E7C76000A1E0B /* ViewController.swift */; };
 		37E219071A7A997800896D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E219061A7A997800896D72 /* AppDelegate.swift */; };
-		37E219091A7A997800896D72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E219081A7A997800896D72 /* ViewController.swift */; };
 		37E2190C1A7A997800896D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E2190A1A7A997800896D72 /* Main.storyboard */; };
 		37E2190E1A7A997800896D72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E2190D1A7A997800896D72 /* Images.xcassets */; };
 		37E219111A7A997800896D72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E2190F1A7A997800896D72 /* LaunchScreen.xib */; };
@@ -32,10 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3717D0991A7E7C76000A1E0B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37E219011A7A997800896D72 /* SAParallaxViewControllerSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAParallaxViewControllerSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E219051A7A997800896D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37E219061A7A997800896D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37E219081A7A997800896D72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37E2190B1A7A997800896D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37E2190D1A7A997800896D72 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		37E219101A7A997800896D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 			children = (
 				37E219281A7A9BD000896D72 /* SAParallaxViewControllerSwift */,
 				37E219061A7A997800896D72 /* AppDelegate.swift */,
-				37E219081A7A997800896D72 /* ViewController.swift */,
+				3717D0991A7E7C76000A1E0B /* ViewController.swift */,
 				37E2190A1A7A997800896D72 /* Main.storyboard */,
 				37E2190D1A7A997800896D72 /* Images.xcassets */,
 				37E2190F1A7A997800896D72 /* LaunchScreen.xib */,
@@ -242,9 +242,9 @@
 			files = (
 				37E2192A1A7A9BD000896D72 /* SAParallaxViewController.swift in Sources */,
 				37E2192E1A7A9DCF00896D72 /* SAParallaxViewLayout.swift in Sources */,
-				37E219091A7A997800896D72 /* ViewController.swift in Sources */,
 				37E219071A7A997800896D72 /* AppDelegate.swift in Sources */,
 				37E219341A7D31C400896D72 /* UIImage+Blur.swift in Sources */,
+				3717D09A1A7E7C76000A1E0B /* ViewController.swift in Sources */,
 				37E219361A7D353600896D72 /* SAParallaxContainerView.swift in Sources */,
 				37E2192C1A7A9DA900896D72 /* SAParallaxViewCell.swift in Sources */,
 			);
@@ -440,6 +440,7 @@
 				37E219221A7A997800896D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37E219231A7A997800896D72 /* Build configuration list for PBXNativeTarget "SAParallaxViewControllerSwiftExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +449,7 @@
 				37E219251A7A997800896D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

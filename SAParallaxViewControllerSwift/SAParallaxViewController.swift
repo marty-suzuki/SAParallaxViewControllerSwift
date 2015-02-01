@@ -8,59 +8,69 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+let kParallaxViewCellReuseIdentifier = "Cell"
 
-class SAParallaxViewController: UICollectionViewController {
-
+class SAParallaxViewController: UIViewController {
+    var collectionView :UICollectionView!
+    
     override init() {
-        super.init(collectionViewLayout: SAParallaxViewLayout())
+        super.init()
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
     required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.registerClass(SAParallaxViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        self.collectionView!.delegate = self
-        self.collectionView!.dataSource = self
-
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = .whiteColor()
+        
+        self.collectionView = UICollectionView(frame: .zeroRect, collectionViewLayout: SAParallaxViewLayout())
+        self.fitToSuperview(self.view, target: self.collectionView)
+        self.collectionView.registerClass(SAParallaxViewCell.self, forCellWithReuseIdentifier: kParallaxViewCellReuseIdentifier)
+        self.collectionView.backgroundColor = .clearColor()
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    private func fitToSuperview(superview: UIView, target: UIView) {
+        superview.addSubview(target)
+        target.setTranslatesAutoresizingMaskIntoConstraints(false)
+        let verticalConstrains = NSLayoutConstraint.constraintsWithVisualFormat("V:|[view]|", options: nil, metrics: nil, views: ["view": target])
+        superview.addConstraints(verticalConstrains)
+        let horizonConstrains = NSLayoutConstraint.constraintsWithVisualFormat("H:|[view]|", options: nil, metrics: nil, views: ["view": target])
+        superview.addConstraints(horizonConstrains)
+    }
 }
 
 //MARK: - UICollectionViewDataSource
 extension SAParallaxViewController: UICollectionViewDataSource {
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 30
     }
     
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as UICollectionViewCell
-        cell.backgroundColor = .redColor()
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kParallaxViewCellReuseIdentifier, forIndexPath: indexPath) as SAParallaxViewCell
+        cell.backgroundColor = .clearColor()
         cell.selected = false
-        if let image = UIImage(named: "image") {
-            (cell as SAParallaxViewCell).setImage(image)
-        }
         return cell
     }
 }
 
 //MARK: - UICollectionViewDelegate
 extension SAParallaxViewController: UICollectionViewDelegate {
-    override func scrollViewDidScroll(scrollView: UIScrollView) {
-        if let cells = collectionView?.visibleCells() as? [SAParallaxViewCell] {
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        if let cells = self.collectionView.visibleCells() as? [SAParallaxViewCell] {
             for cell in cells {
                 let point = cell.superview!.convertPoint(cell.frame.origin, toView:view)
                 
@@ -81,31 +91,12 @@ extension SAParallaxViewController: UICollectionViewDelegate {
     }
     
     
-//    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-//        collectionView.deselectItemAtIndexPath(indexPath, animated: false)
-//        let cell = collectionView.cellForItemAtIndexPath(indexPath) as SAParallaxViewCell
-//        cell.selected = true
-//        
-//        if let cells = collectionView.visibleCells() as? [SAParallaxViewCell] {
-//            let containerView = SAParallaxContainerView(frame: view.bounds)
-//            containerView.setViews(cells: cells, view: view)
-//            
-//            let viewController = DetailViewController()
-//            viewController.transitioningDelegate = self
-//            viewController.trantisionContainerView = containerView
-//            
-//            presentViewController(viewController, animated: true, completion: nil)
-//        }
-//    }
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        //coming soon
+    }
 }
 
 //MARK: - UIViewControllerTransitioningDelegate
 extension SAParallaxViewController: UIViewControllerTransitioningDelegate {
-//    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-//        return TransitionController()
-//    }
-//    
-//    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-//        return TransitionController()
-//    }
+    //coming soon
 }

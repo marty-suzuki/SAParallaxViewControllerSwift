@@ -11,6 +11,7 @@ import UIKit
 class SAParallaxContainerView: UIView {
     var imageView: UIImageView!
     var accessoryView: UIView!
+    
     private var yStartPoint: CGFloat!
     private var accessoryViewHeight = CGFloat(60.0)
     private var blurContainerView: UIView!
@@ -48,7 +49,7 @@ class SAParallaxContainerView: UIView {
         self.accessoryView.backgroundColor = .clearColor()
         
         self.blurColorView = UIView()
-        self.blurColorView.backgroundColor = .blackColor()
+        self.blurColorView.backgroundColor = .whiteColor()
         self.blurColorView.alpha = 0.3
         
         self.backgroundColor = .clearColor()
