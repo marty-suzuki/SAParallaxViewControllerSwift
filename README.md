@@ -12,10 +12,12 @@
 
 ![](./SampleImage/sample.gif)
 
+SAParallaxViewControllerSwift realizes parallax scrolling with blur effect.
+
 ## Features
 
-- [x] Parallax scroling
-- [x] Parallax scroling with blur accessory view
+- [x] Parallax scrolling
+- [x] Parallax scrolling with blur accessory view
 - [ ] Seamlees opening transition
 
 ## Installation
@@ -29,6 +31,8 @@ comming soon...
 Add the [SAParallaxViewControllerSwift](./SAParallaxViewControllerSwift) directory to your project. 
 
 ## Usage
+
+Extend `SAParallaxViewController` like this.
 
 ```swift
 class ViewController: SAParallaxViewController {
@@ -47,12 +51,12 @@ class ViewController: SAParallaxViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
 }
 ```
+
+If you want to use `UICollectionViewDataSource`, implement extension like this.
+You can set image with 'setImage()' of SAParallaxViewCell function.
+You can add some UIView member classes to `containerView.accessoryView` of SAParallaxViewCell property.
 
 ```swift
 extension ViewController: UICollectionViewDataSource {

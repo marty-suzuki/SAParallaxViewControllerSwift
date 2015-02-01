@@ -10,13 +10,7 @@
 Pod::Spec.new do |s|
   s.name             = "SAParallaxViewControllerSwift"
   s.version          = "1.0.0"
-  s.summary          = "A short description of SAParallaxViewControllerSwift."
-  s.description      = <<-DESC
-                       An optional longer description of SAParallaxViewControllerSwift
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
+  s.summary          = "SAParallaxViewControllerSwift realizes parallax scrolling with blur effect."
   s.homepage         = "https://github.com/szk-atmosphere/SAParallaxViewControllerSwift"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
