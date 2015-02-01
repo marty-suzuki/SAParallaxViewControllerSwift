@@ -16,6 +16,9 @@
 		37E2192A1A7A9BD000896D72 /* SAParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E219291A7A9BD000896D72 /* SAParallaxViewController.swift */; };
 		37E2192C1A7A9DA900896D72 /* SAParallaxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2192B1A7A9DA900896D72 /* SAParallaxViewCell.swift */; };
 		37E2192E1A7A9DCF00896D72 /* SAParallaxViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2192D1A7A9DCF00896D72 /* SAParallaxViewLayout.swift */; };
+		37E219301A7D315600896D72 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E2192F1A7D315600896D72 /* Accelerate.framework */; };
+		37E219341A7D31C400896D72 /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E219331A7D31C400896D72 /* UIImage+Blur.swift */; };
+		37E219361A7D353600896D72 /* SAParallaxContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E219351A7D353600896D72 /* SAParallaxContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		37E219291A7A9BD000896D72 /* SAParallaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxViewController.swift; sourceTree = "<group>"; };
 		37E2192B1A7A9DA900896D72 /* SAParallaxViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxViewCell.swift; sourceTree = "<group>"; };
 		37E2192D1A7A9DCF00896D72 /* SAParallaxViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxViewLayout.swift; sourceTree = "<group>"; };
+		37E2192F1A7D315600896D72 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		37E219331A7D31C400896D72 /* UIImage+Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Blur.swift"; sourceTree = "<group>"; };
+		37E219351A7D353600896D72 /* SAParallaxContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E219301A7D315600896D72 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,7 @@
 		37E218F81A7A997800896D72 = {
 			isa = PBXGroup;
 			children = (
+				37E2192F1A7D315600896D72 /* Accelerate.framework */,
 				37E219031A7A997800896D72 /* SAParallaxViewControllerSwiftExample */,
 				37E219191A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests */,
 				37E219021A7A997800896D72 /* Products */,
@@ -124,7 +132,9 @@
 			children = (
 				37E219291A7A9BD000896D72 /* SAParallaxViewController.swift */,
 				37E2192B1A7A9DA900896D72 /* SAParallaxViewCell.swift */,
+				37E219351A7D353600896D72 /* SAParallaxContainerView.swift */,
 				37E2192D1A7A9DCF00896D72 /* SAParallaxViewLayout.swift */,
+				37E219331A7D31C400896D72 /* UIImage+Blur.swift */,
 			);
 			name = SAParallaxViewControllerSwift;
 			path = ../../SAParallaxViewControllerSwift;
@@ -234,6 +244,8 @@
 				37E2192E1A7A9DCF00896D72 /* SAParallaxViewLayout.swift in Sources */,
 				37E219091A7A997800896D72 /* ViewController.swift in Sources */,
 				37E219071A7A997800896D72 /* AppDelegate.swift in Sources */,
+				37E219341A7D31C400896D72 /* UIImage+Blur.swift in Sources */,
+				37E219361A7D353600896D72 /* SAParallaxContainerView.swift in Sources */,
 				37E2192C1A7A9DA900896D72 /* SAParallaxViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
