@@ -6,9 +6,6 @@
 )](https://developer.apple.com/swift)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
-[![Version](https://img.shields.io/cocoapods/v/SAParallaxViewControllerSwift.svg?style=flat)](http://cocoadocs.org/docsets/SAParallaxViewControllerSwift)
-[![License](https://img.shields.io/cocoapods/l/SAParallaxViewControllerSwift.svg?style=flat)](http://cocoadocs.org/docsets/SAParallaxViewControllerSwift)
-[![Platform](https://img.shields.io/cocoapods/p/SAParallaxViewControllerSwift.svg?style=flat)](http://cocoadocs.org/docsets/SAParallaxViewControllerSwift)
 
 ![](./SampleImage/sample.gif)
 
