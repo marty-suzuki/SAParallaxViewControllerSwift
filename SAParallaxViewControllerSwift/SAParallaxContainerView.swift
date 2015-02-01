@@ -111,7 +111,15 @@ class SAParallaxContainerView: UIView {
         self.accessoryViewHeight = CGFloat(height)
     }
     
-    func setBlurSize(size :Float) {
+    func setBlurSize(size: Float) {
         self.blurSize = size
+    }
+    
+    func setBlurColorAlpha(alpha: CGFloat) {
+        self.blurColorView.alpha = alpha
+    }
+    
+    func setBlurColor(color: UIColor) {
+        self.blurColorView.backgroundColor = color
     }
 }

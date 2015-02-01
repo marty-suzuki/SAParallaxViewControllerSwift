@@ -55,8 +55,10 @@ class ViewController: SAParallaxViewController {
 ```
 
 If you want to use `UICollectionViewDataSource`, implement extension like this.
-You can set image with 'setImage()' of SAParallaxViewCell function.
-You can add some UIView member classes to `containerView.accessoryView` of SAParallaxViewCell property.
+
+You can set image with 'cell.setImage()'.
+
+You can add some UIView member classes to `cell.containerView.accessoryView`.
 
 ```swift
 extension ViewController: UICollectionViewDataSource {
@@ -79,6 +81,38 @@ extension ViewController: UICollectionViewDataSource {
         return cell
     }
 }
+```
+
+## Customize
+
+You can change parallax start position with function of `cell.containerView`.
+
+```swift
+func setParallaxStartPosition(#y: Float)
+```
+
+You can change height of `cell.containerView.accessoryView`.
+
+```swift
+func setAccessoryViewHeight(height: Float)
+```
+
+You can change blur size of `cell.containerView.accessoryView`.
+
+```swift  
+func setBlurSize(size :Float)
+```
+
+You can change blur color of `cell.containerView.accessoryView`.
+
+```swift 
+func setBlurColor(color: UIColor)
+```
+
+You can change blur color alpha of `cell.containerView.accessoryView`.
+
+```swift  
+func setBlurColorAlpha(alpha: CGFloat)
 ```
 
 ## Requirements
