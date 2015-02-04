@@ -9,8 +9,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "SAParallaxViewControllerSwift"
-  s.version          = "1.0.0"
-  s.summary          = "SAParallaxViewControllerSwift realizes parallax scrolling with blur effect."
+  s.version          = "1.1.0"
+  s.summary          = "SAParallaxViewControllerSwift realizes parallax scrolling with blur effect. In addition, it realizes seamless opening transition."
   s.homepage         = "https://github.com/szk-atmosphere/SAParallaxViewControllerSwift"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'

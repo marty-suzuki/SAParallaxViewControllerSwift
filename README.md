@@ -9,7 +9,7 @@
 
 ![](./SampleImage/sample.gif) ![](./SampleImage/open_sample.gif)
 
-SAParallaxViewControllerSwift realizes parallax scrolling with blur effect.
+SAParallaxViewControllerSwift realizes parallax scrolling with blur effect. In addition, it realizes seamless opening transition.
 
 ## Features
 
@@ -21,7 +21,10 @@ SAParallaxViewControllerSwift realizes parallax scrolling with blur effect.
 
 #### CocoaPods
 
-comming soon...
+SAParallaxViewControllerSwift is available through [CocoaPods](http://cocoapods.org). If you have cocoapods 0.36beta, you can install
+it, simply add the following line to your Podfile:
+
+    pod "SAParallaxViewControllerSwift"
 
 #### Manually
 
@@ -51,11 +54,7 @@ class ViewController: SAParallaxViewController {
 }
 ```
 
-If you want to use `UICollectionViewDataSource`, implement extension like this.
-
-You can set image with 'cell.setImage()'.
-
-You can add some UIView member classes to `cell.containerView.accessoryView`.
+If you want to use `UICollectionViewDataSource`, implement extension like this. You can set image with 'cell.setImage()'. You can add some UIView member classes to `cell.containerView.accessoryView`.
 
 ```swift
 extension ViewController: UICollectionViewDataSource {
@@ -79,6 +78,52 @@ extension ViewController: UICollectionViewDataSource {
     }
 }
 ```
+
+If you want to use `UICollectionViewDelegate`, implement extension like this.
+
+You must copy `cell.containerView` to `viewController.trantisionContainerView` because to use opening transition. When you copy them, use `containerView.setViews(cells: cells, view: view)`. Set `viewController.transitioningDelegate` as self, finally call `self.presentViewController()`.
+
+```swift
+extension ViewController: UICollectionViewDelegate {
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        super.collectionView(collectionView, didSelectItemAtIndexPath: indexPath)
+        
+        if let cells = collectionView.visibleCells() as? [SAParallaxViewCell] {
+            let containerView = SATransitionContainerView(frame: view.bounds)
+            containerView.setViews(cells: cells, view: view)
+            
+            let viewController = DetailViewController()
+            viewController.transitioningDelegate = self
+            viewController.trantisionContainerView = containerView
+            
+            self.presentViewController(viewController, animated: true, completion: nil)
+        }
+    }
+}
+```
+
+Extend `SADetailViewController` like this.
+
+`SADetailViewController` is detail view controller for parallax cell.
+
+```swift
+class DetailViewController: SADetailViewController {
+    override init() {
+        super.init()
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
 
 ## Customize
 
@@ -115,13 +160,9 @@ func setBlurColorAlpha(alpha: CGFloat)
 ## Requirements
 
 - Xcode 6.1 or greater
-- iOS7.0 or greater
+- iOS7.0(manually only) or greater
 - ARC
 - Accelerate.framework
-
-## Installation
-
-SAParallaxViewControllerSwift will be available through [CocoaPods](http://cocoapods.org).
 
 ## Author
 
