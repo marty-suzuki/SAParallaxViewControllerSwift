@@ -25,14 +25,8 @@ class SADetailViewController: UIViewController {
             let height = width * imageSize.height / imageSize.width
             imageView.autoresizingMask = .None
             imageView.frame = CGRect(x: 0, y: 0, width: width, height: height)
-            view.addSubview(imageView)
+            self.view.addSubview(imageView)
         }
-        
-        let width = UIScreen.mainScreen().bounds.size.width
-        let height = width / 320.0 * 60.0
-        let priceImage = UIImageView()
-        priceImage.image = UIImage(named: "price")
-        NSLayoutConstraint.applyAutoLayout(view, target: priceImage, top: nil, left: 0, right: 0, bottom: 0, height: Float(height), width: nil)
         
         let gesture = UITapGestureRecognizer(target: self, action: "tap")
         gesture.numberOfTouchesRequired = 1

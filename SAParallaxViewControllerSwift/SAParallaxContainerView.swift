@@ -13,11 +13,11 @@ class SAParallaxContainerView: UIView {
     var accessoryView: UIView!
     
     var blurContainerView: UIView!
+    var blurImageView: UIImageView!
     
     private var yStartPoint: CGFloat!
     private var accessoryViewHeight = CGFloat(60.0)
     
-    private var blurImageView: UIImageView!
     private var blurColorView: UIView!
     private var blurSize = Float(20.0)
     

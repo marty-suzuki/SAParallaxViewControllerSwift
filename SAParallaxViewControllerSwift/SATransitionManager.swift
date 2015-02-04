@@ -16,7 +16,7 @@ class SATransitionManager: NSObject {
 extension SATransitionManager: UIViewControllerAnimatedTransitioning {
 
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
-        return animationDuration
+        return self.animationDuration
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -27,16 +27,23 @@ extension SATransitionManager: UIViewControllerAnimatedTransitioning {
         let fromView = fromViewController!.view
         
         let containerView = transitionContext.containerView()
-        let duration = transitionDuration(transitionContext)
+        let duration = self.transitionDuration(transitionContext)
         
-        if let parallax = toViewController as? ViewController {
+        if let parallax = toViewController as? SAParallaxViewController {
             if let detail = fromViewController as? SADetailViewController {
                 let transitionContainer = detail.trantisionContainerView
                 containerView.addSubview(transitionContainer)
                 
                 UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
                     transitionContainer.closeAnimation()
+                }, completion: { (finished) in
+                    
+                    UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+                        
+                        transitionContainer.containerView.blurContainerView.alpha = 1.0
+                        
                     }, completion: { (finished) in
+                        
                         let cancelled = transitionContext.transitionWasCancelled()
                         if cancelled {
                             transitionContainer.removeFromSuperview()
@@ -44,16 +51,27 @@ extension SATransitionManager: UIViewControllerAnimatedTransitioning {
                             containerView.addSubview(toView)
                         }
                         transitionContext.completeTransition(!cancelled)
+                        
+                    })
                 })
             }
-        } else if let parallax = fromViewController as? ViewController {
+        } else if let parallax = fromViewController as? SAParallaxViewController {
             if let detail = toViewController as? SADetailViewController {
                 let transitionContainer = detail.trantisionContainerView
                 containerView.addSubview(transitionContainer)
                 
                 UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
-                    transitionContainer.openAnimation()
+                    
+                    transitionContainer.containerView.blurContainerView.alpha = 0.0
+                    
+                }, completion: { (finished) in
+                    
+                    UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+                        
+                        transitionContainer.openAnimation()
+                        
                     }, completion: { (finished) in
+                        
                         let cancelled = transitionContext.transitionWasCancelled()
                         if cancelled {
                             transitionContainer.removeFromSuperview()
@@ -61,6 +79,8 @@ extension SATransitionManager: UIViewControllerAnimatedTransitioning {
                             containerView.addSubview(toView)
                         }
                         transitionContext.completeTransition(!cancelled)
+                        
+                    })
                 })
             }
         }
