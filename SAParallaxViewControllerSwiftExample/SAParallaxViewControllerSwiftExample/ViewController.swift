@@ -59,7 +59,7 @@ extension ViewController: UICollectionViewDelegate {
             viewController.transitioningDelegate = self
             viewController.trantisionContainerView = containerView
             
-            presentViewController(viewController, animated: true, completion: nil)
+            self.presentViewController(viewController, animated: true, completion: nil)
         }
     }
 }
