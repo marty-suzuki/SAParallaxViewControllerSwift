@@ -7,7 +7,7 @@
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
 
-![](./SampleImage/sample.gif)
+![](./SampleImage/sample.gif) ![](./SampleImage/open_sample.gif)
 
 SAParallaxViewControllerSwift realizes parallax scrolling with blur effect.
 
@@ -15,7 +15,7 @@ SAParallaxViewControllerSwift realizes parallax scrolling with blur effect.
 
 - [x] Parallax scrolling
 - [x] Parallax scrolling with blur accessory view
-- [ ] Seamlees opening transition
+- [x] Seamlees opening transition
 
 ## Installation
 

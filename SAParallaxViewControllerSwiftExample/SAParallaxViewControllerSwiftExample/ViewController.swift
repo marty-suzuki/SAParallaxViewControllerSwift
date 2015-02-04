@@ -24,10 +24,6 @@ class ViewController: SAParallaxViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
 }
 
 extension ViewController: UICollectionViewDataSource {
@@ -48,5 +44,22 @@ extension ViewController: UICollectionViewDataSource {
         cell.containerView.accessoryView.addSubview(label)
         
         return cell
+    }
+}
+
+extension ViewController: UICollectionViewDelegate {
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        super.collectionView(collectionView, didSelectItemAtIndexPath: indexPath)
+        
+        if let cells = collectionView.visibleCells() as? [SAParallaxViewCell] {
+            let containerView = SATransitionContainerView(frame: view.bounds)
+            containerView.setViews(cells: cells, view: view)
+            
+            let viewController = DetailViewController()
+            viewController.transitioningDelegate = self
+            viewController.trantisionContainerView = containerView
+            
+            presentViewController(viewController, animated: true, completion: nil)
+        }
     }
 }
