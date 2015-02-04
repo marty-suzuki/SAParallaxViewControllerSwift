@@ -9,6 +9,7 @@
 import UIKit
 
 class SAParallaxContainerView: UIView {
+    
     var imageView: UIImageView!
     var accessoryView: UIView!
     

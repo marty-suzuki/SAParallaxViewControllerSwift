@@ -27,11 +27,6 @@ class SADetailViewController: UIViewController {
             imageView.frame = CGRect(x: 0, y: 0, width: width, height: height)
             self.view.addSubview(imageView)
         }
-        
-        let gesture = UITapGestureRecognizer(target: self, action: "tap")
-        gesture.numberOfTouchesRequired = 1
-        gesture.numberOfTapsRequired = 1
-        view.addGestureRecognizer(gesture)
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,9 +36,5 @@ class SADetailViewController: UIViewController {
     
     override func prefersStatusBarHidden() -> Bool {
         return true
-    }
-    
-    func tap() {
-        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

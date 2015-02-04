@@ -11,6 +11,7 @@
 		370129EE1A82711A00921235 /* SADetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370129ED1A82711A00921235 /* SADetailViewController.swift */; };
 		370129F01A82737200921235 /* SATransitionContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370129EF1A82737200921235 /* SATransitionContainerView.swift */; };
 		370129F21A82759100921235 /* NSLayoutConstraint+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370129F11A82759100921235 /* NSLayoutConstraint+Easy.swift */; };
+		370129F41A8288A800921235 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370129F31A8288A800921235 /* DetailViewController.swift */; };
 		3717D09A1A7E7C76000A1E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3717D0991A7E7C76000A1E0B /* ViewController.swift */; };
 		37E219071A7A997800896D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E219061A7A997800896D72 /* AppDelegate.swift */; };
 		37E2190C1A7A997800896D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E2190A1A7A997800896D72 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		370129ED1A82711A00921235 /* SADetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SADetailViewController.swift; sourceTree = "<group>"; };
 		370129EF1A82737200921235 /* SATransitionContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SATransitionContainerView.swift; sourceTree = "<group>"; };
 		370129F11A82759100921235 /* NSLayoutConstraint+Easy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Easy.swift"; sourceTree = "<group>"; };
+		370129F31A8288A800921235 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3717D0991A7E7C76000A1E0B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37E219011A7A997800896D72 /* SAParallaxViewControllerSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAParallaxViewControllerSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E219051A7A997800896D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				37E219061A7A997800896D72 /* AppDelegate.swift */,
 				3717D0991A7E7C76000A1E0B /* ViewController.swift */,
+				370129F31A8288A800921235 /* DetailViewController.swift */,
 				37E2190A1A7A997800896D72 /* Main.storyboard */,
 				37E2190D1A7A997800896D72 /* Images.xcassets */,
 				37E2190F1A7A997800896D72 /* LaunchScreen.xib */,
@@ -263,6 +266,7 @@
 				37E2192A1A7A9BD000896D72 /* SAParallaxViewController.swift in Sources */,
 				37E2192E1A7A9DCF00896D72 /* SAParallaxViewLayout.swift in Sources */,
 				37E219071A7A997800896D72 /* AppDelegate.swift in Sources */,
+				370129F41A8288A800921235 /* DetailViewController.swift in Sources */,
 				370129F21A82759100921235 /* NSLayoutConstraint+Easy.swift in Sources */,
 				370129F01A82737200921235 /* SATransitionContainerView.swift in Sources */,
 				37E219341A7D31C400896D72 /* UIImage+Blur.swift in Sources */,

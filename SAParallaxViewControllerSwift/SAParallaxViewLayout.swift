@@ -9,6 +9,7 @@
 import UIKit
 
 class SAParallaxViewLayout: UICollectionViewFlowLayout {
+    
     private let kDefaultHeight: CGFloat = 220.0
     
     override init() {

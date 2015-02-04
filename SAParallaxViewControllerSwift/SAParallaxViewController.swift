@@ -57,10 +57,15 @@ class SAParallaxViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
 }
 
 //MARK: - UICollectionViewDataSource
 extension SAParallaxViewController: UICollectionViewDataSource {
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 30
     }
@@ -75,6 +80,7 @@ extension SAParallaxViewController: UICollectionViewDataSource {
 
 //MARK: - UICollectionViewDelegate
 extension SAParallaxViewController: UICollectionViewDelegate {
+    
     func scrollViewDidScroll(scrollView: UIScrollView) {
         if let cells = self.collectionView.visibleCells() as? [SAParallaxViewCell] {
             for cell in cells {
@@ -100,17 +106,6 @@ extension SAParallaxViewController: UICollectionViewDelegate {
         collectionView.deselectItemAtIndexPath(indexPath, animated: false)
         let cell = collectionView.cellForItemAtIndexPath(indexPath) as SAParallaxViewCell
         cell.selected = true
-        
-        if let cells = collectionView.visibleCells() as? [SAParallaxViewCell] {
-            let containerView = SATransitionContainerView(frame: view.bounds)
-            containerView.setViews(cells: cells, view: view)
-            
-            let viewController = SADetailViewController()
-            viewController.transitioningDelegate = self
-            viewController.trantisionContainerView = containerView
-            
-            presentViewController(viewController, animated: true, completion: nil)
-        }
     }
 }
 
