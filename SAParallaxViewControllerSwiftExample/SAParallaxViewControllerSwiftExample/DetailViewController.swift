@@ -11,14 +11,5 @@ import UIKit
 class DetailViewController: SADetailViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let gesture = UITapGestureRecognizer(target: self, action: "tap")
-        gesture.numberOfTouchesRequired = 1
-        gesture.numberOfTapsRequired = 1
-        view.addGestureRecognizer(gesture)
-    }
-    
-    func tap() {
-        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

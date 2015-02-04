@@ -54,7 +54,7 @@ class SAParallaxViewCell: UICollectionViewCell {
     
     func screenShot() -> UIImageView {
         let scale = UIScreen.mainScreen().scale
-        UIGraphicsBeginImageContextWithOptions(frame.size, false, scale)
+        UIGraphicsBeginImageContextWithOptions(self.frame.size, false, scale)
         self.containerView.layer.renderInContext(UIGraphicsGetCurrentContext())
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

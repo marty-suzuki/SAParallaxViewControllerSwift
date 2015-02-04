@@ -35,7 +35,9 @@ extension SATransitionManager: UIViewControllerAnimatedTransitioning {
                 containerView.addSubview(transitionContainer)
                 
                 UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+                    
                     transitionContainer.closeAnimation()
+                    
                 }, completion: { (finished) in
                     
                     UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
