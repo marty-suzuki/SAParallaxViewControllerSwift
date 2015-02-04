@@ -9,7 +9,7 @@
 
 ![](./SampleImage/sample.gif) ![](./SampleImage/open_sample.gif)
 
-SAParallaxViewControllerSwift realizes parallax scrolling with blur effect.
+SAParallaxViewControllerSwift realizes parallax scrolling with blur effect. In addition, it realizes seamless opening transition.
 
 ## Features
 
