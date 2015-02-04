@@ -11,7 +11,10 @@ import UIKit
 let kParallaxViewCellReuseIdentifier = "Cell"
 
 class SAParallaxViewController: UIViewController {
+    
     var collectionView :UICollectionView!
+    
+    private let transitionManager = SATransitionManager()
     
     override init() {
         super.init()
@@ -31,25 +34,28 @@ class SAParallaxViewController: UIViewController {
         self.view.backgroundColor = .whiteColor()
         
         self.collectionView = UICollectionView(frame: .zeroRect, collectionViewLayout: SAParallaxViewLayout())
-        self.fitToSuperview(self.view, target: self.collectionView)
+        
+        NSLayoutConstraint.applyAutoLayout(self.view, target: self.collectionView, top: 0.0, left: 0.0, right: 0.0, bottom: 0.0, height: nil, width: nil)
+        
         self.collectionView.registerClass(SAParallaxViewCell.self, forCellWithReuseIdentifier: kParallaxViewCellReuseIdentifier)
         self.collectionView.backgroundColor = .clearColor()
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let cells = self.collectionView?.visibleCells() as? [UICollectionViewCell] {
+            for cell in cells {
+                cell.selected = false
+            }
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    private func fitToSuperview(superview: UIView, target: UIView) {
-        superview.addSubview(target)
-        target.setTranslatesAutoresizingMaskIntoConstraints(false)
-        let verticalConstrains = NSLayoutConstraint.constraintsWithVisualFormat("V:|[view]|", options: nil, metrics: nil, views: ["view": target])
-        superview.addConstraints(verticalConstrains)
-        let horizonConstrains = NSLayoutConstraint.constraintsWithVisualFormat("H:|[view]|", options: nil, metrics: nil, views: ["view": target])
-        superview.addConstraints(horizonConstrains)
     }
 }
 
@@ -90,13 +96,32 @@ extension SAParallaxViewController: UICollectionViewDelegate {
         }
     }
     
-    
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        //coming soon
+        collectionView.deselectItemAtIndexPath(indexPath, animated: false)
+        let cell = collectionView.cellForItemAtIndexPath(indexPath) as SAParallaxViewCell
+        cell.selected = true
+        
+        if let cells = collectionView.visibleCells() as? [SAParallaxViewCell] {
+            let containerView = SATransitionContainerView(frame: view.bounds)
+            containerView.setViews(cells: cells, view: view)
+            
+            let viewController = SADetailViewController()
+            viewController.transitioningDelegate = self
+            viewController.trantisionContainerView = containerView
+            
+            presentViewController(viewController, animated: true, completion: nil)
+        }
     }
 }
 
 //MARK: - UIViewControllerTransitioningDelegate
 extension SAParallaxViewController: UIViewControllerTransitioningDelegate {
-    //coming soon
+
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return self.transitionManager
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return self.transitionManager
+    }
 }
