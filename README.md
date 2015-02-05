@@ -22,7 +22,7 @@ SAParallaxViewControllerSwift realizes parallax scrolling with blur effect. In a
 
 #### CocoaPods
 
-SAParallaxViewControllerSwift is available through [CocoaPods](http://cocoapods.org). If you have cocoapods 0.36beta, you can install
+SAParallaxViewControllerSwift is available through [CocoaPods](http://cocoapods.org). If you have cocoapods 0.36 beta or greater, you can install
 it, simply add the following line to your Podfile:
 
     pod "SAParallaxViewControllerSwift"
@@ -57,7 +57,7 @@ class ViewController: SAParallaxViewController {
 }
 ```
 
-If you want to use `UICollectionViewDataSource`, implement extension like this. You can set image with 'cell.setImage()'. You can add some UIView member classes to `cell.containerView.accessoryView`.
+If you want to use `UICollectionViewDataSource`, implement extension like this. You can set image with `cell.setImage()`. You can add some UIView member classes to `cell.containerView.accessoryView`.
 
 ```swift
 extension ViewController: UICollectionViewDataSource {
@@ -127,6 +127,7 @@ class DetailViewController: SADetailViewController {
         super.viewDidLoad()
     }
 }
+```
 
 ## Customize
 
