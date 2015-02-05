@@ -6,7 +6,6 @@
 )](https://developer.apple.com/swift)
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
-[![Version](https://img.shields.io/cocoapods/v/SAParallaxViewControllerSwift.svg?style=flat)](http://cocoadocs.org/docsets/MSAlertController)
 
 ![](./SampleImage/sample.gif) ![](./SampleImage/open_sample.gif)
 
@@ -33,9 +32,7 @@ Add the [SAParallaxViewControllerSwift](./SAParallaxViewControllerSwift) directo
 
 ## Usage
 
-If you install from cocoapods, You have to white `import SAParallaxViewControllerSwift`.
-
-Extend `SAParallaxViewController` like this. 
+Extend `SAParallaxViewController` like this.
 
 ```swift
 class ViewController: SAParallaxViewController {
