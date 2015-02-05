@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		370129EC1A826FA400921235 /* SATransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370129EB1A826FA400921235 /* SATransitionManager.swift */; };
-		370129EE1A82711A00921235 /* SADetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370129ED1A82711A00921235 /* SADetailViewController.swift */; };
-		370129F01A82737200921235 /* SATransitionContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370129EF1A82737200921235 /* SATransitionContainerView.swift */; };
-		370129F21A82759100921235 /* NSLayoutConstraint+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370129F11A82759100921235 /* NSLayoutConstraint+Easy.swift */; };
 		370129F41A8288A800921235 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370129F31A8288A800921235 /* DetailViewController.swift */; };
 		3717D09A1A7E7C76000A1E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3717D0991A7E7C76000A1E0B /* ViewController.swift */; };
 		37E219071A7A997800896D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E219061A7A997800896D72 /* AppDelegate.swift */; };
@@ -18,12 +14,8 @@
 		37E2190E1A7A997800896D72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E2190D1A7A997800896D72 /* Images.xcassets */; };
 		37E219111A7A997800896D72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E2190F1A7A997800896D72 /* LaunchScreen.xib */; };
 		37E2191D1A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2191C1A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.swift */; };
-		37E2192A1A7A9BD000896D72 /* SAParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E219291A7A9BD000896D72 /* SAParallaxViewController.swift */; };
-		37E2192C1A7A9DA900896D72 /* SAParallaxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2192B1A7A9DA900896D72 /* SAParallaxViewCell.swift */; };
-		37E2192E1A7A9DCF00896D72 /* SAParallaxViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2192D1A7A9DCF00896D72 /* SAParallaxViewLayout.swift */; };
 		37E219301A7D315600896D72 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E2192F1A7D315600896D72 /* Accelerate.framework */; };
-		37E219341A7D31C400896D72 /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E219331A7D31C400896D72 /* UIImage+Blur.swift */; };
-		37E219361A7D353600896D72 /* SAParallaxContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E219351A7D353600896D72 /* SAParallaxContainerView.swift */; };
+		4D569EF5C82C09BA751BB486 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13D477417D91DE1AEF9A6A7 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		370129EB1A826FA400921235 /* SATransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SATransitionManager.swift; sourceTree = "<group>"; };
-		370129ED1A82711A00921235 /* SADetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SADetailViewController.swift; sourceTree = "<group>"; };
-		370129EF1A82737200921235 /* SATransitionContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SATransitionContainerView.swift; sourceTree = "<group>"; };
-		370129F11A82759100921235 /* NSLayoutConstraint+Easy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Easy.swift"; sourceTree = "<group>"; };
 		370129F31A8288A800921235 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3717D0991A7E7C76000A1E0B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37E219011A7A997800896D72 /* SAParallaxViewControllerSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAParallaxViewControllerSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,12 +40,10 @@
 		37E219161A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAParallaxViewControllerSwiftExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E2191B1A7A997800896D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37E2191C1A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAParallaxViewControllerSwiftExampleTests.swift; sourceTree = "<group>"; };
-		37E219291A7A9BD000896D72 /* SAParallaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxViewController.swift; sourceTree = "<group>"; };
-		37E2192B1A7A9DA900896D72 /* SAParallaxViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxViewCell.swift; sourceTree = "<group>"; };
-		37E2192D1A7A9DCF00896D72 /* SAParallaxViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxViewLayout.swift; sourceTree = "<group>"; };
 		37E2192F1A7D315600896D72 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		37E219331A7D31C400896D72 /* UIImage+Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Blur.swift"; sourceTree = "<group>"; };
-		37E219351A7D353600896D72 /* SAParallaxContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParallaxContainerView.swift; sourceTree = "<group>"; };
+		4B7B25543FE9ED785555A345 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6846F36077588499286D9E35 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D13D477417D91DE1AEF9A6A7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +52,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E219301A7D315600896D72 /* Accelerate.framework in Frameworks */,
+				4D569EF5C82C09BA751BB486 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AE1A7A90750D44545B58D27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B7B25543FE9ED785555A345 /* Pods.debug.xcconfig */,
+				6846F36077588499286D9E35 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3717D09B1A7E8052000A1E0B /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +89,8 @@
 				37E219031A7A997800896D72 /* SAParallaxViewControllerSwiftExample */,
 				37E219191A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests */,
 				37E219021A7A997800896D72 /* Products */,
+				2AE1A7A90750D44545B58D27 /* Pods */,
+				DC461D79E954703062E3993E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,7 +112,6 @@
 				37E2190A1A7A997800896D72 /* Main.storyboard */,
 				37E2190D1A7A997800896D72 /* Images.xcassets */,
 				37E2190F1A7A997800896D72 /* LaunchScreen.xib */,
-				37E219281A7A9BD000896D72 /* SAParallaxViewControllerSwift */,
 				3717D09B1A7E8052000A1E0B /* Framework */,
 				37E219041A7A997800896D72 /* Supporting Files */,
 			);
@@ -146,21 +143,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		37E219281A7A9BD000896D72 /* SAParallaxViewControllerSwift */ = {
+		DC461D79E954703062E3993E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				370129F11A82759100921235 /* NSLayoutConstraint+Easy.swift */,
-				370129ED1A82711A00921235 /* SADetailViewController.swift */,
-				370129EB1A826FA400921235 /* SATransitionManager.swift */,
-				370129EF1A82737200921235 /* SATransitionContainerView.swift */,
-				37E219351A7D353600896D72 /* SAParallaxContainerView.swift */,
-				37E2192B1A7A9DA900896D72 /* SAParallaxViewCell.swift */,
-				37E219291A7A9BD000896D72 /* SAParallaxViewController.swift */,
-				37E2192D1A7A9DCF00896D72 /* SAParallaxViewLayout.swift */,
-				37E219331A7D31C400896D72 /* UIImage+Blur.swift */,
+				D13D477417D91DE1AEF9A6A7 /* Pods.framework */,
 			);
-			name = SAParallaxViewControllerSwift;
-			path = ../../SAParallaxViewControllerSwift;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37E219201A7A997800896D72 /* Build configuration list for PBXNativeTarget "SAParallaxViewControllerSwiftExample" */;
 			buildPhases = (
+				945A196D7B0ADDC065ECE3D2 /* Check Pods Manifest.lock */,
 				37E218FD1A7A997800896D72 /* Sources */,
 				37E218FE1A7A997800896D72 /* Frameworks */,
 				37E218FF1A7A997800896D72 /* Resources */,
+				72F9C588FC91E918C4A860E5 /* Embed Pods Frameworks */,
+				26B6F49F1C4DB721AA3A1AA5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,23 +249,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26B6F49F1C4DB721AA3A1AA5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72F9C588FC91E918C4A860E5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		945A196D7B0ADDC065ECE3D2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		37E218FD1A7A997800896D72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37E2192A1A7A9BD000896D72 /* SAParallaxViewController.swift in Sources */,
-				37E2192E1A7A9DCF00896D72 /* SAParallaxViewLayout.swift in Sources */,
 				37E219071A7A997800896D72 /* AppDelegate.swift in Sources */,
 				370129F41A8288A800921235 /* DetailViewController.swift in Sources */,
-				370129F21A82759100921235 /* NSLayoutConstraint+Easy.swift in Sources */,
-				370129F01A82737200921235 /* SATransitionContainerView.swift in Sources */,
-				37E219341A7D31C400896D72 /* UIImage+Blur.swift in Sources */,
-				370129EE1A82711A00921235 /* SADetailViewController.swift in Sources */,
 				3717D09A1A7E7C76000A1E0B /* ViewController.swift in Sources */,
-				37E219361A7D353600896D72 /* SAParallaxContainerView.swift in Sources */,
-				370129EC1A826FA400921235 /* SATransitionManager.swift in Sources */,
-				37E2192C1A7A9DA900896D72 /* SAParallaxViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +425,7 @@
 		};
 		37E219211A7A997800896D72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B7B25543FE9ED785555A345 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SAParallaxViewControllerSwiftExample/Info.plist;
@@ -406,6 +437,7 @@
 		};
 		37E219221A7A997800896D72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6846F36077588499286D9E35 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SAParallaxViewControllerSwiftExample/Info.plist;

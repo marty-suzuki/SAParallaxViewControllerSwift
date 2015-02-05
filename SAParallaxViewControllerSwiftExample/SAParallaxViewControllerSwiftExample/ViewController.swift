@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SAParallaxViewControllerSwift
 
 class ViewController: SAParallaxViewController {
     override init() {
