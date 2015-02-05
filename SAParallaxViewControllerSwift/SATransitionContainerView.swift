@@ -8,28 +8,28 @@
 
 import UIKit
 
-class SATransitionContainerView: UIView {
+public class SATransitionContainerView: UIView {
 
-    var views = [UIView]()
-    var viewInitialPositions = [CGPoint]()
-    var imageViewInitialFrame: CGRect!
-    var blurImageViewInitialFrame: CGRect!
-    var containerViewInitialFrame: CGRect!
-    var containerView: SAParallaxContainerView!
+    public var views = [UIView]()
+    public var viewInitialPositions = [CGPoint]()
+    public var imageViewInitialFrame: CGRect!
+    public var blurImageViewInitialFrame: CGRect!
+    public var containerViewInitialFrame: CGRect!
+    public var containerView: SAParallaxContainerView!
     
-    required init(coder aDecoder: NSCoder) {
+    public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    override init() {
+    public override init() {
         super.init()
     }
     
-    func setViews(#cells: [SAParallaxViewCell], view: UIView) {
+    public func setViews(#cells: [SAParallaxViewCell], view: UIView) {
         for cell in cells {
             let point = cell.superview!.convertPoint(cell.frame.origin, toView:view)
             self.viewInitialPositions.append(point)
@@ -63,7 +63,7 @@ class SATransitionContainerView: UIView {
         }
     }
     
-    func openAnimation() {
+    public func openAnimation() {
         let yPositionContainer = self.containerView.frame.origin.y
         let containerViewHeight = self.containerView.frame.size.height
         let height = self.frame.size.height
@@ -92,7 +92,7 @@ class SATransitionContainerView: UIView {
         }
     }
     
-    func closeAnimation() {
+    public func closeAnimation() {
         for (index, view) in enumerate(self.views) {
             if view != self.containerView {
                 let point = self.viewInitialPositions[index]

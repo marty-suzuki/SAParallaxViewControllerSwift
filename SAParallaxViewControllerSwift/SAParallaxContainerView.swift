@@ -8,13 +8,13 @@
 
 import UIKit
 
-class SAParallaxContainerView: UIView {
+public class SAParallaxContainerView: UIView {
     
-    var imageView: UIImageView!
-    var accessoryView: UIView!
+    public var imageView: UIImageView!
+    public var accessoryView: UIView!
     
-    var blurContainerView: UIView!
-    var blurImageView: UIImageView!
+    public var blurContainerView: UIView!
+    public var blurImageView: UIImageView!
     
     private var yStartPoint: CGFloat!
     private var accessoryViewHeight = CGFloat(60.0)
@@ -22,17 +22,17 @@ class SAParallaxContainerView: UIView {
     private var blurColorView: UIView!
     private var blurSize = Float(20.0)
     
-    override init() {
+    public override init() {
         super.init()
         self.initialize()
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         self.initialize()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.initialize()
     }
@@ -60,7 +60,7 @@ class SAParallaxContainerView: UIView {
     }
     
     //MARK: - SAParallaxContainerView Public Methods
-    func setImage(image: UIImage) {
+    public func setImage(image: UIImage) {
         self.imageView.image = image
         if let imageSize = self.imageView.image?.size {
             let width = self.bounds.size.width
@@ -97,32 +97,32 @@ class SAParallaxContainerView: UIView {
         self.blurContainerView.addSubview(self.accessoryView)
     }
     
-    func setImageOffset(offset: CGPoint) {
+    public func setImageOffset(offset: CGPoint) {
         self.imageView.frame = CGRectOffset(self.imageView.bounds, offset.x, offset.y)
         self.blurImageView.frame = CGRectOffset(self.blurImageView.bounds, offset.x, -(self.frame.size.height - self.blurContainerView.frame.height) + offset.y)
     }
     
-    func setParallaxStartPosition(#y: Float) {
+    public func setParallaxStartPosition(#y: Float) {
         self.yStartPoint = CGFloat(y)
     }
     
-    func parallaxStartPosition() -> CGFloat {
+    public func parallaxStartPosition() -> CGFloat {
         return self.yStartPoint
     }
     
-    func setAccessoryViewHeight(height: Float) {
+    public func setAccessoryViewHeight(height: Float) {
         self.accessoryViewHeight = CGFloat(height)
     }
     
-    func setBlurSize(size: Float) {
+    public func setBlurSize(size: Float) {
         self.blurSize = size
     }
     
-    func setBlurColorAlpha(alpha: CGFloat) {
+    public func setBlurColorAlpha(alpha: CGFloat) {
         self.blurColorView.alpha = alpha
     }
     
-    func setBlurColor(color: UIColor) {
+    public func setBlurColor(color: UIColor) {
         self.blurColorView.backgroundColor = color
     }
 }

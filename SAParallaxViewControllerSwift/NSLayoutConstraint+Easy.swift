@@ -10,7 +10,7 @@ import UIKit
 
 extension NSLayoutConstraint {
     
-    class func applyAutoLayout(superview: UIView, target: UIView, top: Float?, left: Float?, right: Float?, bottom: Float?, height: Float?, width: Float?) {
+    public class func applyAutoLayout(superview: UIView, target: UIView, top: Float?, left: Float?, right: Float?, bottom: Float?, height: Float?, width: Float?) {
         
         target.setTranslatesAutoresizingMaskIntoConstraints(false)
         superview.addSubview(target)

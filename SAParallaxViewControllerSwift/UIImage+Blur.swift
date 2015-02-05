@@ -11,7 +11,8 @@ import Accelerate
 
 extension UIImage {
     
-    func blur(size: Float) -> UIImage! {
+    public func blur(size: Float) -> UIImage! {
+        
         let boxSize = size - (size % 2) + 1
         let image = self.CGImage
         let inProvider = CGImageGetDataProvider(image)

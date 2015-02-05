@@ -8,12 +8,12 @@
 
 import UIKit
 
-class SADetailViewController: UIViewController {
+public class SADetailViewController: UIViewController {
 
-    var trantisionContainerView: SATransitionContainerView!
-    var headerView: UIView!
-    var imageView: UIImageView!
-    var closeButton: UIButton!
+    public var trantisionContainerView: SATransitionContainerView!
+    public var headerView: UIView!
+    public var imageView: UIImageView!
+    public var closeButton: UIButton!
     
     private var headerColorView: UIView!
     private var headerImageView: UIImageView!!
@@ -22,11 +22,11 @@ class SADetailViewController: UIViewController {
     
     private let headerViewHeight = CGFloat(44.0)
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        view.backgroundColor = .whiteColor()
+        self.view.backgroundColor = .whiteColor()
         
         let width = UIScreen.mainScreen().bounds.size.width
         self.imageView = UIImageView()
@@ -62,7 +62,7 @@ class SADetailViewController: UIViewController {
         self.headerView.addSubview(self.closeButton)
     }
     
-    override func viewDidAppear(animated: Bool) {
+    public override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         UIView.animateWithDuration(0.25, delay: 0.0, options: .CurveEaseIn, animations: {
@@ -74,16 +74,16 @@ class SADetailViewController: UIViewController {
         })
     }
     
-    override func didReceiveMemoryWarning() {
+    public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    public override func prefersStatusBarHidden() -> Bool {
         return true
     }
     
-    func closeAction(button: UIButton) {
+    public func closeAction(button: UIButton) {
         UIView.animateWithDuration(0.25, delay: 0.0, options: .CurveEaseIn, animations: {
             
             self.headerContainerView.alpha = 0.0

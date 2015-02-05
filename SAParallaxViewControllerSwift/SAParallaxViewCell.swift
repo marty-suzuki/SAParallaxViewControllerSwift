@@ -8,28 +8,28 @@
 
 import UIKit
 
-class SAParallaxViewCell: UICollectionViewCell {
+public class SAParallaxViewCell: UICollectionViewCell {
     
-    var containerView: SAParallaxContainerView!
+    public var containerView: SAParallaxContainerView!
     
     private var previousImageOffset = CGPoint.zeroPoint
     
-    override init() {
+    public override init() {
         super.init()
         self.initialize()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.initialize()
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         self.initialize()
     }
     
-    override func prepareForReuse() {
+    public override func prepareForReuse() {
         containerView.removeFromSuperview()
         self.initialize()
     }
@@ -41,18 +41,18 @@ class SAParallaxViewCell: UICollectionViewCell {
     }
     
     //MARK: - SAParallaxViewCell Public Methods
-    func setImage(image: UIImage) {
+    public func setImage(image: UIImage) {
         self.containerView.setImage(image)
     }
     
-    func setImageOffset(offset: CGPoint) {
+    public func setImageOffset(offset: CGPoint) {
         if selected {
             return
         }
         self.containerView.setImageOffset(offset)
     }
     
-    func screenShot() -> UIImageView {
+    public func screenShot() -> UIImageView {
         let scale = UIScreen.mainScreen().scale
         UIGraphicsBeginImageContextWithOptions(self.frame.size, false, scale)
         self.containerView.layer.renderInContext(UIGraphicsGetCurrentContext())

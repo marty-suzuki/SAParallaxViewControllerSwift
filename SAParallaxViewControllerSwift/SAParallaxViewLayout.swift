@@ -8,21 +8,21 @@
 
 import UIKit
 
-class SAParallaxViewLayout: UICollectionViewFlowLayout {
+public class SAParallaxViewLayout: UICollectionViewFlowLayout {
     
     private let kDefaultHeight: CGFloat = 220.0
     
-    override init() {
+    public override init() {
         super.init()
         self.initialize()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.initialize()
     }
     
-    func initialize() {
+    private func initialize() {
         minimumInteritemSpacing = 0.0
         minimumLineSpacing = 0.0
         sectionInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
@@ -31,11 +31,11 @@ class SAParallaxViewLayout: UICollectionViewFlowLayout {
         itemSize = CGSize(width: width, height: height)
     }
     
-    override func layoutAttributesForElementsInRect(rect: CGRect) -> [AnyObject]? {
+    public override func layoutAttributesForElementsInRect(rect: CGRect) -> [AnyObject]? {
         return super.layoutAttributesForElementsInRect(rect)
     }
     
-    override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes! {
+    public override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes! {
         return super.layoutAttributesForItemAtIndexPath(indexPath)
     }
 }

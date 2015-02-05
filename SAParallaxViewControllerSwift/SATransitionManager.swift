@@ -8,18 +8,18 @@
 
 import UIKit
 
-class SATransitionManager: NSObject {
-    var animationDuration = 0.25
+public class SATransitionManager: NSObject {
+    public var animationDuration = 0.25
 }
 
 //MARK: - UIViewControllerAnimatedTransitioning
 extension SATransitionManager: UIViewControllerAnimatedTransitioning {
 
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
         return self.animationDuration
     }
     
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)
         let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)
         
