@@ -2,9 +2,13 @@ PODS:
   - SAParallaxViewControllerSwift (1.1.1)
 
 DEPENDENCIES:
-  - SAParallaxViewControllerSwift
+  - SAParallaxViewControllerSwift (from `../`)
+
+EXTERNAL SOURCES:
+  SAParallaxViewControllerSwift:
+    :path: ../
 
 SPEC CHECKSUMS:
-  SAParallaxViewControllerSwift: 379f830d9889a86b73e94192df9afcaf5b3cc267
+  SAParallaxViewControllerSwift: ac4be9f288aaf6a6b7cdf4ecede0569863c21235
 
-COCOAPODS: 0.36.0.beta.2
+COCOAPODS: 0.36.1

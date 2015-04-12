@@ -10,8 +10,8 @@ import UIKit
 import SAParallaxViewControllerSwift
 
 class ViewController: SAParallaxViewController {
-    override init() {
-        super.init()
+    convenience init() {
+        self.init(nibName: nil, bundle: nil)
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
@@ -29,20 +29,29 @@ class ViewController: SAParallaxViewController {
 
 extension ViewController: UICollectionViewDataSource {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath) as SAParallaxViewCell
+        let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath)
         
-        let index = indexPath.row % 6
-        let imageName = String(format: "image%d", index + 1)
-        if let image = UIImage(named: imageName) {
-            cell.setImage(image)
+        if let cell = cell as? SAParallaxViewCell {
+            
+            for view in cell.containerView.accessoryView.subviews {
+                if let view = view as? UILabel {
+                    view.removeFromSuperview()
+                }
+            }
+            
+            let index = indexPath.row % 6
+            let imageName = String(format: "image%d", index + 1)
+            if let image = UIImage(named: imageName) {
+                cell.setImage(image)
+            }
+            let title = ["Girl with Room", "Beautiful sky", "Music Festival", "Fashion show", "Beautiful beach", "Pizza and beer"]
+            let label = UILabel(frame: cell.containerView.accessoryView.bounds)
+            label.textAlignment = .Center
+            label.text = title[index]
+            label.textColor = .whiteColor()
+            label.font = .systemFontOfSize(30)
+            cell.containerView.accessoryView.addSubview(label)
         }
-        let title = ["Girl with Room", "Beautiful sky", "Music Festival", "Fashion show", "Beautiful beach", "Pizza and beer"]
-        let label = UILabel(frame: cell.containerView.accessoryView.bounds)
-        label.textAlignment = .Center
-        label.text = title[index]
-        label.textColor = .whiteColor()
-        label.font = .systemFontOfSize(30)
-        cell.containerView.accessoryView.addSubview(label)
         
         return cell
     }

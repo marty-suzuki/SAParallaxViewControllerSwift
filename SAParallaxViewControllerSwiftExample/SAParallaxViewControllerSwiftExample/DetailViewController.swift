@@ -10,15 +10,15 @@ import UIKit
 import SAParallaxViewControllerSwift
 
 class DetailViewController: SADetailViewController {
-    override init() {
-        super.init()
+    convenience init() {
+        self.init(nibName: nil, bundle: nil)
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    required override init(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
