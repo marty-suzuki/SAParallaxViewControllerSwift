@@ -1,6 +1,6 @@
 //
 //  NSLayoutConstraint+Easy.swift
-//  SAParallaxViewControllerSwiftExample
+//  SAParallaxViewControllerSwift
 //
 //  Created by 鈴木大貴 on 2015/02/05.
 //  Copyright (c) 2015年 鈴木大貴. All rights reserved.

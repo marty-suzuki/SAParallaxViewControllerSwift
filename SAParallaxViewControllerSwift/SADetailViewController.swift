@@ -1,6 +1,6 @@
 //
 //  SADetailViewController.swift
-//  SAParallaxViewControllerSwiftExample
+//  SAParallaxViewControllerSwift
 //
 //  Created by 鈴木大貴 on 2015/02/05.
 //  Copyright (c) 2015年 鈴木大貴. All rights reserved.
@@ -26,40 +26,40 @@ public class SADetailViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = .whiteColor()
+        view.backgroundColor = .whiteColor()
         
         let width = UIScreen.mainScreen().bounds.size.width
-        self.imageView = UIImageView()
-        self.imageView.image = self.trantisionContainerView.containerView.imageView.image!
+        imageView = UIImageView()
+        imageView.image = self.trantisionContainerView.containerView.imageView.image!
         if let imageSize = self.imageView.image?.size {
             let height = width * imageSize.height / imageSize.width
-            self.imageView.autoresizingMask = .None
-            self.imageView.frame = CGRect(x: 0, y: 0, width: width, height: height)
-            self.view.addSubview(self.imageView)
+            imageView.autoresizingMask = .None
+            imageView.frame = CGRect(x: 0, y: 0, width: width, height: height)
+            view.addSubview(imageView)
         }
         
-        self.headerContainerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: width, height: headerViewHeight))
-        self.headerContainerView.alpha = 0.0
-        self.headerContainerView.clipsToBounds = true
-        self.view.addSubview(self.headerContainerView)
+        headerContainerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: width, height: headerViewHeight))
+        headerContainerView.alpha = 0.0
+        headerContainerView.clipsToBounds = true
+        view.addSubview(headerContainerView)
         
-        self.blurImageView = UIImageView(frame: self.imageView.bounds)
-        self.blurImageView.image = self.imageView.image?.blur(20.0)
-        self.headerContainerView.addSubview(self.blurImageView)
+        blurImageView = UIImageView(frame: imageView.bounds)
+        blurImageView.image = imageView.image?.blur(20.0)
+        headerContainerView.addSubview(blurImageView)
         
-        self.headerColorView = UIView(frame: self.headerContainerView.bounds)
-        self.headerColorView.backgroundColor = .blackColor()
-        self.headerColorView.alpha = 0.5
-        self.headerContainerView.addSubview(self.headerColorView)
+        headerColorView = UIView(frame: self.headerContainerView.bounds)
+        headerColorView.backgroundColor = .blackColor()
+        headerColorView.alpha = 0.5
+        headerContainerView.addSubview(headerColorView)
         
-        self.headerView = UIView(frame: self.headerContainerView.bounds)
-        self.headerContainerView.addSubview(self.headerView)
+        headerView = UIView(frame: headerContainerView.bounds)
+        headerContainerView.addSubview(headerView)
         
-        self.closeButton = UIButton(frame: CGRect(x: 0.0, y: 0.0, width: headerViewHeight, height: headerViewHeight))
-        self.closeButton.setTitle("X", forState: .Normal)
-        self.closeButton.titleLabel?.textColor = .whiteColor()
-        self.closeButton.addTarget(self, action: "closeAction:", forControlEvents: .TouchUpInside)
-        self.headerView.addSubview(self.closeButton)
+        closeButton = UIButton(frame: CGRect(x: 0.0, y: 0.0, width: headerViewHeight, height: headerViewHeight))
+        closeButton.setTitle("X", forState: .Normal)
+        closeButton.titleLabel?.textColor = .whiteColor()
+        closeButton.addTarget(self, action: "closeAction:", forControlEvents: .TouchUpInside)
+        headerView.addSubview(self.closeButton)
     }
     
     public override func viewDidAppear(animated: Bool) {

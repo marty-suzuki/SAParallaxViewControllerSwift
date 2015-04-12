@@ -1,6 +1,6 @@
 //
 //  SATransitionManager.swift
-//  SAParallaxViewControllerSwiftExample
+//  SAParallaxViewControllerSwift
 //
 //  Created by 鈴木大貴 on 2015/02/05.
 //  Copyright (c) 2015年 鈴木大貴. All rights reserved.
@@ -16,7 +16,7 @@ public class SATransitionManager: NSObject {
 extension SATransitionManager: UIViewControllerAnimatedTransitioning {
 
     public func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
-        return self.animationDuration
+        return animationDuration
     }
     
     public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -27,7 +27,7 @@ extension SATransitionManager: UIViewControllerAnimatedTransitioning {
         let fromView = fromViewController!.view
         
         let containerView = transitionContext.containerView()
-        let duration = self.transitionDuration(transitionContext)
+        let duration = transitionDuration(transitionContext)
         
         if let parallax = toViewController as? SAParallaxViewController {
             if let detail = fromViewController as? SADetailViewController {

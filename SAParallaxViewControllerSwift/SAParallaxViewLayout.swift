@@ -1,6 +1,6 @@
 //
 //  SAParallaxViewLayout.swift
-//  SAParallaxViewControllerSwiftExample
+//  SAParallaxViewControllerSwift
 //
 //  Created by 鈴木大貴 on 2015/01/30.
 //  Copyright (c) 2015年 鈴木大貴. All rights reserved.
@@ -14,12 +14,12 @@ public class SAParallaxViewLayout: UICollectionViewFlowLayout {
     
     public override init() {
         super.init()
-        self.initialize()
+        initialize()
     }
     
     public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.initialize()
+        initialize()
     }
     
     private func initialize() {

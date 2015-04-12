@@ -1,6 +1,6 @@
 //
 //  SAParallaxViewController.swift
-//  SAParallaxViewControllerSwiftExample
+//  SAParallaxViewControllerSwift
 //
 //  Created by 鈴木大貴 on 2015/01/30.
 //  Copyright (c) 2015年 鈴木大貴. All rights reserved.
@@ -16,10 +16,6 @@ public class SAParallaxViewController: UIViewController {
     
     private let transitionManager = SATransitionManager()
     
-    public override init() {
-        super.init()
-    }
-    
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -31,22 +27,22 @@ public class SAParallaxViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = .whiteColor()
+        view.backgroundColor = .whiteColor()
         
-        self.collectionView = UICollectionView(frame: .zeroRect, collectionViewLayout: SAParallaxViewLayout())
+        collectionView = UICollectionView(frame: .zeroRect, collectionViewLayout: SAParallaxViewLayout())
         
-        NSLayoutConstraint.applyAutoLayout(self.view, target: self.collectionView, top: 0.0, left: 0.0, right: 0.0, bottom: 0.0, height: nil, width: nil)
+        NSLayoutConstraint.applyAutoLayout(view, target: collectionView, top: 0.0, left: 0.0, right: 0.0, bottom: 0.0, height: nil, width: nil)
         
-        self.collectionView.registerClass(SAParallaxViewCell.self, forCellWithReuseIdentifier: kParallaxViewCellReuseIdentifier)
-        self.collectionView.backgroundColor = .clearColor()
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
+        collectionView.registerClass(SAParallaxViewCell.self, forCellWithReuseIdentifier: kParallaxViewCellReuseIdentifier)
+        collectionView.backgroundColor = .clearColor()
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
     
     public override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let cells = self.collectionView?.visibleCells() as? [UICollectionViewCell] {
+        if let cells = collectionView?.visibleCells() as? [UICollectionViewCell] {
             for cell in cells {
                 cell.selected = false
             }
@@ -71,7 +67,7 @@ extension SAParallaxViewController: UICollectionViewDataSource {
     }
     
     public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kParallaxViewCellReuseIdentifier, forIndexPath: indexPath) as SAParallaxViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kParallaxViewCellReuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
         cell.backgroundColor = .clearColor()
         cell.selected = false
         return cell
@@ -82,7 +78,7 @@ extension SAParallaxViewController: UICollectionViewDataSource {
 extension SAParallaxViewController: UICollectionViewDelegate {
     
     public func scrollViewDidScroll(scrollView: UIScrollView) {
-        if let cells = self.collectionView.visibleCells() as? [SAParallaxViewCell] {
+        if let cells = collectionView.visibleCells() as? [SAParallaxViewCell] {
             for cell in cells {
                 let point = cell.superview!.convertPoint(cell.frame.origin, toView:view)
                 
@@ -104,8 +100,8 @@ extension SAParallaxViewController: UICollectionViewDelegate {
     
     public func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         collectionView.deselectItemAtIndexPath(indexPath, animated: false)
-        let cell = collectionView.cellForItemAtIndexPath(indexPath) as SAParallaxViewCell
-        cell.selected = true
+        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+        cell?.selected = true
     }
 }
 
@@ -113,10 +109,10 @@ extension SAParallaxViewController: UICollectionViewDelegate {
 extension SAParallaxViewController: UIViewControllerTransitioningDelegate {
 
     public func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return self.transitionManager
+        return transitionManager
     }
     
     public func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return self.transitionManager
+        return transitionManager
     }
 }

@@ -1,6 +1,6 @@
 //
 //  UIImage+Blur.swift
-//  SAParallaxViewControllerSwiftExample
+//  SAParallaxViewControllerSwift
 //
 //  Created by 鈴木大貴 on 2015/02/01.
 //  Copyright (c) 2015年 鈴木大貴. All rights reserved.
@@ -17,8 +17,8 @@ extension UIImage {
         let image = self.CGImage
         let inProvider = CGImageGetDataProvider(image)
         
-        let height = CGImageGetHeight(image)
-        let width = CGImageGetWidth(image)
+        let height = vImagePixelCount(CGImageGetHeight(image))
+        let width = vImagePixelCount(CGImageGetWidth(image))
         let rowBytes = CGImageGetBytesPerRow(image)
         
         let inBitmapData = CGDataProviderCopyData(inProvider)
@@ -31,7 +31,7 @@ extension UIImage {
         let error = vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer, nil, 0, 0, UInt32(boxSize), UInt32(boxSize), nil, vImage_Flags(kvImageEdgeExtend))
         
         var colorSpace = CGColorSpaceCreateDeviceRGB()
-        let context = CGBitmapContextCreate(outBuffer.data, outBuffer.width, outBuffer.height, 8, outBuffer.rowBytes, colorSpace, CGImageGetBitmapInfo(image))
+        let context = CGBitmapContextCreate(outBuffer.data, Int(outBuffer.width), Int(outBuffer.height), 8, outBuffer.rowBytes, colorSpace, CGImageGetBitmapInfo(image))
         let imageRef = CGBitmapContextCreateImage(context)
         let bluredImage = UIImage(CGImage: imageRef)
         
