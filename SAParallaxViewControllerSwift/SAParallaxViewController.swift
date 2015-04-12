@@ -12,7 +12,7 @@ public let kParallaxViewCellReuseIdentifier = "Cell"
 
 public class SAParallaxViewController: UIViewController {
     
-    public var collectionView :UICollectionView!
+    public var collectionView = UICollectionView(frame: .zeroRect, collectionViewLayout: SAParallaxViewLayout())
     
     private let transitionManager = SATransitionManager()
     
@@ -29,8 +29,6 @@ public class SAParallaxViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = .whiteColor()
         
-        collectionView = UICollectionView(frame: .zeroRect, collectionViewLayout: SAParallaxViewLayout())
-        
         NSLayoutConstraint.applyAutoLayout(view, target: collectionView, top: 0.0, left: 0.0, right: 0.0, bottom: 0.0, height: nil, width: nil)
         
         collectionView.registerClass(SAParallaxViewCell.self, forCellWithReuseIdentifier: kParallaxViewCellReuseIdentifier)
@@ -42,7 +40,7 @@ public class SAParallaxViewController: UIViewController {
     public override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let cells = collectionView?.visibleCells() as? [UICollectionViewCell] {
+        if let cells = collectionView.visibleCells() as? [UICollectionViewCell] {
             for cell in cells {
                 cell.selected = false
             }
@@ -92,7 +90,9 @@ extension SAParallaxViewController: UICollectionViewDelegate {
                     if yOffset > imageRemainDistance {
                         yOffset = imageRemainDistance
                     }
-                    cell.setImageOffset(CGPoint(x: 0.0, y: -(cell.containerView.parallaxStartPosition())-yOffset))
+                    if let parallaxStartPosition = cell.containerView.parallaxStartPosition() {
+                        cell.setImageOffset(CGPoint(x: 0.0, y: -(parallaxStartPosition) - yOffset))
+                    }
                 }
             }
         }

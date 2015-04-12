@@ -12,10 +12,10 @@ public class SATransitionContainerView: UIView {
 
     public var views = [UIView]()
     public var viewInitialPositions = [CGPoint]()
-    public var imageViewInitialFrame: CGRect!
-    public var blurImageViewInitialFrame: CGRect!
-    public var containerViewInitialFrame: CGRect!
-    public var containerView: SAParallaxContainerView!
+    public var imageViewInitialFrame: CGRect = .zeroRect
+    public var blurImageViewInitialFrame: CGRect = .zeroRect
+    public var containerViewInitialFrame: CGRect = .zeroRect
+    public var containerView: SAParallaxContainerView?
     
     public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -31,13 +31,15 @@ public class SATransitionContainerView: UIView {
             viewInitialPositions.append(point)
             
             if cell.selected {
-                containerView = SAParallaxContainerView(frame: cell.containerView.bounds)
+                let containerView = SAParallaxContainerView(frame: cell.containerView.bounds)
                 containerView.frame.origin = point
                 containerView.clipsToBounds = true
                 containerView.backgroundColor = .whiteColor()
                 containerViewInitialFrame = containerView.frame
                 
-                containerView.setImage(cell.containerView.imageView.image!)
+                if let image = cell.containerView.imageView.image {
+                    containerView.setImage(image)
+                }
                 if let image = containerView.imageView.image {
                     containerView.imageView.frame = cell.containerView.imageView.frame
                     imageViewInitialFrame = containerView.imageView.frame
@@ -50,6 +52,7 @@ public class SATransitionContainerView: UIView {
                 
                 views.append(containerView)
                 addSubview(containerView)
+                self.containerView = containerView
             } else {
                 let imageView = cell.screenShot()
                 imageView.frame.origin = point
@@ -60,30 +63,32 @@ public class SATransitionContainerView: UIView {
     }
     
     public func openAnimation() {
-        let yPositionContainer = containerView.frame.origin.y
-        let containerViewHeight = containerView.frame.size.height
-        let height = frame.size.height
-        
-        let distanceToTop = yPositionContainer
-        let distanceToBottom = height - (yPositionContainer + containerViewHeight)
-        
-        for view in views {
-            if view != containerView {
-                var frame = view.frame
-                
-                if frame.origin.y < yPositionContainer {
-                    frame.origin.y -= distanceToTop
-                    view.frame = frame
+        if let yPositionContainer = containerView?.frame.origin.y, containerViewHeight = containerView?.frame.size.height {
+            let height = frame.size.height
+            
+            let distanceToTop = yPositionContainer
+            let distanceToBottom = height - (yPositionContainer + containerViewHeight)
+            
+            for view in views {
+                if view != containerView {
+                    var frame = view.frame
+                    
+                    if frame.origin.y < yPositionContainer {
+                        frame.origin.y -= distanceToTop
+                        view.frame = frame
+                    } else {
+                        frame.origin.y += distanceToBottom
+                        view.frame = frame
+                    }
                 } else {
-                    frame.origin.y += distanceToBottom
-                    view.frame = frame
+                    if let containerView = containerView {
+                        containerView.frame = bounds
+                        containerView.imageView.frame = containerView.imageView.bounds
+                        var rect = containerView.blurContainerView.frame
+                        rect.origin.y = height - rect.size.height
+                        containerView.blurContainerView.frame = rect
+                    }
                 }
-            } else {
-                containerView.frame = bounds
-                containerView.imageView.frame = containerView.imageView.bounds
-                var rect = containerView.blurContainerView.frame
-                rect.origin.y = height - rect.size.height
-                containerView.blurContainerView.frame = rect
             }
         }
     }
@@ -94,12 +99,14 @@ public class SATransitionContainerView: UIView {
                 let point = self.viewInitialPositions[index]
                 view.frame.origin = point
             } else {
-                containerView.frame = containerViewInitialFrame
-                containerView.imageView.frame = imageViewInitialFrame
-                containerView.blurImageView.frame = blurImageViewInitialFrame
-                var rect = containerView.blurContainerView.frame
-                rect.origin.y = containerView.frame.size.height - rect.size.height
-                containerView.blurContainerView.frame = rect
+                containerView?.frame = containerViewInitialFrame
+                containerView?.imageView.frame = imageViewInitialFrame
+                containerView?.blurImageView.frame = blurImageViewInitialFrame
+                if let containerView = containerView {
+                    var rect = containerView.blurContainerView.frame
+                    rect.origin.y = containerView.frame.size.height - rect.size.height
+                    containerView.blurContainerView.frame = rect
+                }
             }
         }
     }

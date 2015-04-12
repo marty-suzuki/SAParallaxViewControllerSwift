@@ -32,6 +32,13 @@ extension ViewController: UICollectionViewDataSource {
         let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath)
         
         if let cell = cell as? SAParallaxViewCell {
+            
+            for view in cell.containerView.accessoryView.subviews {
+                if let view = view as? UILabel {
+                    view.removeFromSuperview()
+                }
+            }
+            
             let index = indexPath.row % 6
             let imageName = String(format: "image%d", index + 1)
             if let image = UIImage(named: imageName) {

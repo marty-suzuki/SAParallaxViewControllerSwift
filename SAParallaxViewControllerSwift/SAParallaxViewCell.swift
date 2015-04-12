@@ -10,7 +10,7 @@ import UIKit
 
 public class SAParallaxViewCell: UICollectionViewCell {
     
-    public var containerView: SAParallaxContainerView!
+    public var containerView = SAParallaxContainerView()
     
     private var previousImageOffset = CGPoint.zeroPoint
     
@@ -36,7 +36,7 @@ public class SAParallaxViewCell: UICollectionViewCell {
     
     //MARK: - SAParallaxViewCell Private Methods
     private func initialize() {
-        containerView = SAParallaxContainerView(frame: bounds)
+        containerView.frame = bounds
         addSubview(containerView)
     }
     
@@ -53,6 +53,7 @@ public class SAParallaxViewCell: UICollectionViewCell {
     }
     
     public func screenShot() -> UIImageView {
+        
         let scale = UIScreen.mainScreen().scale
         UIGraphicsBeginImageContextWithOptions(self.frame.size, false, scale)
         containerView.layer.renderInContext(UIGraphicsGetCurrentContext())

@@ -10,17 +10,17 @@ import UIKit
 
 public class SAParallaxContainerView: UIView {
     
-    public var imageView: UIImageView!
-    public var accessoryView: UIView!
+    public var imageView = UIImageView()
+    public var accessoryView = UIView()
     
-    public var blurContainerView: UIView!
-    public var blurImageView: UIImageView!
+    public var blurContainerView = UIView()
+    public var blurImageView = UIImageView()
     
-    private var yStartPoint: CGFloat!
-    private var accessoryViewHeight = CGFloat(60.0)
+    private var yStartPoint: CGFloat?
+    private var accessoryViewHeight: CGFloat = 60
     
-    private var blurColorView: UIView!
-    private var blurSize = Float(20.0)
+    private var blurColorView = UIView()
+    private var blurSize: Float = 20
     
     public convenience init() {
         self.init(frame: .zeroRect)
@@ -39,19 +39,13 @@ public class SAParallaxContainerView: UIView {
     
     //MARK: - SAParallaxContainerView Private Methods
     private func initialize() {
-        imageView = UIImageView()
         imageView.contentMode = .ScaleAspectFit
         
-        blurImageView = UIImageView()
-        
-        blurContainerView = UIView()
         blurContainerView.backgroundColor = .clearColor()
         blurContainerView.clipsToBounds = true
         
-        accessoryView = UIView()
         accessoryView.backgroundColor = .clearColor()
         
-        blurColorView = UIView()
         blurColorView.backgroundColor = .whiteColor()
         blurColorView.alpha = 0.3
         
@@ -106,7 +100,7 @@ public class SAParallaxContainerView: UIView {
         yStartPoint = CGFloat(y)
     }
     
-    public func parallaxStartPosition() -> CGFloat {
+    public func parallaxStartPosition() -> CGFloat? {
         return yStartPoint
     }
     

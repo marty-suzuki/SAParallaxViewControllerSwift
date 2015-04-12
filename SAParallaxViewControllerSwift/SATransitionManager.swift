@@ -23,67 +23,68 @@ extension SATransitionManager: UIViewControllerAnimatedTransitioning {
         let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)
         let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)
         
-        let toView = toViewController!.view
-        let fromView = fromViewController!.view
-        
-        let containerView = transitionContext.containerView()
-        let duration = transitionDuration(transitionContext)
-        
-        if let parallax = toViewController as? SAParallaxViewController {
-            if let detail = fromViewController as? SADetailViewController {
-                let transitionContainer = detail.trantisionContainerView
-                containerView.addSubview(transitionContainer)
-                
-                UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
-                    
-                    transitionContainer.closeAnimation()
-                    
-                }, completion: { (finished) in
-                    
-                    UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+        if let toView = toViewController?.view, fromView = fromViewController?.view {
+            let containerView = transitionContext.containerView()
+            let duration = transitionDuration(transitionContext)
+            
+            if let parallax = toViewController as? SAParallaxViewController {
+                if let detail = fromViewController as? SADetailViewController {
+                    if let transitionContainer = detail.trantisionContainerView {
+                        containerView.addSubview(transitionContainer)
                         
-                        transitionContainer.containerView.blurContainerView.alpha = 1.0
+                        UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+                            
+                            transitionContainer.closeAnimation()
+                            
+                        }, completion: { (finished) in
+                            
+                            UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+                                
+                                transitionContainer.containerView?.blurContainerView.alpha = 1.0
+                                
+                            }, completion: { (finished) in
+                                
+                                let cancelled = transitionContext.transitionWasCancelled()
+                                if cancelled {
+                                    transitionContainer.removeFromSuperview()
+                                } else {
+                                    containerView.addSubview(toView)
+                                }
+                                transitionContext.completeTransition(!cancelled)
+                                
+                            })
+                        })
+                    }
+                }
+            } else if let parallax = fromViewController as? SAParallaxViewController {
+                if let detail = toViewController as? SADetailViewController {
+                    if let transitionContainer = detail.trantisionContainerView {
+                        containerView.addSubview(transitionContainer)
                         
-                    }, completion: { (finished) in
-                        
-                        let cancelled = transitionContext.transitionWasCancelled()
-                        if cancelled {
-                            transitionContainer.removeFromSuperview()
-                        } else {
-                            containerView.addSubview(toView)
-                        }
-                        transitionContext.completeTransition(!cancelled)
-                        
-                    })
-                })
-            }
-        } else if let parallax = fromViewController as? SAParallaxViewController {
-            if let detail = toViewController as? SADetailViewController {
-                let transitionContainer = detail.trantisionContainerView
-                containerView.addSubview(transitionContainer)
-                
-                UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
-                    
-                    transitionContainer.containerView.blurContainerView.alpha = 0.0
-                    
-                }, completion: { (finished) in
-                    
-                    UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
-                        
-                        transitionContainer.openAnimation()
-                        
-                    }, completion: { (finished) in
-                        
-                        let cancelled = transitionContext.transitionWasCancelled()
-                        if cancelled {
-                            transitionContainer.removeFromSuperview()
-                        } else {
-                            containerView.addSubview(toView)
-                        }
-                        transitionContext.completeTransition(!cancelled)
-                        
-                    })
-                })
+                        UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+                            
+                            transitionContainer.containerView?.blurContainerView.alpha = 0.0
+                            
+                        }, completion: { (finished) in
+                            
+                            UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+                                
+                                transitionContainer.openAnimation()
+                                
+                            }, completion: { (finished) in
+                                
+                                let cancelled = transitionContext.transitionWasCancelled()
+                                if cancelled {
+                                    transitionContainer.removeFromSuperview()
+                                } else {
+                                    containerView.addSubview(toView)
+                                }
+                                transitionContext.completeTransition(!cancelled)
+                                
+                            })
+                        })
+                    }
+                }
             }
         }
     }
