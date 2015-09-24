@@ -23,7 +23,7 @@ public class SAParallaxContainerView: UIView {
     private var blurSize: Float = 20
     
     public convenience init() {
-        self.init(frame: .zeroRect)
+        self.init(frame: .zero)
         initialize()
     }
     
@@ -32,7 +32,7 @@ public class SAParallaxContainerView: UIView {
         initialize()
     }
     
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initialize()
     }
@@ -96,7 +96,7 @@ public class SAParallaxContainerView: UIView {
         blurImageView.frame = CGRectOffset(blurImageView.bounds, offset.x, -(frame.size.height - blurContainerView.frame.height) + offset.y)
     }
     
-    public func setParallaxStartPosition(#y: Float) {
+    public func setParallaxStartPosition(y y: Float) {
         yStartPoint = CGFloat(y)
     }
     

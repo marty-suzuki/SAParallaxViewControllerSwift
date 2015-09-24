@@ -28,11 +28,11 @@ extension UIImage {
         let outData = malloc(CGImageGetBytesPerRow(image) * CGImageGetHeight(image))
         var outBuffer = vImage_Buffer(data: outData, height: height, width: width, rowBytes: rowBytes)
         
-        let error = vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer, nil, 0, 0, UInt32(boxSize), UInt32(boxSize), nil, vImage_Flags(kvImageEdgeExtend))
+        let _ = vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer, nil, 0, 0, UInt32(boxSize), UInt32(boxSize), nil, vImage_Flags(kvImageEdgeExtend))
         
-        var colorSpace = CGColorSpaceCreateDeviceRGB()
-        let context = CGBitmapContextCreate(outBuffer.data, Int(outBuffer.width), Int(outBuffer.height), 8, outBuffer.rowBytes, colorSpace, CGImageGetBitmapInfo(image))
-        let imageRef = CGBitmapContextCreateImage(context)
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        let context = CGBitmapContextCreate(outBuffer.data, Int(outBuffer.width), Int(outBuffer.height), 8, outBuffer.rowBytes, colorSpace, CGImageGetBitmapInfo(image).rawValue)
+        let imageRef = CGBitmapContextCreateImage(context)!
         let bluredImage = UIImage(CGImage: imageRef)
         
         free(outData)

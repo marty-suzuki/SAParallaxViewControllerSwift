@@ -12,7 +12,7 @@ public let kParallaxViewCellReuseIdentifier = "Cell"
 
 public class SAParallaxViewController: UIViewController {
     
-    public var collectionView = UICollectionView(frame: .zeroRect, collectionViewLayout: SAParallaxViewLayout())
+    public var collectionView = UICollectionView(frame: .zero, collectionViewLayout: SAParallaxViewLayout())
     
     private let transitionManager = SATransitionManager()
     
@@ -20,7 +20,7 @@ public class SAParallaxViewController: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -40,10 +40,9 @@ public class SAParallaxViewController: UIViewController {
     public override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let cells = collectionView.visibleCells() as? [UICollectionViewCell] {
-            for cell in cells {
-                cell.selected = false
-            }
+        let cells = collectionView.visibleCells()
+        for cell in cells {
+            cell.selected = false
         }
     }
 
@@ -65,7 +64,7 @@ extension SAParallaxViewController: UICollectionViewDataSource {
     }
     
     public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kParallaxViewCellReuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kParallaxViewCellReuseIdentifier, forIndexPath: indexPath) 
         cell.backgroundColor = .clearColor()
         cell.selected = false
         return cell

@@ -17,7 +17,7 @@ public class SAParallaxViewLayout: UICollectionViewFlowLayout {
         initialize()
     }
     
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initialize()
     }
@@ -31,11 +31,11 @@ public class SAParallaxViewLayout: UICollectionViewFlowLayout {
         itemSize = CGSize(width: width, height: height)
     }
     
-    public override func layoutAttributesForElementsInRect(rect: CGRect) -> [AnyObject]? {
+    public override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         return super.layoutAttributesForElementsInRect(rect)
     }
     
-    public override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes! {
+    public override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
         return super.layoutAttributesForItemAtIndexPath(indexPath)
     }
 }

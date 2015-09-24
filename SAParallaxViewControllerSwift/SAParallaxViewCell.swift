@@ -12,14 +12,14 @@ public class SAParallaxViewCell: UICollectionViewCell {
     
     public var containerView = SAParallaxContainerView()
     
-    private var previousImageOffset = CGPoint.zeroPoint
+    private var previousImageOffset = CGPoint.zero
     
     public convenience init() {
-        self.init(frame: .zeroRect)
+        self.init(frame: .zero)
         initialize()
     }
     
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initialize()
     }
@@ -56,7 +56,7 @@ public class SAParallaxViewCell: UICollectionViewCell {
         
         let scale = UIScreen.mainScreen().scale
         UIGraphicsBeginImageContextWithOptions(self.frame.size, false, scale)
-        containerView.layer.renderInContext(UIGraphicsGetCurrentContext())
+        containerView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
