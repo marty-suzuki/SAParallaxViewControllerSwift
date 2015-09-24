@@ -12,12 +12,12 @@ public class SATransitionContainerView: UIView {
 
     public var views = [UIView]()
     public var viewInitialPositions = [CGPoint]()
-    public var imageViewInitialFrame: CGRect = .zeroRect
-    public var blurImageViewInitialFrame: CGRect = .zeroRect
-    public var containerViewInitialFrame: CGRect = .zeroRect
+    public var imageViewInitialFrame: CGRect = .zero
+    public var blurImageViewInitialFrame: CGRect = .zero
+    public var containerViewInitialFrame: CGRect = .zero
     public var containerView: SAParallaxContainerView?
     
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -25,7 +25,7 @@ public class SATransitionContainerView: UIView {
         super.init(frame: frame)
     }
     
-    public func setViews(#cells: [SAParallaxViewCell], view: UIView) {
+    public func setViews(cells cells: [SAParallaxViewCell], view: UIView) {
         for cell in cells {
             let point = cell.superview!.convertPoint(cell.frame.origin, toView:view)
             viewInitialPositions.append(point)
@@ -40,12 +40,12 @@ public class SATransitionContainerView: UIView {
                 if let image = cell.containerView.imageView.image {
                     containerView.setImage(image)
                 }
-                if let image = containerView.imageView.image {
+                if let _ = containerView.imageView.image {
                     containerView.imageView.frame = cell.containerView.imageView.frame
                     imageViewInitialFrame = containerView.imageView.frame
                 }
                 
-                if let bluredImage = containerView.blurImageView.image {
+                if let _ = containerView.blurImageView.image {
                     containerView.blurImageView.frame = cell.containerView.blurImageView.frame
                     blurImageViewInitialFrame = containerView.blurImageView.frame;
                 }
@@ -94,7 +94,7 @@ public class SATransitionContainerView: UIView {
     }
     
     public func closeAnimation() {
-        for (index, view) in enumerate(views) {
+        for (index, view) in views.enumerate() {
             if view != containerView {
                 let point = self.viewInitialPositions[index]
                 view.frame.origin = point

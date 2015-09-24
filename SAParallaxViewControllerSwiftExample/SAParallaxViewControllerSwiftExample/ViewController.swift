@@ -18,7 +18,7 @@ class ViewController: SAParallaxViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -27,7 +27,8 @@ class ViewController: SAParallaxViewController {
     }
 }
 
-extension ViewController: UICollectionViewDataSource {
+//MARK: - UICollectionViewDataSource
+extension ViewController {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath)
         
@@ -57,7 +58,8 @@ extension ViewController: UICollectionViewDataSource {
     }
 }
 
-extension ViewController: UICollectionViewDelegate {
+//MARK: - UICollectionViewDelegate
+extension ViewController {
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         super.collectionView(collectionView, didSelectItemAtIndexPath: indexPath)
         
