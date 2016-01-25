@@ -1,5 +1,5 @@
 framework module SAParallaxViewControllerSwift {
-  umbrella header "Pods-SAParallaxViewControllerSwift-umbrella.h"
+  umbrella header "SAParallaxViewControllerSwift-umbrella.h"
 
   export *
   module * { export * }

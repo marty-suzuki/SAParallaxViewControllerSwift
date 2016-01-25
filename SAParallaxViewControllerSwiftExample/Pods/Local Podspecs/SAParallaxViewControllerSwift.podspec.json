@@ -1,6 +1,6 @@
 {
   "name": "SAParallaxViewControllerSwift",
-  "version": "1.1.1",
+  "version": "1.4.0",
   "summary": "SAParallaxViewControllerSwift realizes parallax scrolling with blur effect. In addition, it realizes seamless opening transition.",
   "homepage": "https://github.com/szk-atmosphere/SAParallaxViewControllerSwift",
   "license": "MIT",
@@ -9,12 +9,20 @@
   },
   "source": {
     "git": "https://github.com/szk-atmosphere/SAParallaxViewControllerSwift.git",
-    "tag": "1.1.1"
+    "tag": "1.4.0"
   },
   "social_media_url": "https://twitter.com/SzkAtmosphere",
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "SAParallaxViewControllerSwift/*.{swift}"
+  "source_files": "SAParallaxViewControllerSwift/*.{swift}",
+  "dependencies": {
+    "SABlurImageView": [
+
+    ],
+    "MisterFusion": [
+
+    ]
+  }
 }
