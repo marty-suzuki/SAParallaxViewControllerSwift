@@ -26,39 +26,40 @@ public class SATransitionContainerView: UIView {
     }
     
     public func setViews(cells cells: [SAParallaxViewCell], view: UIView) {
-        for cell in cells {
-            let point = cell.superview!.convertPoint(cell.frame.origin, toView:view)
+        cells.forEach {
+            guard let point = $0.superview?.convertPoint($0.frame.origin, toView:view) else { return }
             viewInitialPositions.append(point)
             
-            if cell.selected {
-                let containerView = SAParallaxContainerView(frame: cell.containerView.bounds)
+            if $0.selected {
+                let containerView = SAParallaxContainerView(frame: $0.containerView.bounds)
                 containerView.frame.origin = point
                 containerView.clipsToBounds = true
                 containerView.backgroundColor = .whiteColor()
                 containerViewInitialFrame = containerView.frame
                 
-                if let image = cell.containerView.imageView.image {
+                if let image = $0.containerView.imageView.image {
                     containerView.setImage(image)
                 }
                 if let _ = containerView.imageView.image {
-                    containerView.imageView.frame = cell.containerView.imageView.frame
+                    containerView.imageView.frame = $0.containerView.imageView.frame
                     imageViewInitialFrame = containerView.imageView.frame
                 }
                 
                 if let _ = containerView.blurImageView.image {
-                    containerView.blurImageView.frame = cell.containerView.blurImageView.frame
+                    containerView.blurImageView.frame = $0.containerView.blurImageView.frame
                     blurImageViewInitialFrame = containerView.blurImageView.frame;
                 }
                 
                 views.append(containerView)
                 addSubview(containerView)
                 self.containerView = containerView
-            } else {
-                let imageView = cell.screenShot()
-                imageView.frame.origin = point
-                views.append(imageView)
-                addSubview(imageView)
+                return
             }
+            
+            let imageView = $0.screenShot()
+            imageView.frame.origin = point
+            views.append(imageView)
+            addSubview(imageView)
         }
     }
     
@@ -69,44 +70,40 @@ public class SATransitionContainerView: UIView {
             let distanceToTop = yPositionContainer
             let distanceToBottom = height - (yPositionContainer + containerViewHeight)
             
-            for view in views {
-                if view != containerView {
-                    var frame = view.frame
-                    
+            views.forEach {
+                if $0 != containerView {
+                    var frame = $0.frame
                     if frame.origin.y < yPositionContainer {
                         frame.origin.y -= distanceToTop
-                        view.frame = frame
                     } else {
                         frame.origin.y += distanceToBottom
-                        view.frame = frame
                     }
+                    $0.frame = frame
                 } else {
-                    if let containerView = containerView {
-                        containerView.frame = bounds
-                        containerView.imageView.frame = containerView.imageView.bounds
-                        var rect = containerView.blurContainerView.frame
-                        rect.origin.y = height - rect.size.height
-                        containerView.blurContainerView.frame = rect
-                    }
+                    guard let containerView = containerView else { return }
+                    containerView.frame = bounds
+                    containerView.imageView.frame = containerView.imageView.bounds
+                    var rect = containerView.blurContainerView.frame
+                    rect.origin.y = height - rect.size.height
+                    containerView.blurContainerView.frame = rect
                 }
             }
         }
     }
     
     public func closeAnimation() {
-        for (index, view) in views.enumerate() {
-            if view != containerView {
-                let point = self.viewInitialPositions[index]
-                view.frame.origin = point
+        views.enumerate().forEach {
+            if $0.element != containerView {
+                let point = self.viewInitialPositions[$0.index]
+                $0.element.frame.origin = point
             } else {
                 containerView?.frame = containerViewInitialFrame
                 containerView?.imageView.frame = imageViewInitialFrame
                 containerView?.blurImageView.frame = blurImageViewInitialFrame
-                if let containerView = containerView {
-                    var rect = containerView.blurContainerView.frame
-                    rect.origin.y = containerView.frame.size.height - rect.size.height
-                    containerView.blurContainerView.frame = rect
-                }
+                guard let containerView = containerView else { return }
+                var rect = containerView.blurContainerView.frame
+                rect.origin.y = containerView.frame.size.height - rect.size.height
+                containerView.blurContainerView.frame = rect
             }
         }
     }

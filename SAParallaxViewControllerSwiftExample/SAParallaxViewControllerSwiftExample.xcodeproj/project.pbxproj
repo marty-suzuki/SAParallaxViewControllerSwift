@@ -15,7 +15,7 @@
 		37E219111A7A997800896D72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E2190F1A7A997800896D72 /* LaunchScreen.xib */; };
 		37E2191D1A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2191C1A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.swift */; };
 		37E219301A7D315600896D72 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E2192F1A7D315600896D72 /* Accelerate.framework */; };
-		4D569EF5C82C09BA751BB486 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13D477417D91DE1AEF9A6A7 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4D569EF5C82C09BA751BB486 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13D477417D91DE1AEF9A6A7 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

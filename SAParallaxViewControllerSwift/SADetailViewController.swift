@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import SABlurImageView
 
 public class SADetailViewController: UIViewController {
 
+    static private let HeaderViewHeight: CGFloat = 44
+    
     public var trantisionContainerView: SATransitionContainerView?
-    public var imageView = UIImageView()
+    public var imageView = SABlurImageView()
     
     public var headerView: UIView?
     public var closeButton: UIButton?
@@ -19,9 +22,7 @@ public class SADetailViewController: UIViewController {
     private var headerImageView: UIImageView?
     private var headerContainerView: UIView?
     private var blurImageView: UIImageView?
-    
-    private let kHeaderViewHeight: CGFloat = 44
-    
+
     public override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,14 +38,14 @@ public class SADetailViewController: UIViewController {
             view.addSubview(imageView)
         }
         
-        let headerContainerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: width, height: kHeaderViewHeight))
+        let headerContainerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: width, height: self.dynamicType.HeaderViewHeight))
         headerContainerView.alpha = 0.0
         headerContainerView.clipsToBounds = true
         view.addSubview(headerContainerView)
         self.headerContainerView = headerContainerView
         
-        let blurImageView = UIImageView(frame: imageView.bounds)
-        blurImageView.image = imageView.image?.blur(20.0)
+        let blurImageView = SABlurImageView(frame: imageView.bounds)
+        blurImageView.addBlurEffect(20.0)
         headerContainerView.addSubview(blurImageView)
         self.blurImageView = blurImageView
         
@@ -58,7 +59,7 @@ public class SADetailViewController: UIViewController {
         headerContainerView.addSubview(headerView)
         self.headerView = headerView
         
-        let closeButton = UIButton(frame: CGRect(x: 0.0, y: 0.0, width: kHeaderViewHeight, height: kHeaderViewHeight))
+        let closeButton = UIButton(frame: CGRect(x: 0.0, y: 0.0, width: self.dynamicType.HeaderViewHeight, height: self.dynamicType.HeaderViewHeight))
         closeButton.setTitle("X", forState: .Normal)
         closeButton.titleLabel?.textColor = .whiteColor()
         closeButton.addTarget(self, action: "closeAction:", forControlEvents: .TouchUpInside)
@@ -70,10 +71,8 @@ public class SADetailViewController: UIViewController {
         super.viewDidAppear(animated)
         
         UIView.animateWithDuration(0.25, delay: 0.0, options: .CurveEaseIn, animations: {
-            
             self.headerContainerView?.alpha = 1.0
-            
-        }, completion: { (finished) in })
+        }, completion: nil)
     }
     
     public override func didReceiveMemoryWarning() {
@@ -87,13 +86,9 @@ public class SADetailViewController: UIViewController {
     
     public func closeAction(button: UIButton) {
         UIView.animateWithDuration(0.25, delay: 0.0, options: .CurveEaseIn, animations: {
-            
             self.headerContainerView?.alpha = 0.0
-            
-        }, completion: { (finished) in
-            
+        }, completion: { _ in
             self.dismissViewControllerAnimated(true, completion: nil)
-                
         })
     }
 }
