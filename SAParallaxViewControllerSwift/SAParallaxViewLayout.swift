@@ -10,7 +10,7 @@ import UIKit
 
 public class SAParallaxViewLayout: UICollectionViewFlowLayout {
     
-    private let kDefaultHeight: CGFloat = 220.0
+    private static let defaultHeight: CGFloat = 220
     
     public override init() {
         super.init()
@@ -27,7 +27,7 @@ public class SAParallaxViewLayout: UICollectionViewFlowLayout {
         minimumLineSpacing = 0.0
         sectionInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
         let width = UIScreen.main().bounds.size.width
-        let height = width / 320.0 * kDefaultHeight
+        let height = width / 320.0 * SAParallaxViewLayout.defaultHeight
         itemSize = CGSize(width: width, height: height)
     }
     

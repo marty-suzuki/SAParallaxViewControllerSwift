@@ -11,8 +11,8 @@ import QuartzCore
 import Accelerate
 
 extension UIImage {
-    class func blurEffect(_ cgImage: CGImage) -> UIImage! {
-        return UIImage(cgImage: cgImage)
+    class func blurEffect(_ cgImage: CGImage, boxSize: CGFloat) -> UIImage! {
+        return UIImage(cgImage: cgImage.blurEffect(boxSize))
     }
     
     func blurEffect(_ boxSize: CGFloat) -> UIImage! {

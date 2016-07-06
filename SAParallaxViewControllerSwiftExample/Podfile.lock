@@ -1,20 +1,35 @@
 PODS:
-  - MisterFusion (0.8.0)
-  - SABlurImageView (2.1.0)
-  - SAParallaxViewControllerSwift (1.4.0):
-    - MisterFusion
-    - SABlurImageView
+  - MisterFusion (2.0.0)
+  - SABlurImageView (3.0.0)
+  - SAParallaxViewControllerSwift (2.0.0)
 
 DEPENDENCIES:
+  - MisterFusion (from `https://github.com/szk-atmosphere/MisterFusion.git`, tag `2.0.0-beta`)
+  - SABlurImageView (from `https://github.com/szk-atmosphere/SABlurImageView.git`,
+    tag `3.0.0-beta`)
   - SAParallaxViewControllerSwift (from `../`)
 
 EXTERNAL SOURCES:
+  MisterFusion:
+    :git: https://github.com/szk-atmosphere/MisterFusion.git
+    :tag: 2.0.0-beta
+  SABlurImageView:
+    :git: https://github.com/szk-atmosphere/SABlurImageView.git
+    :tag: 3.0.0-beta
   SAParallaxViewControllerSwift:
     :path: "../"
 
+CHECKOUT OPTIONS:
+  MisterFusion:
+    :git: https://github.com/szk-atmosphere/MisterFusion.git
+    :tag: 2.0.0-beta
+  SABlurImageView:
+    :git: https://github.com/szk-atmosphere/SABlurImageView.git
+    :tag: 3.0.0-beta
+
 SPEC CHECKSUMS:
-  MisterFusion: 3b20851bc79eeaba59070922102f1bd2866dfe02
-  SABlurImageView: 869da4e0b80e60b21b05d98509de98d0221c15d5
-  SAParallaxViewControllerSwift: 5c191b369bc4e2fd0771f66ae5b8da68a43ce599
+  MisterFusion: bd71d218ad9fa2054f45070178409b043c144448
+  SABlurImageView: 7078f9226c4a26ea4dedf69ad140f1376679e02d
+  SAParallaxViewControllerSwift: f5e9e86399ed7a1a1627345f4ba12dedcc07f63f
 
 COCOAPODS: 0.39.0

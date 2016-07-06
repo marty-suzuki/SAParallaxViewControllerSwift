@@ -84,12 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods/MisterFusion.framework"
-  install_framework "Pods/SABlurImageView.framework"
-  install_framework "Pods/SAParallaxViewControllerSwift.framework"
+  install_framework "Pods-SAParallaxViewControllerSwiftExample/MisterFusion.framework"
+  install_framework "Pods-SAParallaxViewControllerSwiftExample/SABlurImageView.framework"
+  install_framework "Pods-SAParallaxViewControllerSwiftExample/SAParallaxViewControllerSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods/MisterFusion.framework"
-  install_framework "Pods/SABlurImageView.framework"
-  install_framework "Pods/SAParallaxViewControllerSwift.framework"
+  install_framework "Pods-SAParallaxViewControllerSwiftExample/MisterFusion.framework"
+  install_framework "Pods-SAParallaxViewControllerSwiftExample/SABlurImageView.framework"
+  install_framework "Pods-SAParallaxViewControllerSwiftExample/SAParallaxViewControllerSwift.framework"
 fi

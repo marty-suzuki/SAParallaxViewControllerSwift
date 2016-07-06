@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '90CD8279E771B5CD90737232'
+               BlueprintIdentifier = '978F65D56C516839D606B50A'
                BlueprintName = 'SAParallaxViewControllerSwift'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SAParallaxViewControllerSwift.framework'>

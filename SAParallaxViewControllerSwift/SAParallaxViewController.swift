@@ -9,11 +9,9 @@
 import UIKit
 import MisterFusion
 
-
-
 public class SAParallaxViewController: UIViewController {
     
-    public static let ParallaxViewCellReuseIdentifier = "ParallaxViewCellReuseIdentifier"
+    public static let parallaxViewCellReuseIdentifier = "ParallaxViewCellReuseIdentifier"
     
     public var collectionView = UICollectionView(frame: .zero, collectionViewLayout: SAParallaxViewLayout())
     
@@ -33,13 +31,13 @@ public class SAParallaxViewController: UIViewController {
         view.backgroundColor = .white()
         
         view.addLayoutSubview(collectionView, andConstraints:
-            collectionView.Top,
-            collectionView.Left,
-            collectionView.Right,
-            collectionView.Bottom
+            collectionView.top,
+            collectionView.left,
+            collectionView.right,
+            collectionView.bottom
         )
         
-        collectionView.register(SAParallaxViewCell.self, forCellWithReuseIdentifier: self.dynamicType.ParallaxViewCellReuseIdentifier)
+        collectionView.register(SAParallaxViewCell.self, forCellWithReuseIdentifier: SAParallaxViewController.parallaxViewCellReuseIdentifier)
         collectionView.backgroundColor = .clear()
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -68,7 +66,7 @@ extension SAParallaxViewController: UICollectionViewDataSource {
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.dynamicType.ParallaxViewCellReuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SAParallaxViewController.parallaxViewCellReuseIdentifier, for: indexPath)
         cell.backgroundColor = .clear()
         cell.isSelected = false
         return cell

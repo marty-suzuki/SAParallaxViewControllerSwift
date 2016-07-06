@@ -1,938 +1,2217 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		1699D27C79B7E71DF10E0165A7C1EA89 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1FBCB93B80A2658C0701E1649F87FE /* Accelerate.framework */; };
-		22636CE1C55E8CA607798DEEABC3E8B7 /* MisterFusion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8963746C538B7AB25D0B1F879FA06E80 /* MisterFusion-dummy.m */; };
-		2650BDAEFB0A79C1754410F1BE415F76 /* SABlurImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B4966FA9EB0EE599644E4E491B59EA /* SABlurImageView.swift */; };
-		30857480BFE1228D601BA8774C9E4217 /* SAParallaxViewControllerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2351F4A1EDA71521B1A3A6FA3C32BA23 /* SAParallaxViewControllerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		355F88C4FBBF52F85248DD9E364F31A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF37060673075655E30B45E2FD3BF93 /* Foundation.framework */; };
-		3A5F1265264A25BFC733AC7B2BF433CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0C251921C9BC40AA0785F1E4CA4D3C /* UIKit.framework */; };
-		3CC8579912C427E7E056CBE9F6E82219 /* SATransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F8CA5BB6B1EF7ADCF6EB2F89EDEEDD /* SATransitionManager.swift */; };
-		3F30477183914D37E3E3A67D84411C45 /* MisterFusion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D87380FDF311CE18E3968EC9D95908 /* MisterFusion.framework */; };
-		41E914D5AD8E4137E492F90202CD9C7C /* SAParallaxViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6554AC9E493979ACB513237EB000EA9 /* SAParallaxViewLayout.swift */; };
-		421E57A50344ECEFBA244B04B563A84A /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		487950F5450F6A7E508A867F90C72F92 /* UIImage+BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8410006211602DF773EA6F7ACA969 /* UIImage+BlurEffect.swift */; };
-		53EE8DE41682CE1D265BE8B60ED69A11 /* Array+MisterFusion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2762F2FE1A55CD29E118614940F97358 /* Array+MisterFusion.swift */; };
-		638253443BB27CE1BB3F8B95563BD99E /* SABlurImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 383367EA47A527395F76B69BA7537BFB /* SABlurImageView-dummy.m */; };
-		7E438CA656CEDA50BD246384A2E8D5BC /* SABlurImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094106F6E5EC32B01BBCF4A1E7AB8703 /* SABlurImageView.framework */; };
-		90256570D119DB16B13F4FB6FBD29532 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
-		9119AEE5AB1FA42D76CD82A54817F03A /* SAParallaxContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E8187AAE85BB375F94CEECCA691521 /* SAParallaxContainerView.swift */; };
-		945F68BCF0D1B46CE5E34DAC6C3450F7 /* SADetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E360447FD1EAA8E6D1350032460500C /* SADetailViewController.swift */; };
-		9F139F95B35B2EEAD512036B6C95278B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF37060673075655E30B45E2FD3BF93 /* Foundation.framework */; };
-		A03C84FA56C1EFBCE51BD48F9EBD5CD3 /* MisterFusion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806DB517DB3CC4DE12692F836447E780 /* MisterFusion.swift */; };
-		B2AC28704B5159D1E6C0642B3FEA19ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0C251921C9BC40AA0785F1E4CA4D3C /* UIKit.framework */; };
-		D4AC08146B2F6FEC1A5CDE83DCC909DB /* SAParallaxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43D5CB003800C562833A6E3E971D8E /* SAParallaxViewCell.swift */; };
-		DB6ABFC771D3D59E6E61AF4AAFFA8F01 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4B7F928BA21A51F1D6714DE7784125 /* QuartzCore.framework */; };
-		DCC5C8EE5DD8B5AC82C20FAD718595FD /* SAParallaxViewControllerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D155B2377683337621A0E315A6588D17 /* SAParallaxViewControllerSwift-dummy.m */; };
-		E97A332AFCB13BB4E1857CA5BCB2A357 /* MisterFusion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A5299CA0A68B664FB8E6D425461F98 /* MisterFusion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ECD8F806EE00E746C4E0AC40B4DE6154 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF37060673075655E30B45E2FD3BF93 /* Foundation.framework */; };
-		ECF711953587E935C127360EFC41C7FA /* CATransition+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C1AEE7C6DBC9A6199484FB537E7AE6 /* CATransition+Closure.swift */; };
-		EE19026ACA68D20E67910266756C0445 /* SATransitionContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BD1A021ACE162F5193EC4FF4D4E39 /* SATransitionContainerView.swift */; };
-		EE6E4183E3F9C468C244DAE05651626A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF37060673075655E30B45E2FD3BF93 /* Foundation.framework */; };
-		FA8D966AA461A7A41CB3843F3907EAB3 /* SABlurImageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE91F0E8DB464F3B9BF992B62E3A2A9D /* SABlurImageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC61A40A4CDF77029C3FBCEDD8B2C5AF /* SAParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA45626441FB26DF4DBCAD2DF152F3C /* SAParallaxViewController.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		602827D913315009058EFC1BAC76F355 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9FC843BD22328DEFBCAB1DA4A92108F7;
-			remoteInfo = MisterFusion;
-		};
-		A95BDDFF283DE8C8634366AE0AA02BAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9FC843BD22328DEFBCAB1DA4A92108F7;
-			remoteInfo = MisterFusion;
-		};
-		AE7920BCAB615307709233171852EBE8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5917681F892AAA43DD889C94EEE4A39A;
-			remoteInfo = SABlurImageView;
-		};
-		CBACBB849EE1CA14CE3FA2575F4EA93E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5917681F892AAA43DD889C94EEE4A39A;
-			remoteInfo = SABlurImageView;
-		};
-		E761DDC12A953CD56F1A189D53C710C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A720D2ED1A0DBC5863BA58D0A5F850CC;
-			remoteInfo = SAParallaxViewControllerSwift;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		094106F6E5EC32B01BBCF4A1E7AB8703 /* SABlurImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SABlurImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		12F8CA5BB6B1EF7ADCF6EB2F89EDEEDD /* SATransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SATransitionManager.swift; sourceTree = "<group>"; };
-		20A5299CA0A68B664FB8E6D425461F98 /* MisterFusion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MisterFusion-umbrella.h"; sourceTree = "<group>"; };
-		221A52D540C18D17293645E13C12A407 /* MisterFusion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MisterFusion-prefix.pch"; sourceTree = "<group>"; };
-		2351F4A1EDA71521B1A3A6FA3C32BA23 /* SAParallaxViewControllerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAParallaxViewControllerSwift-umbrella.h"; sourceTree = "<group>"; };
-		2762F2FE1A55CD29E118614940F97358 /* Array+MisterFusion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+MisterFusion.swift"; path = "MisterFusion/Array+MisterFusion.swift"; sourceTree = "<group>"; };
-		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		3755136696C05DF97C34B6D6E40A58F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		383367EA47A527395F76B69BA7537BFB /* SABlurImageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SABlurImageView-dummy.m"; sourceTree = "<group>"; };
-		4D1FF5AF723EFB12F49EBBF3553584AC /* SAParallaxViewControllerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SAParallaxViewControllerSwift.modulemap; sourceTree = "<group>"; };
-		4FBF7BB61888F568DFA3160D6320F6B6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FE4C3897F95B137B768953C7D52A9A4 /* SAParallaxViewControllerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAParallaxViewControllerSwift.xcconfig; sourceTree = "<group>"; };
-		53E1FBFC4BB56C00587B281F59E7D9F2 /* SABlurImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SABlurImageView-prefix.pch"; sourceTree = "<group>"; };
-		64B4966FA9EB0EE599644E4E491B59EA /* SABlurImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SABlurImageView.swift; path = SABlurImageView/SABlurImageView.swift; sourceTree = "<group>"; };
-		65D87380FDF311CE18E3968EC9D95908 /* MisterFusion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MisterFusion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D43D5CB003800C562833A6E3E971D8E /* SAParallaxViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAParallaxViewCell.swift; sourceTree = "<group>"; };
-		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		7BF37060673075655E30B45E2FD3BF93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		806DB517DB3CC4DE12692F836447E780 /* MisterFusion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MisterFusion.swift; path = MisterFusion/MisterFusion.swift; sourceTree = "<group>"; };
-		86E8187AAE85BB375F94CEECCA691521 /* SAParallaxContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAParallaxContainerView.swift; sourceTree = "<group>"; };
-		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		8963746C538B7AB25D0B1F879FA06E80 /* MisterFusion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MisterFusion-dummy.m"; sourceTree = "<group>"; };
-		8E360447FD1EAA8E6D1350032460500C /* SADetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SADetailViewController.swift; sourceTree = "<group>"; };
-		91C1AEE7C6DBC9A6199484FB537E7AE6 /* CATransition+Closure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CATransition+Closure.swift"; path = "SABlurImageView/CATransition+Closure.swift"; sourceTree = "<group>"; };
-		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		9AA73AA09CD510FA0125F6FD85AFE7EB /* SABlurImageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SABlurImageView.modulemap; sourceTree = "<group>"; };
-		A202581E9DB12709BF071FA5CEDBF76D /* SABlurImageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SABlurImageView.xcconfig; sourceTree = "<group>"; };
-		AB2BD1A021ACE162F5193EC4FF4D4E39 /* SATransitionContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SATransitionContainerView.swift; sourceTree = "<group>"; };
-		AE4B7F928BA21A51F1D6714DE7784125 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		AE9E89BD5E27C037B439970E83D221E1 /* SAParallaxViewControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAParallaxViewControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF0C251921C9BC40AA0785F1E4CA4D3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B6A719227F1303D07D515385A1EECDAA /* SABlurImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SABlurImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B91BD39B69D13EC5E189F4ABF286C0BD /* MisterFusion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MisterFusion.xcconfig; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BCA45626441FB26DF4DBCAD2DF152F3C /* SAParallaxViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAParallaxViewController.swift; sourceTree = "<group>"; };
-		CA08FB1BEC4E7BA66EDC551FD78FF717 /* MisterFusion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MisterFusion.modulemap; sourceTree = "<group>"; };
-		CBB2BF1D08AC3912D9FD0D1086424A2F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		CFF8410006211602DF773EA6F7ACA969 /* UIImage+BlurEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+BlurEffect.swift"; path = "SABlurImageView/UIImage+BlurEffect.swift"; sourceTree = "<group>"; };
-		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D155B2377683337621A0E315A6588D17 /* SAParallaxViewControllerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAParallaxViewControllerSwift-dummy.m"; sourceTree = "<group>"; };
-		D6554AC9E493979ACB513237EB000EA9 /* SAParallaxViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAParallaxViewLayout.swift; sourceTree = "<group>"; };
-		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED1FBCB93B80A2658C0701E1649F87FE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		EE91F0E8DB464F3B9BF992B62E3A2A9D /* SABlurImageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SABlurImageView-umbrella.h"; sourceTree = "<group>"; };
-		F8B8784CD0F24718772FDC50BBB1B6FB /* MisterFusion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MisterFusion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAE62ADC722EB4593083BE08E2A4F580 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE48844C9486F82E0C848A891E0D81C7 /* SAParallaxViewControllerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAParallaxViewControllerSwift-prefix.pch"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		54C77337B476137FCBAD1AB008AFCC03 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE6E4183E3F9C468C244DAE05651626A /* Foundation.framework in Frameworks */,
-				B2AC28704B5159D1E6C0642B3FEA19ED /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A3E3CD1C119FCBD34161AD2F07A55AE0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1699D27C79B7E71DF10E0165A7C1EA89 /* Accelerate.framework in Frameworks */,
-				9F139F95B35B2EEAD512036B6C95278B /* Foundation.framework in Frameworks */,
-				DB6ABFC771D3D59E6E61AF4AAFFA8F01 /* QuartzCore.framework in Frameworks */,
-				3A5F1265264A25BFC733AC7B2BF433CC /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ABBF23B82CA4B1AA6251BFB1458F80C4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				355F88C4FBBF52F85248DD9E364F31A0 /* Foundation.framework in Frameworks */,
-				3F30477183914D37E3E3A67D84411C45 /* MisterFusion.framework in Frameworks */,
-				7E438CA656CEDA50BD246384A2E8D5BC /* SABlurImageView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B2558F8177A9A473D7673DAA54D35ABD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ECD8F806EE00E746C4E0AC40B4DE6154 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		05CE3D82C7AE68D0BF2B22D2A1CC8A49 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FAE62ADC722EB4593083BE08E2A4F580 /* Info.plist */,
-				9AA73AA09CD510FA0125F6FD85AFE7EB /* SABlurImageView.modulemap */,
-				A202581E9DB12709BF071FA5CEDBF76D /* SABlurImageView.xcconfig */,
-				383367EA47A527395F76B69BA7537BFB /* SABlurImageView-dummy.m */,
-				53E1FBFC4BB56C00587B281F59E7D9F2 /* SABlurImageView-prefix.pch */,
-				EE91F0E8DB464F3B9BF992B62E3A2A9D /* SABlurImageView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SABlurImageView";
-			sourceTree = "<group>";
-		};
-		1FE090E725841390EF2D3044DF57144C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CBB2BF1D08AC3912D9FD0D1086424A2F /* Info.plist */,
-				4D1FF5AF723EFB12F49EBBF3553584AC /* SAParallaxViewControllerSwift.modulemap */,
-				4FE4C3897F95B137B768953C7D52A9A4 /* SAParallaxViewControllerSwift.xcconfig */,
-				D155B2377683337621A0E315A6588D17 /* SAParallaxViewControllerSwift-dummy.m */,
-				FE48844C9486F82E0C848A891E0D81C7 /* SAParallaxViewControllerSwift-prefix.pch */,
-				2351F4A1EDA71521B1A3A6FA3C32BA23 /* SAParallaxViewControllerSwift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "SAParallaxViewControllerSwiftExample/Pods/Target Support Files/SAParallaxViewControllerSwift";
-			sourceTree = "<group>";
-		};
-		2CF3485955C9434332960C7A7F8759BE /* SABlurImageView */ = {
-			isa = PBXGroup;
-			children = (
-				91C1AEE7C6DBC9A6199484FB537E7AE6 /* CATransition+Closure.swift */,
-				64B4966FA9EB0EE599644E4E491B59EA /* SABlurImageView.swift */,
-				CFF8410006211602DF773EA6F7ACA969 /* UIImage+BlurEffect.swift */,
-				05CE3D82C7AE68D0BF2B22D2A1CC8A49 /* Support Files */,
-			);
-			path = SABlurImageView;
-			sourceTree = "<group>";
-		};
-		2DBA631DBF6EC1310830D12B2882B5EE /* SAParallaxViewControllerSwift */ = {
-			isa = PBXGroup;
-			children = (
-				675BAE41547BF6B5833E9DB66A286B1C /* SAParallaxViewControllerSwift */,
-				1FE090E725841390EF2D3044DF57144C /* Support Files */,
-			);
-			name = SAParallaxViewControllerSwift;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		322CC3A151294A90E445EEBDD5FE5D35 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F8B8784CD0F24718772FDC50BBB1B6FB /* MisterFusion.framework */,
-				4FBF7BB61888F568DFA3160D6320F6B6 /* Pods.framework */,
-				B6A719227F1303D07D515385A1EECDAA /* SABlurImageView.framework */,
-				AE9E89BD5E27C037B439970E83D221E1 /* SAParallaxViewControllerSwift.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		42B3119CE6C591032F18F57D7C4F3DEE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6638D3E8D092584D8E6907B5AA2445A2 /* MisterFusion */,
-				2CF3485955C9434332960C7A7F8759BE /* SABlurImageView */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		48BC927C5232A96A97F7EBC4E4192FDC /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2DBA631DBF6EC1310830D12B2882B5EE /* SAParallaxViewControllerSwift */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		6638D3E8D092584D8E6907B5AA2445A2 /* MisterFusion */ = {
-			isa = PBXGroup;
-			children = (
-				2762F2FE1A55CD29E118614940F97358 /* Array+MisterFusion.swift */,
-				806DB517DB3CC4DE12692F836447E780 /* MisterFusion.swift */,
-				AE090ED2E5645FE4D7D151EF5A2A84CF /* Support Files */,
-			);
-			path = MisterFusion;
-			sourceTree = "<group>";
-		};
-		675BAE41547BF6B5833E9DB66A286B1C /* SAParallaxViewControllerSwift */ = {
-			isa = PBXGroup;
-			children = (
-				8E360447FD1EAA8E6D1350032460500C /* SADetailViewController.swift */,
-				86E8187AAE85BB375F94CEECCA691521 /* SAParallaxContainerView.swift */,
-				6D43D5CB003800C562833A6E3E971D8E /* SAParallaxViewCell.swift */,
-				BCA45626441FB26DF4DBCAD2DF152F3C /* SAParallaxViewController.swift */,
-				D6554AC9E493979ACB513237EB000EA9 /* SAParallaxViewLayout.swift */,
-				AB2BD1A021ACE162F5193EC4FF4D4E39 /* SATransitionContainerView.swift */,
-				12F8CA5BB6B1EF7ADCF6EB2F89EDEEDD /* SATransitionManager.swift */,
-			);
-			path = SAParallaxViewControllerSwift;
-			sourceTree = "<group>";
-		};
-		74CE68166B206E8961D3FB8D291D6D5B /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				ED1FBCB93B80A2658C0701E1649F87FE /* Accelerate.framework */,
-				7BF37060673075655E30B45E2FD3BF93 /* Foundation.framework */,
-				AE4B7F928BA21A51F1D6714DE7784125 /* QuartzCore.framework */,
-				AF0C251921C9BC40AA0785F1E4CA4D3C /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
-				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
-				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
-				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
-				894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */,
-				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
-				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
-				2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */,
-				977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */,
-				DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				48BC927C5232A96A97F7EBC4E4192FDC /* Development Pods */,
-				963D30A0994E2721501FA7BDFF8ABC50 /* Frameworks */,
-				42B3119CE6C591032F18F57D7C4F3DEE /* Pods */,
-				322CC3A151294A90E445EEBDD5FE5D35 /* Products */,
-				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		963D30A0994E2721501FA7BDFF8ABC50 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				65D87380FDF311CE18E3968EC9D95908 /* MisterFusion.framework */,
-				094106F6E5EC32B01BBCF4A1E7AB8703 /* SABlurImageView.framework */,
-				74CE68166B206E8961D3FB8D291D6D5B /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AE090ED2E5645FE4D7D151EF5A2A84CF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3755136696C05DF97C34B6D6E40A58F2 /* Info.plist */,
-				CA08FB1BEC4E7BA66EDC551FD78FF717 /* MisterFusion.modulemap */,
-				B91BD39B69D13EC5E189F4ABF286C0BD /* MisterFusion.xcconfig */,
-				8963746C538B7AB25D0B1F879FA06E80 /* MisterFusion-dummy.m */,
-				221A52D540C18D17293645E13C12A407 /* MisterFusion-prefix.pch */,
-				20A5299CA0A68B664FB8E6D425461F98 /* MisterFusion-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MisterFusion";
-			sourceTree = "<group>";
-		};
-		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		5E7702F1E80E2696D9185BFED3A6B50A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E97A332AFCB13BB4E1857CA5BCB2A357 /* MisterFusion-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A788F289CB50860F12117DD3E23CDC7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA8D966AA461A7A41CB3843F3907EAB3 /* SABlurImageView-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C2EF2C34AA34019A4C1643E3FE8D19DB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				421E57A50344ECEFBA244B04B563A84A /* Pods-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3DBAEAE38A20E3AFCE16A4DFD4463A3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				30857480BFE1228D601BA8774C9E4217 /* SAParallaxViewControllerSwift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		5917681F892AAA43DD889C94EEE4A39A /* SABlurImageView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A1A09B43CCCB738B4D153269F2C7E029 /* Build configuration list for PBXNativeTarget "SABlurImageView" */;
-			buildPhases = (
-				A5E4274664B5AC9D32172566C1CE21EB /* Sources */,
-				A3E3CD1C119FCBD34161AD2F07A55AE0 /* Frameworks */,
-				9A788F289CB50860F12117DD3E23CDC7 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SABlurImageView;
-			productName = SABlurImageView;
-			productReference = B6A719227F1303D07D515385A1EECDAA /* SABlurImageView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		73DD3758F50FAAC6042F4C7762114858 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B63490A7337A8BA1F3D4F6E60DA5610 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				5DDA012AD9B07CF79CB16EA0F8518177 /* Sources */,
-				B2558F8177A9A473D7673DAA54D35ABD /* Frameworks */,
-				C2EF2C34AA34019A4C1643E3FE8D19DB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				50E1D94436B915FE6E7A042D7188B3F7 /* PBXTargetDependency */,
-				E807A93F4C4340AE6AEC55F6F55EBEE5 /* PBXTargetDependency */,
-				B4B27B7EC64CD1732AA2D28A1EA4D8AB /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = 4FBF7BB61888F568DFA3160D6320F6B6 /* Pods.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9FC843BD22328DEFBCAB1DA4A92108F7 /* MisterFusion */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D527E849301E62CDDB55A973DEBA607C /* Build configuration list for PBXNativeTarget "MisterFusion" */;
-			buildPhases = (
-				98819D7144BFC0B905DD9D19287ACEEC /* Sources */,
-				54C77337B476137FCBAD1AB008AFCC03 /* Frameworks */,
-				5E7702F1E80E2696D9185BFED3A6B50A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MisterFusion;
-			productName = MisterFusion;
-			productReference = F8B8784CD0F24718772FDC50BBB1B6FB /* MisterFusion.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A720D2ED1A0DBC5863BA58D0A5F850CC /* SAParallaxViewControllerSwift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8AFEF3BD5CD32A34E9E93F5DE87B8120 /* Build configuration list for PBXNativeTarget "SAParallaxViewControllerSwift" */;
-			buildPhases = (
-				0D98B8BCB0B12E5553645D0C41486CE5 /* Sources */,
-				ABBF23B82CA4B1AA6251BFB1458F80C4 /* Frameworks */,
-				F3DBAEAE38A20E3AFCE16A4DFD4463A3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C1786611F4D366B2B53BAD784E565F86 /* PBXTargetDependency */,
-				13A549175D8B03E631342B4FD7688B8A /* PBXTargetDependency */,
-			);
-			name = SAParallaxViewControllerSwift;
-			productName = SAParallaxViewControllerSwift;
-			productReference = AE9E89BD5E27C037B439970E83D221E1 /* SAParallaxViewControllerSwift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					5917681F892AAA43DD889C94EEE4A39A = {
-						LastSwiftMigration = 0800;
-					};
-					9FC843BD22328DEFBCAB1DA4A92108F7 = {
-						LastSwiftMigration = 0800;
-					};
-					A720D2ED1A0DBC5863BA58D0A5F850CC = {
-						LastSwiftMigration = 0800;
-					};
-				};
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 322CC3A151294A90E445EEBDD5FE5D35 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				9FC843BD22328DEFBCAB1DA4A92108F7 /* MisterFusion */,
-				73DD3758F50FAAC6042F4C7762114858 /* Pods */,
-				5917681F892AAA43DD889C94EEE4A39A /* SABlurImageView */,
-				A720D2ED1A0DBC5863BA58D0A5F850CC /* SAParallaxViewControllerSwift */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		0D98B8BCB0B12E5553645D0C41486CE5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				945F68BCF0D1B46CE5E34DAC6C3450F7 /* SADetailViewController.swift in Sources */,
-				9119AEE5AB1FA42D76CD82A54817F03A /* SAParallaxContainerView.swift in Sources */,
-				D4AC08146B2F6FEC1A5CDE83DCC909DB /* SAParallaxViewCell.swift in Sources */,
-				FC61A40A4CDF77029C3FBCEDD8B2C5AF /* SAParallaxViewController.swift in Sources */,
-				DCC5C8EE5DD8B5AC82C20FAD718595FD /* SAParallaxViewControllerSwift-dummy.m in Sources */,
-				41E914D5AD8E4137E492F90202CD9C7C /* SAParallaxViewLayout.swift in Sources */,
-				EE19026ACA68D20E67910266756C0445 /* SATransitionContainerView.swift in Sources */,
-				3CC8579912C427E7E056CBE9F6E82219 /* SATransitionManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5DDA012AD9B07CF79CB16EA0F8518177 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90256570D119DB16B13F4FB6FBD29532 /* Pods-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98819D7144BFC0B905DD9D19287ACEEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53EE8DE41682CE1D265BE8B60ED69A11 /* Array+MisterFusion.swift in Sources */,
-				22636CE1C55E8CA607798DEEABC3E8B7 /* MisterFusion-dummy.m in Sources */,
-				A03C84FA56C1EFBCE51BD48F9EBD5CD3 /* MisterFusion.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5E4274664B5AC9D32172566C1CE21EB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ECF711953587E935C127360EFC41C7FA /* CATransition+Closure.swift in Sources */,
-				638253443BB27CE1BB3F8B95563BD99E /* SABlurImageView-dummy.m in Sources */,
-				2650BDAEFB0A79C1754410F1BE415F76 /* SABlurImageView.swift in Sources */,
-				487950F5450F6A7E508A867F90C72F92 /* UIImage+BlurEffect.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		13A549175D8B03E631342B4FD7688B8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SABlurImageView;
-			target = 5917681F892AAA43DD889C94EEE4A39A /* SABlurImageView */;
-			targetProxy = AE7920BCAB615307709233171852EBE8 /* PBXContainerItemProxy */;
-		};
-		50E1D94436B915FE6E7A042D7188B3F7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MisterFusion;
-			target = 9FC843BD22328DEFBCAB1DA4A92108F7 /* MisterFusion */;
-			targetProxy = A95BDDFF283DE8C8634366AE0AA02BAD /* PBXContainerItemProxy */;
-		};
-		B4B27B7EC64CD1732AA2D28A1EA4D8AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SAParallaxViewControllerSwift;
-			target = A720D2ED1A0DBC5863BA58D0A5F850CC /* SAParallaxViewControllerSwift */;
-			targetProxy = E761DDC12A953CD56F1A189D53C710C1 /* PBXContainerItemProxy */;
-		};
-		C1786611F4D366B2B53BAD784E565F86 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MisterFusion;
-			target = 9FC843BD22328DEFBCAB1DA4A92108F7 /* MisterFusion */;
-			targetProxy = 602827D913315009058EFC1BAC76F355 /* PBXContainerItemProxy */;
-		};
-		E807A93F4C4340AE6AEC55F6F55EBEE5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SABlurImageView;
-			target = 5917681F892AAA43DD889C94EEE4A39A /* SABlurImageView */;
-			targetProxy = CBACBB849EE1CA14CE3FA2575F4EA93E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		0889D9F3D589C214DC308AC829B1E91A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		0A84E3C077DFDF0A259DD770FB7B2F29 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B91BD39B69D13EC5E189F4ABF286C0BD /* MisterFusion.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MisterFusion/MisterFusion-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MisterFusion/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MisterFusion/MisterFusion.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MisterFusion;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0FF3A633CD7A2DB2BB596E311E090EC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FE4C3897F95B137B768953C7D52A9A4 /* SAParallaxViewControllerSwift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SAParallaxViewControllerSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SAParallaxViewControllerSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		64424DAB5AB603F7C3DE9E530D663236 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FE4C3897F95B137B768953C7D52A9A4 /* SAParallaxViewControllerSwift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SAParallaxViewControllerSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SAParallaxViewControllerSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		BACC09BDC6039597319F307FDC35A293 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A202581E9DB12709BF071FA5CEDBF76D /* SABlurImageView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SABlurImageView/SABlurImageView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SABlurImageView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SABlurImageView/SABlurImageView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SABlurImageView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BB9D8406934875C5E574A0219F10015A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B91BD39B69D13EC5E189F4ABF286C0BD /* MisterFusion.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MisterFusion/MisterFusion-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MisterFusion/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MisterFusion/MisterFusion.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MisterFusion;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DF73F5D81E73065C3B39B51F4E5E0514 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A202581E9DB12709BF071FA5CEDBF76D /* SABlurImageView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SABlurImageView/SABlurImageView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SABlurImageView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SABlurImageView/SABlurImageView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SABlurImageView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EDA9F7A8F0C9DB109A1FE68A5BFCC9B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
-				FB45FFD90572718D82AB9092B750F0CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B63490A7337A8BA1F3D4F6E60DA5610 /* Build configuration list for PBXNativeTarget "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EDA9F7A8F0C9DB109A1FE68A5BFCC9B1 /* Debug */,
-				0889D9F3D589C214DC308AC829B1E91A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8AFEF3BD5CD32A34E9E93F5DE87B8120 /* Build configuration list for PBXNativeTarget "SAParallaxViewControllerSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				64424DAB5AB603F7C3DE9E530D663236 /* Debug */,
-				0FF3A633CD7A2DB2BB596E311E090EC7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A1A09B43CCCB738B4D153269F2C7E029 /* Build configuration list for PBXNativeTarget "SABlurImageView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BACC09BDC6039597319F307FDC35A293 /* Debug */,
-				DF73F5D81E73065C3B39B51F4E5E0514 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D527E849301E62CDDB55A973DEBA607C /* Build configuration list for PBXNativeTarget "MisterFusion" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A84E3C077DFDF0A259DD770FB7B2F29 /* Debug */,
-				BB9D8406934875C5E574A0219F10015A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>04ADE224A67CB66E81041F9A87F23743</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-SAParallaxViewControllerSwiftExample.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>05CE3D82C7AE68D0BF2B22D2A1CC8A49</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FAE62ADC722EB4593083BE08E2A4F580</string>
+				<string>9AA73AA09CD510FA0125F6FD85AFE7EB</string>
+				<string>A202581E9DB12709BF071FA5CEDBF76D</string>
+				<string>383367EA47A527395F76B69BA7537BFB</string>
+				<string>53E1FBFC4BB56C00587B281F59E7D9F2</string>
+				<string>EE91F0E8DB464F3B9BF992B62E3A2A9D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/SABlurImageView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>08C3EC8B374AFFAFB47453255B814ADD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>91C1AEE7C6DBC9A6199484FB537E7AE6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0A84E3C077DFDF0A259DD770FB7B2F29</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B91BD39B69D13EC5E189F4ABF286C0BD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/MisterFusion/MisterFusion-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/MisterFusion/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/MisterFusion/MisterFusion.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>MisterFusion</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1016E157B36E5789DD3ABE3253798C26</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SABlurImageView.framework</string>
+			<key>path</key>
+			<string>SABlurImageView.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1025317949119CBAC3F3012E835E690B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-SAParallaxViewControllerSwiftExample.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>11FFF4B8C819418E14488E7624A02FE9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14B8B9B15ECBE87983FF987239AB2D7B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>35891B0FDFEB04FDD15421753FA5B9D7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>16949F7B991EC219E60FEDD1464536C9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>MisterFusion.framework</string>
+			<key>path</key>
+			<string>MisterFusion.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>17F6BA1BDC0B17DC787BC5304D04E0C1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AB5E9160CAA2677328BF9618CD52E91</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1A8C6D006A5F18E55611085FBAD9CBD8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A202581E9DB12709BF071FA5CEDBF76D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SABlurImageView/SABlurImageView-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SABlurImageView/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SABlurImageView/SABlurImageView.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>SABlurImageView</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1D3D0C0B59F84C36AFE6E53D6F50B30B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8EA0B1B6C87EF026B640C0C69386EFAF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1DC39C8ED4DF4339638712591DA6A72D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SAParallaxViewControllerSwift.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>20A5299CA0A68B664FB8E6D425461F98</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MisterFusion-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>221A52D540C18D17293645E13C12A407</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MisterFusion-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>22636CE1C55E8CA607798DEEABC3E8B7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8963746C538B7AB25D0B1F879FA06E80</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2762F2FE1A55CD29E118614940F97358</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Array+MisterFusion.swift</string>
+			<key>path</key>
+			<string>MisterFusion/Array+MisterFusion.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27BCB7CB3CFA146C2294B67AF925B6C6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>45BC0C4255FF7897E4292B2646CB3279</string>
+				<string>04ADE224A67CB66E81041F9A87F23743</string>
+				<string>69C1910F2054CD6B714D4020E2D9CD57</string>
+				<string>EA2B9974BA40075A8C5F39ECCCA910BA</string>
+				<string>3FC5A796BC5F7D385AFB3F4ACD4D8683</string>
+				<string>6E34F64219449608694DECEFFA4CBE53</string>
+				<string>FE43B51128AF802B5613F04556C0CDC5</string>
+				<string>C66085CEC5ECE3387ED4EAC44E03852A</string>
+				<string>11FFF4B8C819418E14488E7624A02FE9</string>
+				<string>1025317949119CBAC3F3012E835E690B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-SAParallaxViewControllerSwiftExample</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-SAParallaxViewControllerSwiftExample</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2C1B37065B0EDF606E1B5000E3C4EA14</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SAParallaxViewControllerSwift.framework</string>
+			<key>path</key>
+			<string>SAParallaxViewControllerSwift.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>2CF3485955C9434332960C7A7F8759BE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>91C1AEE7C6DBC9A6199484FB537E7AE6</string>
+				<string>64B4966FA9EB0EE599644E4E491B59EA</string>
+				<string>CFF8410006211602DF773EA6F7ACA969</string>
+				<string>05CE3D82C7AE68D0BF2B22D2A1CC8A49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SABlurImageView</string>
+			<key>path</key>
+			<string>SABlurImageView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>A70CDAD61F90AC503C7D04CC22DA2923</string>
+				<string>FB45FFD90572718D82AB9092B750F0CA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2EC9F8D1BBE31D3D35B6873EB6F4CEB2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SAParallaxViewControllerSwift-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2FA5D16C9D4B71A23750E0D88045DF9B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3DD460F5488FFB69BC3EA8B5F26552DC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>35477A09CCF30D0D0F723A37ACF37987</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3FC5A796BC5F7D385AFB3F4ACD4D8683</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>35891B0FDFEB04FDD15421753FA5B9D7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>478F0BBA725626FFE9A7DE2D5034DF8B</string>
+				<string>8EA0B1B6C87EF026B640C0C69386EFAF</string>
+				<string>8C03939B2EB142FFCFA9CACC9698B2C2</string>
+				<string>7AB5E9160CAA2677328BF9618CD52E91</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3755136696C05DF97C34B6D6E40A58F2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>383367EA47A527395F76B69BA7537BFB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SABlurImageView-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3DD460F5488FFB69BC3EA8B5F26552DC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>70A01A9182A305DFC494E4EBFD0842C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>3E35ECFFF996E47AFF3F4C9C4B70A902</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>A40E7B3B28531AB21EF222D7B871FB12</string>
+			<key>buildPhases</key>
+			<array>
+				<string>FAB31A00D4A64F4223E6F6BED7576516</string>
+				<string>47BAFED72458F81B8CA3BDD694C0F0AC</string>
+				<string>2FA5D16C9D4B71A23750E0D88045DF9B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SAParallaxViewControllerSwift</string>
+			<key>productName</key>
+			<string>SAParallaxViewControllerSwift</string>
+			<key>productReference</key>
+			<string>2C1B37065B0EDF606E1B5000E3C4EA14</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>3FC5A796BC5F7D385AFB3F4ACD4D8683</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-SAParallaxViewControllerSwiftExample-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>42B3119CE6C591032F18F57D7C4F3DEE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6638D3E8D092584D8E6907B5AA2445A2</string>
+				<string>2CF3485955C9434332960C7A7F8759BE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4394B0C61C0B934DE43FDAC052F76596</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_SAParallaxViewControllerSwiftExample.framework</string>
+			<key>path</key>
+			<string>Pods_SAParallaxViewControllerSwiftExample.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>45BC0C4255FF7897E4292B2646CB3279</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>478F0BBA725626FFE9A7DE2D5034DF8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Accelerate.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Accelerate.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>47BAFED72458F81B8CA3BDD694C0F0AC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>59AAA3781C1E6EA400A020BE61981F13</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>48BC927C5232A96A97F7EBC4E4192FDC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DE7EB834EBF6A89A3481C8F64005AA04</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4A985DBE158818651FA5FA1B29711DB1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CFF8410006211602DF773EA6F7ACA969</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4AE626CD6878D822A348FD88EC925F3F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>35477A09CCF30D0D0F723A37ACF37987</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>53E1FBFC4BB56C00587B281F59E7D9F2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SABlurImageView-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>53EE8DE41682CE1D265BE8B60ED69A11</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2762F2FE1A55CD29E118614940F97358</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>54C77337B476137FCBAD1AB008AFCC03</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EE6E4183E3F9C468C244DAE05651626A</string>
+				<string>B2AC28704B5159D1E6C0642B3FEA19ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>577EFDB0CACD00AB90229D511AA13730</key>
+		<dict>
+			<key>fileRef</key>
+			<string>383367EA47A527395F76B69BA7537BFB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>59AAA3781C1E6EA400A020BE61981F13</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8EA0B1B6C87EF026B640C0C69386EFAF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5B58109B9DB06F68E9B277A50296BE70</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>16949F7B991EC219E60FEDD1464536C9</string>
+				<string>4394B0C61C0B934DE43FDAC052F76596</string>
+				<string>1016E157B36E5789DD3ABE3253798C26</string>
+				<string>2C1B37065B0EDF606E1B5000E3C4EA14</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5E7702F1E80E2696D9185BFED3A6B50A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E97A332AFCB13BB4E1857CA5BCB2A357</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5E94D20C69D73025652AA67F853CC42B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9D94D179434132B41DBB6DB622AFDEC8</string>
+				<string>1D3D0C0B59F84C36AFE6E53D6F50B30B</string>
+				<string>D0A95D032DB3EFD742F44601A4A90E47</string>
+				<string>17F6BA1BDC0B17DC787BC5304D04E0C1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5ED9AB59B2D32B35CBA0BA94CB712D1C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>SAParallaxViewLayout.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6429A35DEFF4A337357516B8E52C83CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5ED9AB59B2D32B35CBA0BA94CB712D1C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>64B4966FA9EB0EE599644E4E491B59EA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SABlurImageView.swift</string>
+			<key>path</key>
+			<string>SABlurImageView/SABlurImageView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6518096AB11339C49F1621597E5CC898</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>11FFF4B8C819418E14488E7624A02FE9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Pods-SAParallaxViewControllerSwiftExample.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_SAParallaxViewControllerSwiftExample</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>655D1CA6CF54105B522E46366B6B41DD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>77626075C2B27D674B4FD66533FE053E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SAParallaxViewControllerSwift/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>SAParallaxViewControllerSwift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6638D3E8D092584D8E6907B5AA2445A2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2762F2FE1A55CD29E118614940F97358</string>
+				<string>806DB517DB3CC4DE12692F836447E780</string>
+				<string>AE090ED2E5645FE4D7D151EF5A2A84CF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MisterFusion</string>
+			<key>path</key>
+			<string>MisterFusion</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>66399DA8856AE901A6AA5340163F2DF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D06D17566EFFA359B051DB6D1A96850A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68676DBD434AC6F1EBC004A5A40FA96F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>84E10F56E073CA0829CDAC9B4EC7DE17</string>
+				<string>B888E1B6300B178F50BB3264FD58B5A9</string>
+				<string>D06D17566EFFA359B051DB6D1A96850A</string>
+				<string>809EAF7BBDC895C7859ADDE2ACACC983</string>
+				<string>5ED9AB59B2D32B35CBA0BA94CB712D1C</string>
+				<string>A681400CEFFD0E1E07180C5376CB21B9</string>
+				<string>FA8445A49D782D4995D893C85B02B057</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SAParallaxViewControllerSwift</string>
+			<key>path</key>
+			<string>SAParallaxViewControllerSwift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>69C1910F2054CD6B714D4020E2D9CD57</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-SAParallaxViewControllerSwiftExample-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6E34F64219449608694DECEFFA4CBE53</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-SAParallaxViewControllerSwiftExample-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>70A01A9182A305DFC494E4EBFD0842C3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SAParallaxViewControllerSwift-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7511F29261FD6BA616ED22B7560D7DDA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>77626075C2B27D674B4FD66533FE053E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>SAParallaxViewControllerSwift.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7959D1D77B634B52C75BC2002CB18626</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>08C3EC8B374AFFAFB47453255B814ADD</string>
+				<string>577EFDB0CACD00AB90229D511AA13730</string>
+				<string>EAE522D3D057CC3952C324509C9E9320</string>
+				<string>4A985DBE158818651FA5FA1B29711DB1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7AB5E9160CAA2677328BF9618CD52E91</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>7BFCE14D4EC4D9F9C664121B1A521732</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C66085CEC5ECE3387ED4EAC44E03852A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>48BC927C5232A96A97F7EBC4E4192FDC</string>
+				<string>14B8B9B15ECBE87983FF987239AB2D7B</string>
+				<string>42B3119CE6C591032F18F57D7C4F3DEE</string>
+				<string>5B58109B9DB06F68E9B277A50296BE70</string>
+				<string>EFC1FB00F9C68104E90FAE88ECE3B24E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7EAA70A08E6537D0735EDCDCE561E148</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B888E1B6300B178F50BB3264FD58B5A9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>806DB517DB3CC4DE12692F836447E780</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>MisterFusion.swift</string>
+			<key>path</key>
+			<string>MisterFusion/MisterFusion.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>809EAF7BBDC895C7859ADDE2ACACC983</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>SAParallaxViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8411A253520D3F7754EBA7C1F35B191B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FA8445A49D782D4995D893C85B02B057</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>84E10F56E073CA0829CDAC9B4EC7DE17</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>SADetailViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>856A8BF8340C0D834FC934EB97685EB8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>84E10F56E073CA0829CDAC9B4EC7DE17</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>867C7A841A4E85D0ACB3ACC771943C21</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6518096AB11339C49F1621597E5CC898</string>
+				<string>F672E8B15CD7F38B3A276CFAB85295B7</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>8963746C538B7AB25D0B1F879FA06E80</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MisterFusion-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8C03939B2EB142FFCFA9CACC9698B2C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>8EA0B1B6C87EF026B640C0C69386EFAF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>91C1AEE7C6DBC9A6199484FB537E7AE6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>CATransition+Closure.swift</string>
+			<key>path</key>
+			<string>SABlurImageView/CATransition+Closure.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>98819D7144BFC0B905DD9D19287ACEEC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>53EE8DE41682CE1D265BE8B60ED69A11</string>
+				<string>22636CE1C55E8CA607798DEEABC3E8B7</string>
+				<string>A03C84FA56C1EFBCE51BD48F9EBD5CD3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9AA73AA09CD510FA0125F6FD85AFE7EB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SABlurImageView.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9D94D179434132B41DBB6DB622AFDEC8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>478F0BBA725626FFE9A7DE2D5034DF8B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9E89BB60EF503FD4A7E3917600B93E35</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7511F29261FD6BA616ED22B7560D7DDA</string>
+				<string>1DC39C8ED4DF4339638712591DA6A72D</string>
+				<string>77626075C2B27D674B4FD66533FE053E</string>
+				<string>2EC9F8D1BBE31D3D35B6873EB6F4CEB2</string>
+				<string>DE3E7653855C077B7BF2D1EE3B3F3040</string>
+				<string>70A01A9182A305DFC494E4EBFD0842C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>SAParallaxViewControllerSwiftExample/Pods/Target Support Files/SAParallaxViewControllerSwift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9FC843BD22328DEFBCAB1DA4A92108F7</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D527E849301E62CDDB55A973DEBA607C</string>
+			<key>buildPhases</key>
+			<array>
+				<string>98819D7144BFC0B905DD9D19287ACEEC</string>
+				<string>54C77337B476137FCBAD1AB008AFCC03</string>
+				<string>5E7702F1E80E2696D9185BFED3A6B50A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MisterFusion</string>
+			<key>productName</key>
+			<string>MisterFusion</string>
+			<key>productReference</key>
+			<string>16949F7B991EC219E60FEDD1464536C9</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>A03C84FA56C1EFBCE51BD48F9EBD5CD3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>806DB517DB3CC4DE12692F836447E780</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A1DC60BF428B394A4389F8A39B5D2590</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2EC9F8D1BBE31D3D35B6873EB6F4CEB2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A202581E9DB12709BF071FA5CEDBF76D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>SABlurImageView.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A2E344E6828D2D53D0D78404DED26F36</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A681400CEFFD0E1E07180C5376CB21B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A35BFB0F5EACEBAF090012373DBF979A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1A8C6D006A5F18E55611085FBAD9CBD8</string>
+				<string>D899FA42F5706B848F3697879E0877E0</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>A40E7B3B28531AB21EF222D7B871FB12</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>655D1CA6CF54105B522E46366B6B41DD</string>
+				<string>DFC408F164E5CF97A1F76A443BA4F854</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>A681400CEFFD0E1E07180C5376CB21B9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>SATransitionContainerView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A70CDAD61F90AC503C7D04CC22DA2923</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>AE090ED2E5645FE4D7D151EF5A2A84CF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3755136696C05DF97C34B6D6E40A58F2</string>
+				<string>CA08FB1BEC4E7BA66EDC551FD78FF717</string>
+				<string>B91BD39B69D13EC5E189F4ABF286C0BD</string>
+				<string>8963746C538B7AB25D0B1F879FA06E80</string>
+				<string>221A52D540C18D17293645E13C12A407</string>
+				<string>20A5299CA0A68B664FB8E6D425461F98</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/MisterFusion</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AE14990114D794B269585734437428C1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SAParallaxViewControllerSwift</string>
+			<key>target</key>
+			<string>3E35ECFFF996E47AFF3F4C9C4B70A902</string>
+			<key>targetProxy</key>
+			<string>C4BCFFFB9CA1A82422558150B349C2EE</string>
+		</dict>
+		<key>B0B60E11EE9756CB4692C4CCCEFBE061</key>
+		<dict>
+			<key>fileRef</key>
+			<string>809EAF7BBDC895C7859ADDE2ACACC983</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B2AC28704B5159D1E6C0642B3FEA19ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7AB5E9160CAA2677328BF9618CD52E91</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B39B5EE92B8B765130B68DB8F0CB646C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EC3C0ADB6B414483B7C04EB118F17D89</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B888E1B6300B178F50BB3264FD58B5A9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>SAParallaxContainerView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B8C7195C8363A188E167B4908C91DA8D</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>867C7A841A4E85D0ACB3ACC771943C21</string>
+			<key>buildPhases</key>
+			<array>
+				<string>4AE626CD6878D822A348FD88EC925F3F</string>
+				<string>C05A1F818813EF571060C581E1B8AB85</string>
+				<string>D3943E5DC1BE286638D5DBBF8EC8B24C</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>E13D2220348294DFB6C9EA44330E5C02</string>
+				<string>DA83C60429CECC38CBCA1932892137BB</string>
+				<string>AE14990114D794B269585734437428C1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-SAParallaxViewControllerSwiftExample</string>
+			<key>productName</key>
+			<string>Pods-SAParallaxViewControllerSwiftExample</string>
+			<key>productReference</key>
+			<string>4394B0C61C0B934DE43FDAC052F76596</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>B91BD39B69D13EC5E189F4ABF286C0BD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>MisterFusion.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BB9D8406934875C5E574A0219F10015A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B91BD39B69D13EC5E189F4ABF286C0BD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/MisterFusion/MisterFusion-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/MisterFusion/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/MisterFusion/MisterFusion.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>MisterFusion</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C05A1F818813EF571060C581E1B8AB85</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F50E110E6E47C104CDCB6D3A5F5076C8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C4BCFFFB9CA1A82422558150B349C2EE</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>3E35ECFFF996E47AFF3F4C9C4B70A902</string>
+			<key>remoteInfo</key>
+			<string>SAParallaxViewControllerSwift</string>
+		</dict>
+		<key>C66085CEC5ECE3387ED4EAC44E03852A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-SAParallaxViewControllerSwiftExample-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9EC5195A94D219DB93103AB4BD5C5C2</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>E85FF824BEA6CE584AD45B6EAE60F7B6</string>
+			<key>remoteInfo</key>
+			<string>SABlurImageView</string>
+		</dict>
+		<key>CA08FB1BEC4E7BA66EDC551FD78FF717</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MisterFusion.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CFC150798542161BFF942A5A76A5A4ED</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>9FC843BD22328DEFBCAB1DA4A92108F7</string>
+			<key>remoteInfo</key>
+			<string>MisterFusion</string>
+		</dict>
+		<key>CFF8410006211602DF773EA6F7ACA969</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>UIImage+BlurEffect.swift</string>
+			<key>path</key>
+			<string>SABlurImageView/UIImage+BlurEffect.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D06D17566EFFA359B051DB6D1A96850A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>SAParallaxViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D0A95D032DB3EFD742F44601A4A90E47</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8C03939B2EB142FFCFA9CACC9698B2C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D3943E5DC1BE286638D5DBBF8EC8B24C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7BFCE14D4EC4D9F9C664121B1A521732</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>5B58109B9DB06F68E9B277A50296BE70</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>9FC843BD22328DEFBCAB1DA4A92108F7</string>
+				<string>B8C7195C8363A188E167B4908C91DA8D</string>
+				<string>E85FF824BEA6CE584AD45B6EAE60F7B6</string>
+				<string>3E35ECFFF996E47AFF3F4C9C4B70A902</string>
+			</array>
+		</dict>
+		<key>D527E849301E62CDDB55A973DEBA607C</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0A84E3C077DFDF0A259DD770FB7B2F29</string>
+				<string>BB9D8406934875C5E574A0219F10015A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D899FA42F5706B848F3697879E0877E0</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A202581E9DB12709BF071FA5CEDBF76D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SABlurImageView/SABlurImageView-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SABlurImageView/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SABlurImageView/SABlurImageView.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>SABlurImageView</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DA83C60429CECC38CBCA1932892137BB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SABlurImageView</string>
+			<key>target</key>
+			<string>E85FF824BEA6CE584AD45B6EAE60F7B6</string>
+			<key>targetProxy</key>
+			<string>C9EC5195A94D219DB93103AB4BD5C5C2</string>
+		</dict>
+		<key>DE3E7653855C077B7BF2D1EE3B3F3040</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SAParallaxViewControllerSwift-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DE7EB834EBF6A89A3481C8F64005AA04</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68676DBD434AC6F1EBC004A5A40FA96F</string>
+				<string>9E89BB60EF503FD4A7E3917600B93E35</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SAParallaxViewControllerSwift</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DFC408F164E5CF97A1F76A443BA4F854</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>77626075C2B27D674B4FD66533FE053E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SAParallaxViewControllerSwift/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>SAParallaxViewControllerSwift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E13D2220348294DFB6C9EA44330E5C02</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>MisterFusion</string>
+			<key>target</key>
+			<string>9FC843BD22328DEFBCAB1DA4A92108F7</string>
+			<key>targetProxy</key>
+			<string>CFC150798542161BFF942A5A76A5A4ED</string>
+		</dict>
+		<key>E85FF824BEA6CE584AD45B6EAE60F7B6</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>A35BFB0F5EACEBAF090012373DBF979A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7959D1D77B634B52C75BC2002CB18626</string>
+				<string>5E94D20C69D73025652AA67F853CC42B</string>
+				<string>B39B5EE92B8B765130B68DB8F0CB646C</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SABlurImageView</string>
+			<key>productName</key>
+			<string>SABlurImageView</string>
+			<key>productReference</key>
+			<string>1016E157B36E5789DD3ABE3253798C26</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>E97A332AFCB13BB4E1857CA5BCB2A357</key>
+		<dict>
+			<key>fileRef</key>
+			<string>20A5299CA0A68B664FB8E6D425461F98</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>EA2B9974BA40075A8C5F39ECCCA910BA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-SAParallaxViewControllerSwiftExample-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EAE522D3D057CC3952C324509C9E9320</key>
+		<dict>
+			<key>fileRef</key>
+			<string>64B4966FA9EB0EE599644E4E491B59EA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EC3C0ADB6B414483B7C04EB118F17D89</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EE91F0E8DB464F3B9BF992B62E3A2A9D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>EE6E4183E3F9C468C244DAE05651626A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8EA0B1B6C87EF026B640C0C69386EFAF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EE91F0E8DB464F3B9BF992B62E3A2A9D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SABlurImageView-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EFC1FB00F9C68104E90FAE88ECE3B24E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>27BCB7CB3CFA146C2294B67AF925B6C6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F50E110E6E47C104CDCB6D3A5F5076C8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8EA0B1B6C87EF026B640C0C69386EFAF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F672E8B15CD7F38B3A276CFAB85295B7</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1025317949119CBAC3F3012E835E690B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Pods-SAParallaxViewControllerSwiftExample.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_SAParallaxViewControllerSwiftExample</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FA8445A49D782D4995D893C85B02B057</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>SATransitionManager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAB31A00D4A64F4223E6F6BED7576516</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>856A8BF8340C0D834FC934EB97685EB8</string>
+				<string>7EAA70A08E6537D0735EDCDCE561E148</string>
+				<string>66399DA8856AE901A6AA5340163F2DF0</string>
+				<string>B0B60E11EE9756CB4692C4CCCEFBE061</string>
+				<string>A1DC60BF428B394A4389F8A39B5D2590</string>
+				<string>6429A35DEFF4A337357516B8E52C83CD</string>
+				<string>A2E344E6828D2D53D0D78404DED26F36</string>
+				<string>8411A253520D3F7754EBA7C1F35B191B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FAE62ADC722EB4593083BE08E2A4F580</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FB45FFD90572718D82AB9092B750F0CA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FE43B51128AF802B5613F04556C0CDC5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-SAParallaxViewControllerSwiftExample-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

@@ -17,6 +17,7 @@ SAParallaxViewControllerSwift realizes parallax scrolling with blur effect. In a
 - [x] Parallax scrolling
 - [x] Parallax scrolling with blur accessory view
 - [x] Seamlees opening transition
+- [x] Support Swift3 (If you want to use it in Swift3, please use [2.0.0-beta](https://github.com/szk-atmosphere/SAParallaxViewControllerSwift/tree/2.0.0-beta))
 
 ## Installation
 
@@ -26,6 +27,8 @@ SAParallaxViewControllerSwift is available through [CocoaPods](http://cocoapods.
 it, simply add the following line to your Podfile:
 
     pod "SAParallaxViewControllerSwift"
+    pod 'SABlurImageView', :git => 'https://github.com/szk-atmosphere/SABlurImageView.git', :tag => '3.0.0-beta'
+    pod 'MisterFusion', :git => 'https://github.com/szk-atmosphere/MisterFusion.git', :tag => '2.0.0-beta'
 
 #### Manually
 
@@ -163,7 +166,7 @@ func setBlurColorAlpha(alpha: CGFloat)
 
 ## Requirements
 
-- Xcode 7.0 or greater
+- Xcode 8.0-beta or greater
 - iOS 8.0 or greater
 - ARC
 - [SABlurImageView](https://github.com/szk-atmosphere/SABlurImageView)

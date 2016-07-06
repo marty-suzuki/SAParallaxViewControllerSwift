@@ -1,3 +1,7 @@
 platform :ios, "8.0"
-pod 'SAParallaxViewControllerSwift', :path => '../'
+target 'SAParallaxViewControllerSwiftExample' do
+    pod 'SAParallaxViewControllerSwift', :path => '../'
+    pod 'SABlurImageView', :git => 'https://github.com/szk-atmosphere/SABlurImageView.git', :tag => '3.0.0-beta'
+    pod 'MisterFusion', :git => 'https://github.com/szk-atmosphere/MisterFusion.git', :tag => '2.0.0-beta'
+end
 use_frameworks!
