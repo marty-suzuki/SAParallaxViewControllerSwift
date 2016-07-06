@@ -17,6 +17,7 @@ SAParallaxViewControllerSwift realizes parallax scrolling with blur effect. In a
 - [x] Parallax scrolling
 - [x] Parallax scrolling with blur accessory view
 - [x] Seamlees opening transition
+- [x] Support Swift3 (If you want to use it in Swift3, please use [2.0.0-beta](https://github.com/szk-atmosphere/SAParallaxViewControllerSwift/tree/2.0.0-beta))
 
 ## Installation
 
