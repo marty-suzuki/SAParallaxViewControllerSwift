@@ -40,22 +40,22 @@ public class SAParallaxContainerView: UIView {
     
     //MARK: - SAParallaxContainerView Private Methods
     private func initialize() {
-        imageView.contentMode = .ScaleAspectFit
+        imageView.contentMode = .scaleAspectFit
         
-        blurContainerView.backgroundColor = .clearColor()
+        blurContainerView.backgroundColor = .clear()
         blurContainerView.clipsToBounds = true
         
-        accessoryView.backgroundColor = .clearColor()
+        accessoryView.backgroundColor = .clear()
         
-        blurColorView.backgroundColor = .whiteColor()
+        blurColorView.backgroundColor = .white()
         blurColorView.alpha = 0.3
         
-        backgroundColor = .clearColor()
+        backgroundColor = .clear()
         clipsToBounds = true
     }
     
     //MARK: - SAParallaxContainerView Public Methods
-    public func setImage(image: UIImage) {
+    public func setImage(_ image: UIImage) {
         self.imageView.image = image
         if let imageSize = imageView.image?.size {
             let width = bounds.size.width
@@ -65,12 +65,12 @@ public class SAParallaxContainerView: UIView {
             if yPoint == 0 {
                 yStartPoint = 0
             }
-            imageView.autoresizingMask = .None
+            imageView.autoresizingMask = UIViewAutoresizing()
             imageView.frame = CGRect(x: 0, y: -yPoint, width: width, height: height)
             addSubview(imageView)
         }
         
-        let width = UIScreen.mainScreen().bounds.size.width
+        let width = UIScreen.main().bounds.size.width
         let height = width / 320.0 * accessoryViewHeight
         blurContainerView.frame = CGRect(x: 0, y: frame.size.height - height, width: width, height: height)
         addSubview(blurContainerView)
@@ -91,12 +91,12 @@ public class SAParallaxContainerView: UIView {
         blurContainerView.addSubview(accessoryView)
     }
     
-    public func setImageOffset(offset: CGPoint) {
-        imageView.frame = CGRectOffset(imageView.bounds, offset.x, offset.y)
-        blurImageView.frame = CGRectOffset(blurImageView.bounds, offset.x, -(frame.size.height - blurContainerView.frame.height) + offset.y)
+    public func setImageOffset(_ offset: CGPoint) {
+        imageView.frame = imageView.bounds.offsetBy(dx: offset.x, dy: offset.y)
+        blurImageView.frame = blurImageView.bounds.offsetBy(dx: offset.x, dy: -(frame.size.height - blurContainerView.frame.height) + offset.y)
     }
     
-    public func setParallaxStartPosition(y y: CGFloat) {
+    public func setParallaxStartPosition(y: CGFloat) {
         yStartPoint = CGFloat(y)
     }
     
@@ -104,19 +104,19 @@ public class SAParallaxContainerView: UIView {
         return yStartPoint
     }
     
-    public func setAccessoryViewHeight(height: CGFloat) {
+    public func setAccessoryViewHeight(_ height: CGFloat) {
         accessoryViewHeight = CGFloat(height)
     }
     
-    public func setBlurSize(size: CGFloat) {
+    public func setBlurSize(_ size: CGFloat) {
         blurSize = size
     }
     
-    public func setBlurColorAlpha(alpha: CGFloat) {
+    public func setBlurColorAlpha(_ alpha: CGFloat) {
         blurColorView.alpha = alpha
     }
     
-    public func setBlurColor(color: UIColor) {
+    public func setBlurColor(_ color: UIColor) {
         blurColorView.backgroundColor = color
     }
 }

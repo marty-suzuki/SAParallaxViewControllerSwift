@@ -26,16 +26,16 @@ public class SAParallaxViewLayout: UICollectionViewFlowLayout {
         minimumInteritemSpacing = 0.0
         minimumLineSpacing = 0.0
         sectionInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
-        let width = UIScreen.mainScreen().bounds.size.width
+        let width = UIScreen.main().bounds.size.width
         let height = width / 320.0 * kDefaultHeight
         itemSize = CGSize(width: width, height: height)
     }
     
-    public override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        return super.layoutAttributesForElementsInRect(rect)
+    public override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        return super.layoutAttributesForElements(in: rect)
     }
     
-    public override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
-        return super.layoutAttributesForItemAtIndexPath(indexPath)
+    public override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        return super.layoutAttributesForItem(at: indexPath)
     }
 }

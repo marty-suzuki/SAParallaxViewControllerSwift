@@ -25,16 +25,16 @@ public class SATransitionContainerView: UIView {
         super.init(frame: frame)
     }
     
-    public func setViews(cells cells: [SAParallaxViewCell], view: UIView) {
+    public func setViews(cells: [SAParallaxViewCell], view: UIView) {
         cells.forEach {
-            guard let point = $0.superview?.convertPoint($0.frame.origin, toView:view) else { return }
+            guard let point = $0.superview?.convert($0.frame.origin, to:view) else { return }
             viewInitialPositions.append(point)
             
-            if $0.selected {
+            if $0.isSelected {
                 let containerView = SAParallaxContainerView(frame: $0.containerView.bounds)
                 containerView.frame.origin = point
                 containerView.clipsToBounds = true
-                containerView.backgroundColor = .whiteColor()
+                containerView.backgroundColor = .white()
                 containerViewInitialFrame = containerView.frame
                 
                 if let image = $0.containerView.imageView.image {
@@ -92,9 +92,9 @@ public class SATransitionContainerView: UIView {
     }
     
     public func closeAnimation() {
-        views.enumerate().forEach {
+        views.enumerated().forEach {
             if $0.element != containerView {
-                let point = self.viewInitialPositions[$0.index]
+                let point = self.viewInitialPositions[$0.offset]
                 $0.element.frame.origin = point
             } else {
                 containerView?.frame = containerViewInitialFrame

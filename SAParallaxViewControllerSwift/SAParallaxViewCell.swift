@@ -41,12 +41,12 @@ public class SAParallaxViewCell: UICollectionViewCell {
     }
     
     //MARK: - SAParallaxViewCell Public Methods
-    public func setImage(image: UIImage) {
+    public func setImage(_ image: UIImage) {
         containerView.setImage(image)
     }
     
-    public func setImageOffset(offset: CGPoint) {
-        if selected {
+    public func setImageOffset(_ offset: CGPoint) {
+        if isSelected {
             return
         }
         containerView.setImageOffset(offset)
@@ -54,9 +54,9 @@ public class SAParallaxViewCell: UICollectionViewCell {
     
     public func screenShot() -> UIImageView {
         
-        let scale = UIScreen.mainScreen().scale
+        let scale = UIScreen.main().scale
         UIGraphicsBeginImageContextWithOptions(self.frame.size, false, scale)
-        containerView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        containerView.layer.render(in: UIGraphicsGetCurrentContext()!)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         

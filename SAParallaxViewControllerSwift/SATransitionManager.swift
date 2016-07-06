@@ -15,21 +15,19 @@ public class SATransitionManager: NSObject {
 //MARK: - UIViewControllerAnimatedTransitioning
 extension SATransitionManager: UIViewControllerAnimatedTransitioning {
 
-    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    public func transitionDuration(_ transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return animationDuration
     }
     
-    public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(_ transitionContext: UIViewControllerContextTransitioning) {
         
-        guard let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) else {
+        guard let toViewController = transitionContext.viewController(forKey: UITransitionContextToViewControllerKey) else {
             return
         }
-        guard let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey) else {
+        guard let fromViewController = transitionContext.viewController(forKey: UITransitionContextFromViewControllerKey) else {
             return
         }
-        guard let containerView = transitionContext.containerView() else {
-            return
-        }
+        let containerView = transitionContext.containerView()
         
         let duration = transitionDuration(transitionContext)
         if let _ = toViewController as? SAParallaxViewController {
@@ -37,13 +35,13 @@ extension SATransitionManager: UIViewControllerAnimatedTransitioning {
                 if let transitionContainer = detail.trantisionContainerView {
                     containerView.addSubview(transitionContainer)
                     
-                    UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+                    UIView.animate(withDuration: duration, delay: 0.0, options: .curveEaseIn, animations: {
                         
                         transitionContainer.closeAnimation()
                         
                     }, completion: { (finished) in
                         
-                        UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+                        UIView.animate(withDuration: duration, delay: 0.0, options: .curveEaseIn, animations: {
                             
                             transitionContainer.containerView?.blurContainerView.alpha = 1.0
                             
@@ -66,13 +64,13 @@ extension SATransitionManager: UIViewControllerAnimatedTransitioning {
                 if let transitionContainer = detail.trantisionContainerView {
                     containerView.addSubview(transitionContainer)
                     
-                    UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+                    UIView.animate(withDuration: duration, delay: 0.0, options: .curveEaseIn, animations: {
                         
                         transitionContainer.containerView?.blurContainerView.alpha = 0.0
                         
                     }, completion: { (finished) in
                         
-                        UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+                        UIView.animate(withDuration: duration, delay: 0.0, options: .curveEaseIn, animations: {
                             
                             transitionContainer.openAnimation()
                             
