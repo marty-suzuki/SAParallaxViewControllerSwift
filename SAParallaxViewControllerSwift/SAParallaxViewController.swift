@@ -39,7 +39,7 @@ public class SAParallaxViewController: UIViewController {
             collectionView.Bottom
         )
         
-        collectionView.registerClass(SAParallaxViewCell.self, forCellWithReuseIdentifier: self.dynamicType.ParallaxViewCellReuseIdentifier)
+        collectionView.registerClass(SAParallaxViewCell.self, forCellWithReuseIdentifier: SAParallaxViewController.ParallaxViewCellReuseIdentifier)
         collectionView.backgroundColor = .clearColor()
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -68,7 +68,7 @@ extension SAParallaxViewController: UICollectionViewDataSource {
     }
     
     public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(self.dynamicType.ParallaxViewCellReuseIdentifier, forIndexPath: indexPath)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(SAParallaxViewController.ParallaxViewCellReuseIdentifier, forIndexPath: indexPath)
         cell.backgroundColor = .clearColor()
         cell.selected = false
         return cell
@@ -83,17 +83,16 @@ extension SAParallaxViewController: UICollectionViewDelegate {
         cells.forEach {
             guard let point = $0.superview?.convertPoint($0.frame.origin, toView:view) else { return }
             let yScrollStart = scrollView.frame.size.height - $0.frame.size.height
-            if yScrollStart >= point.y {
-                let imageRemainDistance = ($0.containerView.imageView.frame.size.width - $0.frame.size.height) / 2.0
-                let maxScrollDistance = scrollView.frame.size.height
-                var yOffset = (1.0 - ((point.y + $0.frame.size.height) / maxScrollDistance)) * imageRemainDistance
-                
-                if yOffset > imageRemainDistance {
-                    yOffset = imageRemainDistance
-                }
-                if let parallaxStartPosition = $0.containerView.parallaxStartPosition() {
-                    $0.setImageOffset(CGPoint(x: 0.0, y: -(parallaxStartPosition) - yOffset))
-                }
+            guard yScrollStart >= point.y else { return }
+            let imageRemainDistance = ($0.containerView.imageView.frame.size.width - $0.frame.size.height) / 2.0
+            let maxScrollDistance = scrollView.frame.size.height
+            var yOffset = (1.0 - ((point.y + $0.frame.size.height) / maxScrollDistance)) * imageRemainDistance
+            
+            if yOffset > imageRemainDistance {
+                yOffset = imageRemainDistance
+            }
+            if let parallaxStartPosition = $0.containerView.parallaxStartPosition() {
+                $0.setImageOffset(CGPoint(x: 0.0, y: -(parallaxStartPosition) - yOffset))
             }
         }
     }

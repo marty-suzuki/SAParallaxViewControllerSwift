@@ -17,6 +17,7 @@ SAParallaxViewControllerSwift realizes parallax scrolling with blur effect. In a
 - [x] Parallax scrolling
 - [x] Parallax scrolling with blur accessory view
 - [x] Seamlees opening transition
+- [x] Support Swift2.3
 - [x] Support Swift3 (If you want to use it in Swift3, please use [2.0.0-beta](https://github.com/szk-atmosphere/SAParallaxViewControllerSwift/tree/2.0.0-beta))
 
 ## Installation
@@ -63,7 +64,7 @@ If you want to use `UICollectionViewDataSource`, implement extension like this. 
 ```swift
 extension ViewController: UICollectionViewDataSource {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath) as SAParallaxViewCell
+        let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath) as! SAParallaxViewCell
 
         let index = indexPath.row % 6
         let imageName = String(format: "image%d", index + 1)

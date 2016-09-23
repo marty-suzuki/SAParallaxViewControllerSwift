@@ -7,128 +7,128 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1699D27C79B7E71DF10E0165A7C1EA89 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1FBCB93B80A2658C0701E1649F87FE /* Accelerate.framework */; };
+		095DE975B8AC5B7C8F90C3EE98145E54 /* MisterFusion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D87380FDF311CE18E3968EC9D95908 /* MisterFusion.framework */; };
 		22636CE1C55E8CA607798DEEABC3E8B7 /* MisterFusion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8963746C538B7AB25D0B1F879FA06E80 /* MisterFusion-dummy.m */; };
-		2650BDAEFB0A79C1754410F1BE415F76 /* SABlurImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B4966FA9EB0EE599644E4E491B59EA /* SABlurImageView.swift */; };
-		30857480BFE1228D601BA8774C9E4217 /* SAParallaxViewControllerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2351F4A1EDA71521B1A3A6FA3C32BA23 /* SAParallaxViewControllerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		355F88C4FBBF52F85248DD9E364F31A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF37060673075655E30B45E2FD3BF93 /* Foundation.framework */; };
-		3A5F1265264A25BFC733AC7B2BF433CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0C251921C9BC40AA0785F1E4CA4D3C /* UIKit.framework */; };
-		3CC8579912C427E7E056CBE9F6E82219 /* SATransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F8CA5BB6B1EF7ADCF6EB2F89EDEEDD /* SATransitionManager.swift */; };
-		3F30477183914D37E3E3A67D84411C45 /* MisterFusion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D87380FDF311CE18E3968EC9D95908 /* MisterFusion.framework */; };
-		41E914D5AD8E4137E492F90202CD9C7C /* SAParallaxViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6554AC9E493979ACB513237EB000EA9 /* SAParallaxViewLayout.swift */; };
-		421E57A50344ECEFBA244B04B563A84A /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		487950F5450F6A7E508A867F90C72F92 /* UIImage+BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8410006211602DF773EA6F7ACA969 /* UIImage+BlurEffect.swift */; };
+		2AA0A6CE20D017B419B8B38608B27CD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315A20DC19E54C49F0C7CACA75E8D2DE /* Foundation.framework */; };
+		32EA1F30413278D1B3EAD96076C1508F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F1A2A461F12D26548008B7C7EA90DA /* UIKit.framework */; };
+		33FBBD8C7FC892317E0B77AF1218612B /* SABlurImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094106F6E5EC32B01BBCF4A1E7AB8703 /* SABlurImageView.framework */; };
+		35DCBB25799948EA1206C8BA837D1BBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315A20DC19E54C49F0C7CACA75E8D2DE /* Foundation.framework */; };
+		3FA89825C9C0D750930283D8D9B602A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F1A2A461F12D26548008B7C7EA90DA /* UIKit.framework */; };
+		4A4F6E619BC4169BFC98626E1E48300E /* SADetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E10F56E073CA0829CDAC9B4EC7DE17 /* SADetailViewController.swift */; };
+		4C504DCB0B741345F1E2ED3F240FED74 /* SABlurImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B4966FA9EB0EE599644E4E491B59EA /* SABlurImageView.swift */; };
+		4EE338877999AE809640EA6AC536E1D2 /* SABlurImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 383367EA47A527395F76B69BA7537BFB /* SABlurImageView-dummy.m */; };
+		4F63ADC6C7A8772D7B044B9EBC15CA61 /* SAParallaxViewControllerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70A01A9182A305DFC494E4EBFD0842C3 /* SAParallaxViewControllerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		532F883C02DABD2AB105259F2FBD6B3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315A20DC19E54C49F0C7CACA75E8D2DE /* Foundation.framework */; };
 		53EE8DE41682CE1D265BE8B60ED69A11 /* Array+MisterFusion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2762F2FE1A55CD29E118614940F97358 /* Array+MisterFusion.swift */; };
-		638253443BB27CE1BB3F8B95563BD99E /* SABlurImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 383367EA47A527395F76B69BA7537BFB /* SABlurImageView-dummy.m */; };
-		7E438CA656CEDA50BD246384A2E8D5BC /* SABlurImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094106F6E5EC32B01BBCF4A1E7AB8703 /* SABlurImageView.framework */; };
-		90256570D119DB16B13F4FB6FBD29532 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
-		9119AEE5AB1FA42D76CD82A54817F03A /* SAParallaxContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E8187AAE85BB375F94CEECCA691521 /* SAParallaxContainerView.swift */; };
-		945F68BCF0D1B46CE5E34DAC6C3450F7 /* SADetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E360447FD1EAA8E6D1350032460500C /* SADetailViewController.swift */; };
-		9F139F95B35B2EEAD512036B6C95278B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF37060673075655E30B45E2FD3BF93 /* Foundation.framework */; };
+		637C1428A79D52E39B7CC408F5C3FCA2 /* Pods-SAParallaxViewControllerSwiftExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C66085CEC5ECE3387ED4EAC44E03852A /* Pods-SAParallaxViewControllerSwiftExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6568F1BAD5A7F2F47B46F8341E410645 /* SAParallaxContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B888E1B6300B178F50BB3264FD58B5A9 /* SAParallaxContainerView.swift */; };
 		A03C84FA56C1EFBCE51BD48F9EBD5CD3 /* MisterFusion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806DB517DB3CC4DE12692F836447E780 /* MisterFusion.swift */; };
-		B2AC28704B5159D1E6C0642B3FEA19ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0C251921C9BC40AA0785F1E4CA4D3C /* UIKit.framework */; };
-		D4AC08146B2F6FEC1A5CDE83DCC909DB /* SAParallaxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43D5CB003800C562833A6E3E971D8E /* SAParallaxViewCell.swift */; };
-		DB6ABFC771D3D59E6E61AF4AAFFA8F01 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4B7F928BA21A51F1D6714DE7784125 /* QuartzCore.framework */; };
-		DCC5C8EE5DD8B5AC82C20FAD718595FD /* SAParallaxViewControllerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D155B2377683337621A0E315A6588D17 /* SAParallaxViewControllerSwift-dummy.m */; };
+		A5103B3D7CCD442A7759749279B58F62 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C3A43C297776A3561127C0C7EE52BB /* QuartzCore.framework */; };
+		ACE08002AC2339C6A578B06C241B092B /* UIImage+BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8410006211602DF773EA6F7ACA969 /* UIImage+BlurEffect.swift */; };
+		ADCF7019D39BC771B57D678CFE076E39 /* SAParallaxViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED9AB59B2D32B35CBA0BA94CB712D1C /* SAParallaxViewLayout.swift */; };
+		B51C4C66A327F83BC61F23F7218BA4A4 /* CATransition+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C1AEE7C6DBC9A6199484FB537E7AE6 /* CATransition+Closure.swift */; };
+		B7085CC055AECCA149979F22FA347559 /* SATransitionContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681400CEFFD0E1E07180C5376CB21B9 /* SATransitionContainerView.swift */; };
+		B923ACB0120674564300AA0AF3717491 /* SABlurImageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE91F0E8DB464F3B9BF992B62E3A2A9D /* SABlurImageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9A9DD74126DF7918E4A9810B37A8EAB /* SAParallaxViewControllerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9F8D1BBE31D3D35B6873EB6F4CEB2 /* SAParallaxViewControllerSwift-dummy.m */; };
+		DAC6940463D46ADFDB5CC94C95F4C2AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315A20DC19E54C49F0C7CACA75E8D2DE /* Foundation.framework */; };
+		DD7224DD148F487C9E3D69E7519BC8AC /* SATransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8445A49D782D4995D893C85B02B057 /* SATransitionManager.swift */; };
+		E360958DBB9311B7600F0A5490120781 /* Pods-SAParallaxViewControllerSwiftExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5A796BC5F7D385AFB3F4ACD4D8683 /* Pods-SAParallaxViewControllerSwiftExample-dummy.m */; };
 		E97A332AFCB13BB4E1857CA5BCB2A357 /* MisterFusion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A5299CA0A68B664FB8E6D425461F98 /* MisterFusion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ECD8F806EE00E746C4E0AC40B4DE6154 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF37060673075655E30B45E2FD3BF93 /* Foundation.framework */; };
-		ECF711953587E935C127360EFC41C7FA /* CATransition+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C1AEE7C6DBC9A6199484FB537E7AE6 /* CATransition+Closure.swift */; };
-		EE19026ACA68D20E67910266756C0445 /* SATransitionContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BD1A021ACE162F5193EC4FF4D4E39 /* SATransitionContainerView.swift */; };
-		EE6E4183E3F9C468C244DAE05651626A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF37060673075655E30B45E2FD3BF93 /* Foundation.framework */; };
-		FA8D966AA461A7A41CB3843F3907EAB3 /* SABlurImageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE91F0E8DB464F3B9BF992B62E3A2A9D /* SABlurImageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC61A40A4CDF77029C3FBCEDD8B2C5AF /* SAParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA45626441FB26DF4DBCAD2DF152F3C /* SAParallaxViewController.swift */; };
+		F3A190B7B9C249A9B810A1C9C7262FF2 /* SAParallaxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06D17566EFFA359B051DB6D1A96850A /* SAParallaxViewCell.swift */; };
+		F67D702DC4E7D2BC6509AC72FB933AAB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762B8C144F041374B69780F651DDAB80 /* Accelerate.framework */; };
+		FBDCF6ADBC8DE785D4A91B32EF5F737B /* SAParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809EAF7BBDC895C7859ADDE2ACACC983 /* SAParallaxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		602827D913315009058EFC1BAC76F355 /* PBXContainerItemProxy */ = {
+		116C25E677797267F2989C185DD58D47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9FC843BD22328DEFBCAB1DA4A92108F7;
-			remoteInfo = MisterFusion;
-		};
-		A95BDDFF283DE8C8634366AE0AA02BAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9FC843BD22328DEFBCAB1DA4A92108F7;
-			remoteInfo = MisterFusion;
-		};
-		AE7920BCAB615307709233171852EBE8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5917681F892AAA43DD889C94EEE4A39A;
+			remoteGlobalIDString = E2067E23ACC7CB501D0BD318DB065F66;
 			remoteInfo = SABlurImageView;
 		};
-		CBACBB849EE1CA14CE3FA2575F4EA93E /* PBXContainerItemProxy */ = {
+		4001846FCC89FC3E917C7E70C7BC29D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5917681F892AAA43DD889C94EEE4A39A;
-			remoteInfo = SABlurImageView;
-		};
-		E761DDC12A953CD56F1A189D53C710C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A720D2ED1A0DBC5863BA58D0A5F850CC;
+			remoteGlobalIDString = 7F3163F71C747EF8C4A82F962D53C1F3;
 			remoteInfo = SAParallaxViewControllerSwift;
+		};
+		5ACCD4EB71053B2466BEC8D246270D9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FC843BD22328DEFBCAB1DA4A92108F7;
+			remoteInfo = MisterFusion;
+		};
+		84DB09A06D45E36CB285012508CD680F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FC843BD22328DEFBCAB1DA4A92108F7;
+			remoteInfo = MisterFusion;
+		};
+		E47096747986271B95F3C9152A2F6A81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2067E23ACC7CB501D0BD318DB065F66;
+			remoteInfo = SABlurImageView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C87AE02B77E31DF54035407BE4D055 /* SABlurImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SABlurImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04ADE224A67CB66E81041F9A87F23743 /* Pods-SAParallaxViewControllerSwiftExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SAParallaxViewControllerSwiftExample.modulemap"; sourceTree = "<group>"; };
 		094106F6E5EC32B01BBCF4A1E7AB8703 /* SABlurImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SABlurImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		12F8CA5BB6B1EF7ADCF6EB2F89EDEEDD /* SATransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SATransitionManager.swift; sourceTree = "<group>"; };
+		0977CB9EC19BD22FCC0E025C41E8275F /* Pods_SAParallaxViewControllerSwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAParallaxViewControllerSwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1025317949119CBAC3F3012E835E690B /* Pods-SAParallaxViewControllerSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SAParallaxViewControllerSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
+		11FFF4B8C819418E14488E7624A02FE9 /* Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
+		14C3A43C297776A3561127C0C7EE52BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		1DC39C8ED4DF4339638712591DA6A72D /* SAParallaxViewControllerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SAParallaxViewControllerSwift.modulemap; sourceTree = "<group>"; };
 		20A5299CA0A68B664FB8E6D425461F98 /* MisterFusion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MisterFusion-umbrella.h"; sourceTree = "<group>"; };
 		221A52D540C18D17293645E13C12A407 /* MisterFusion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MisterFusion-prefix.pch"; sourceTree = "<group>"; };
-		2351F4A1EDA71521B1A3A6FA3C32BA23 /* SAParallaxViewControllerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAParallaxViewControllerSwift-umbrella.h"; sourceTree = "<group>"; };
 		2762F2FE1A55CD29E118614940F97358 /* Array+MisterFusion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+MisterFusion.swift"; path = "MisterFusion/Array+MisterFusion.swift"; sourceTree = "<group>"; };
-		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		2EC9F8D1BBE31D3D35B6873EB6F4CEB2 /* SAParallaxViewControllerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAParallaxViewControllerSwift-dummy.m"; sourceTree = "<group>"; };
+		315A20DC19E54C49F0C7CACA75E8D2DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3755136696C05DF97C34B6D6E40A58F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		383367EA47A527395F76B69BA7537BFB /* SABlurImageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SABlurImageView-dummy.m"; sourceTree = "<group>"; };
-		4D1FF5AF723EFB12F49EBBF3553584AC /* SAParallaxViewControllerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SAParallaxViewControllerSwift.modulemap; sourceTree = "<group>"; };
-		4FBF7BB61888F568DFA3160D6320F6B6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FE4C3897F95B137B768953C7D52A9A4 /* SAParallaxViewControllerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAParallaxViewControllerSwift.xcconfig; sourceTree = "<group>"; };
+		3FC5A796BC5F7D385AFB3F4ACD4D8683 /* Pods-SAParallaxViewControllerSwiftExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SAParallaxViewControllerSwiftExample-dummy.m"; sourceTree = "<group>"; };
+		45BC0C4255FF7897E4292B2646CB3279 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53E1FBFC4BB56C00587B281F59E7D9F2 /* SABlurImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SABlurImageView-prefix.pch"; sourceTree = "<group>"; };
+		53F1A2A461F12D26548008B7C7EA90DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5ED9AB59B2D32B35CBA0BA94CB712D1C /* SAParallaxViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAParallaxViewLayout.swift; sourceTree = "<group>"; };
 		64B4966FA9EB0EE599644E4E491B59EA /* SABlurImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SABlurImageView.swift; path = SABlurImageView/SABlurImageView.swift; sourceTree = "<group>"; };
 		65D87380FDF311CE18E3968EC9D95908 /* MisterFusion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MisterFusion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D43D5CB003800C562833A6E3E971D8E /* SAParallaxViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAParallaxViewCell.swift; sourceTree = "<group>"; };
-		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		7BF37060673075655E30B45E2FD3BF93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		69C1910F2054CD6B714D4020E2D9CD57 /* Pods-SAParallaxViewControllerSwiftExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SAParallaxViewControllerSwiftExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E34F64219449608694DECEFFA4CBE53 /* Pods-SAParallaxViewControllerSwiftExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SAParallaxViewControllerSwiftExample-frameworks.sh"; sourceTree = "<group>"; };
+		70A01A9182A305DFC494E4EBFD0842C3 /* SAParallaxViewControllerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAParallaxViewControllerSwift-umbrella.h"; sourceTree = "<group>"; };
+		7511F29261FD6BA616ED22B7560D7DDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		762B8C144F041374B69780F651DDAB80 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		77626075C2B27D674B4FD66533FE053E /* SAParallaxViewControllerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAParallaxViewControllerSwift.xcconfig; sourceTree = "<group>"; };
 		806DB517DB3CC4DE12692F836447E780 /* MisterFusion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MisterFusion.swift; path = MisterFusion/MisterFusion.swift; sourceTree = "<group>"; };
-		86E8187AAE85BB375F94CEECCA691521 /* SAParallaxContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAParallaxContainerView.swift; sourceTree = "<group>"; };
-		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		809EAF7BBDC895C7859ADDE2ACACC983 /* SAParallaxViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAParallaxViewController.swift; sourceTree = "<group>"; };
+		84E10F56E073CA0829CDAC9B4EC7DE17 /* SADetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SADetailViewController.swift; sourceTree = "<group>"; };
 		8963746C538B7AB25D0B1F879FA06E80 /* MisterFusion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MisterFusion-dummy.m"; sourceTree = "<group>"; };
-		8E360447FD1EAA8E6D1350032460500C /* SADetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SADetailViewController.swift; sourceTree = "<group>"; };
 		91C1AEE7C6DBC9A6199484FB537E7AE6 /* CATransition+Closure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CATransition+Closure.swift"; path = "SABlurImageView/CATransition+Closure.swift"; sourceTree = "<group>"; };
-		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95F24BE3FBBF586A15F651A6C47A8BA4 /* MisterFusion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MisterFusion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA73AA09CD510FA0125F6FD85AFE7EB /* SABlurImageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SABlurImageView.modulemap; sourceTree = "<group>"; };
 		A202581E9DB12709BF071FA5CEDBF76D /* SABlurImageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SABlurImageView.xcconfig; sourceTree = "<group>"; };
-		AB2BD1A021ACE162F5193EC4FF4D4E39 /* SATransitionContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SATransitionContainerView.swift; sourceTree = "<group>"; };
-		AE4B7F928BA21A51F1D6714DE7784125 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		AE9E89BD5E27C037B439970E83D221E1 /* SAParallaxViewControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAParallaxViewControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF0C251921C9BC40AA0785F1E4CA4D3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B6A719227F1303D07D515385A1EECDAA /* SABlurImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SABlurImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A681400CEFFD0E1E07180C5376CB21B9 /* SATransitionContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SATransitionContainerView.swift; sourceTree = "<group>"; };
+		B888E1B6300B178F50BB3264FD58B5A9 /* SAParallaxContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAParallaxContainerView.swift; sourceTree = "<group>"; };
 		B91BD39B69D13EC5E189F4ABF286C0BD /* MisterFusion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MisterFusion.xcconfig; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BCA45626441FB26DF4DBCAD2DF152F3C /* SAParallaxViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAParallaxViewController.swift; sourceTree = "<group>"; };
+		C4F22D91FB96C88E5ECF1EDC93DCA862 /* SAParallaxViewControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAParallaxViewControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66085CEC5ECE3387ED4EAC44E03852A /* Pods-SAParallaxViewControllerSwiftExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SAParallaxViewControllerSwiftExample-umbrella.h"; sourceTree = "<group>"; };
 		CA08FB1BEC4E7BA66EDC551FD78FF717 /* MisterFusion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MisterFusion.modulemap; sourceTree = "<group>"; };
-		CBB2BF1D08AC3912D9FD0D1086424A2F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		CFF8410006211602DF773EA6F7ACA969 /* UIImage+BlurEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+BlurEffect.swift"; path = "SABlurImageView/UIImage+BlurEffect.swift"; sourceTree = "<group>"; };
-		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D155B2377683337621A0E315A6588D17 /* SAParallaxViewControllerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAParallaxViewControllerSwift-dummy.m"; sourceTree = "<group>"; };
-		D6554AC9E493979ACB513237EB000EA9 /* SAParallaxViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAParallaxViewLayout.swift; sourceTree = "<group>"; };
-		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED1FBCB93B80A2658C0701E1649F87FE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		D06D17566EFFA359B051DB6D1A96850A /* SAParallaxViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAParallaxViewCell.swift; sourceTree = "<group>"; };
+		DE3E7653855C077B7BF2D1EE3B3F3040 /* SAParallaxViewControllerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAParallaxViewControllerSwift-prefix.pch"; sourceTree = "<group>"; };
+		EA2B9974BA40075A8C5F39ECCCA910BA /* Pods-SAParallaxViewControllerSwiftExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SAParallaxViewControllerSwiftExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		EE91F0E8DB464F3B9BF992B62E3A2A9D /* SABlurImageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SABlurImageView-umbrella.h"; sourceTree = "<group>"; };
-		F8B8784CD0F24718772FDC50BBB1B6FB /* MisterFusion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MisterFusion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8445A49D782D4995D893C85B02B057 /* SATransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SATransitionManager.swift; sourceTree = "<group>"; };
 		FAE62ADC722EB4593083BE08E2A4F580 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE48844C9486F82E0C848A891E0D81C7 /* SAParallaxViewControllerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAParallaxViewControllerSwift-prefix.pch"; sourceTree = "<group>"; };
+		FE43B51128AF802B5613F04556C0CDC5 /* Pods-SAParallaxViewControllerSwiftExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SAParallaxViewControllerSwiftExample-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,37 +136,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE6E4183E3F9C468C244DAE05651626A /* Foundation.framework in Frameworks */,
-				B2AC28704B5159D1E6C0642B3FEA19ED /* UIKit.framework in Frameworks */,
+				DAC6940463D46ADFDB5CC94C95F4C2AC /* Foundation.framework in Frameworks */,
+				32EA1F30413278D1B3EAD96076C1508F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3E3CD1C119FCBD34161AD2F07A55AE0 /* Frameworks */ = {
+		572522B10D202ACE9BE51D6598B2582A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1699D27C79B7E71DF10E0165A7C1EA89 /* Accelerate.framework in Frameworks */,
-				9F139F95B35B2EEAD512036B6C95278B /* Foundation.framework in Frameworks */,
-				DB6ABFC771D3D59E6E61AF4AAFFA8F01 /* QuartzCore.framework in Frameworks */,
-				3A5F1265264A25BFC733AC7B2BF433CC /* UIKit.framework in Frameworks */,
+				2AA0A6CE20D017B419B8B38608B27CD1 /* Foundation.framework in Frameworks */,
+				095DE975B8AC5B7C8F90C3EE98145E54 /* MisterFusion.framework in Frameworks */,
+				33FBBD8C7FC892317E0B77AF1218612B /* SABlurImageView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ABBF23B82CA4B1AA6251BFB1458F80C4 /* Frameworks */ = {
+		B50220801A8BC1EFD24B937C82B9910F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				355F88C4FBBF52F85248DD9E364F31A0 /* Foundation.framework in Frameworks */,
-				3F30477183914D37E3E3A67D84411C45 /* MisterFusion.framework in Frameworks */,
-				7E438CA656CEDA50BD246384A2E8D5BC /* SABlurImageView.framework in Frameworks */,
+				F67D702DC4E7D2BC6509AC72FB933AAB /* Accelerate.framework in Frameworks */,
+				532F883C02DABD2AB105259F2FBD6B3F /* Foundation.framework in Frameworks */,
+				A5103B3D7CCD442A7759749279B58F62 /* QuartzCore.framework in Frameworks */,
+				3FA89825C9C0D750930283D8D9B602A0 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B2558F8177A9A473D7673DAA54D35ABD /* Frameworks */ = {
+		D2AB8ABBA3D33B5A285EDBF1FF3836C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD8F806EE00E746C4E0AC40B4DE6154 /* Foundation.framework in Frameworks */,
+				35DCBB25799948EA1206C8BA837D1BBA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,18 +187,22 @@
 			path = "../Target Support Files/SABlurImageView";
 			sourceTree = "<group>";
 		};
-		1FE090E725841390EF2D3044DF57144C /* Support Files */ = {
+		27BCB7CB3CFA146C2294B67AF925B6C6 /* Pods-SAParallaxViewControllerSwiftExample */ = {
 			isa = PBXGroup;
 			children = (
-				CBB2BF1D08AC3912D9FD0D1086424A2F /* Info.plist */,
-				4D1FF5AF723EFB12F49EBBF3553584AC /* SAParallaxViewControllerSwift.modulemap */,
-				4FE4C3897F95B137B768953C7D52A9A4 /* SAParallaxViewControllerSwift.xcconfig */,
-				D155B2377683337621A0E315A6588D17 /* SAParallaxViewControllerSwift-dummy.m */,
-				FE48844C9486F82E0C848A891E0D81C7 /* SAParallaxViewControllerSwift-prefix.pch */,
-				2351F4A1EDA71521B1A3A6FA3C32BA23 /* SAParallaxViewControllerSwift-umbrella.h */,
+				45BC0C4255FF7897E4292B2646CB3279 /* Info.plist */,
+				04ADE224A67CB66E81041F9A87F23743 /* Pods-SAParallaxViewControllerSwiftExample.modulemap */,
+				69C1910F2054CD6B714D4020E2D9CD57 /* Pods-SAParallaxViewControllerSwiftExample-acknowledgements.markdown */,
+				EA2B9974BA40075A8C5F39ECCCA910BA /* Pods-SAParallaxViewControllerSwiftExample-acknowledgements.plist */,
+				3FC5A796BC5F7D385AFB3F4ACD4D8683 /* Pods-SAParallaxViewControllerSwiftExample-dummy.m */,
+				6E34F64219449608694DECEFFA4CBE53 /* Pods-SAParallaxViewControllerSwiftExample-frameworks.sh */,
+				FE43B51128AF802B5613F04556C0CDC5 /* Pods-SAParallaxViewControllerSwiftExample-resources.sh */,
+				C66085CEC5ECE3387ED4EAC44E03852A /* Pods-SAParallaxViewControllerSwiftExample-umbrella.h */,
+				11FFF4B8C819418E14488E7624A02FE9 /* Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig */,
+				1025317949119CBAC3F3012E835E690B /* Pods-SAParallaxViewControllerSwiftExample.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "SAParallaxViewControllerSwiftExample/Pods/Target Support Files/SAParallaxViewControllerSwift";
+			name = "Pods-SAParallaxViewControllerSwiftExample";
+			path = "Target Support Files/Pods-SAParallaxViewControllerSwiftExample";
 			sourceTree = "<group>";
 		};
 		2CF3485955C9434332960C7A7F8759BE /* SABlurImageView */ = {
@@ -210,27 +214,6 @@
 				05CE3D82C7AE68D0BF2B22D2A1CC8A49 /* Support Files */,
 			);
 			path = SABlurImageView;
-			sourceTree = "<group>";
-		};
-		2DBA631DBF6EC1310830D12B2882B5EE /* SAParallaxViewControllerSwift */ = {
-			isa = PBXGroup;
-			children = (
-				675BAE41547BF6B5833E9DB66A286B1C /* SAParallaxViewControllerSwift */,
-				1FE090E725841390EF2D3044DF57144C /* Support Files */,
-			);
-			name = SAParallaxViewControllerSwift;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		322CC3A151294A90E445EEBDD5FE5D35 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F8B8784CD0F24718772FDC50BBB1B6FB /* MisterFusion.framework */,
-				4FBF7BB61888F568DFA3160D6320F6B6 /* Pods.framework */,
-				B6A719227F1303D07D515385A1EECDAA /* SABlurImageView.framework */,
-				AE9E89BD5E27C037B439970E83D221E1 /* SAParallaxViewControllerSwift.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		42B3119CE6C591032F18F57D7C4F3DEE /* Pods */ = {
@@ -245,7 +228,7 @@
 		48BC927C5232A96A97F7EBC4E4192FDC /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2DBA631DBF6EC1310830D12B2882B5EE /* SAParallaxViewControllerSwift */,
+				DE7EB834EBF6A89A3481C8F64005AA04 /* SAParallaxViewControllerSwift */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -260,59 +243,41 @@
 			path = MisterFusion;
 			sourceTree = "<group>";
 		};
-		675BAE41547BF6B5833E9DB66A286B1C /* SAParallaxViewControllerSwift */ = {
+		68676DBD434AC6F1EBC004A5A40FA96F /* SAParallaxViewControllerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				8E360447FD1EAA8E6D1350032460500C /* SADetailViewController.swift */,
-				86E8187AAE85BB375F94CEECCA691521 /* SAParallaxContainerView.swift */,
-				6D43D5CB003800C562833A6E3E971D8E /* SAParallaxViewCell.swift */,
-				BCA45626441FB26DF4DBCAD2DF152F3C /* SAParallaxViewController.swift */,
-				D6554AC9E493979ACB513237EB000EA9 /* SAParallaxViewLayout.swift */,
-				AB2BD1A021ACE162F5193EC4FF4D4E39 /* SATransitionContainerView.swift */,
-				12F8CA5BB6B1EF7ADCF6EB2F89EDEEDD /* SATransitionManager.swift */,
+				84E10F56E073CA0829CDAC9B4EC7DE17 /* SADetailViewController.swift */,
+				B888E1B6300B178F50BB3264FD58B5A9 /* SAParallaxContainerView.swift */,
+				D06D17566EFFA359B051DB6D1A96850A /* SAParallaxViewCell.swift */,
+				809EAF7BBDC895C7859ADDE2ACACC983 /* SAParallaxViewController.swift */,
+				5ED9AB59B2D32B35CBA0BA94CB712D1C /* SAParallaxViewLayout.swift */,
+				A681400CEFFD0E1E07180C5376CB21B9 /* SATransitionContainerView.swift */,
+				FA8445A49D782D4995D893C85B02B057 /* SATransitionManager.swift */,
 			);
 			path = SAParallaxViewControllerSwift;
-			sourceTree = "<group>";
-		};
-		74CE68166B206E8961D3FB8D291D6D5B /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				ED1FBCB93B80A2658C0701E1649F87FE /* Accelerate.framework */,
-				7BF37060673075655E30B45E2FD3BF93 /* Foundation.framework */,
-				AE4B7F928BA21A51F1D6714DE7784125 /* QuartzCore.framework */,
-				AF0C251921C9BC40AA0785F1E4CA4D3C /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
-				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
-				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
-				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
-				894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */,
-				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
-				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
-				2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */,
-				977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */,
-				DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				48BC927C5232A96A97F7EBC4E4192FDC /* Development Pods */,
 				963D30A0994E2721501FA7BDFF8ABC50 /* Frameworks */,
 				42B3119CE6C591032F18F57D7C4F3DEE /* Pods */,
-				322CC3A151294A90E445EEBDD5FE5D35 /* Products */,
-				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
+				8D35D4F9CF945F9A5A06B5A7AB0790EF /* Products */,
+				EFC1FB00F9C68104E90FAE88ECE3B24E /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8D35D4F9CF945F9A5A06B5A7AB0790EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95F24BE3FBBF586A15F651A6C47A8BA4 /* MisterFusion.framework */,
+				0977CB9EC19BD22FCC0E025C41E8275F /* Pods_SAParallaxViewControllerSwiftExample.framework */,
+				00C87AE02B77E31DF54035407BE4D055 /* SABlurImageView.framework */,
+				C4F22D91FB96C88E5ECF1EDC93DCA862 /* SAParallaxViewControllerSwift.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		963D30A0994E2721501FA7BDFF8ABC50 /* Frameworks */ = {
@@ -320,9 +285,23 @@
 			children = (
 				65D87380FDF311CE18E3968EC9D95908 /* MisterFusion.framework */,
 				094106F6E5EC32B01BBCF4A1E7AB8703 /* SABlurImageView.framework */,
-				74CE68166B206E8961D3FB8D291D6D5B /* iOS */,
+				DF8EA7CB96EB24AAA51B074B2459AC1E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E89BB60EF503FD4A7E3917600B93E35 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7511F29261FD6BA616ED22B7560D7DDA /* Info.plist */,
+				1DC39C8ED4DF4339638712591DA6A72D /* SAParallaxViewControllerSwift.modulemap */,
+				77626075C2B27D674B4FD66533FE053E /* SAParallaxViewControllerSwift.xcconfig */,
+				2EC9F8D1BBE31D3D35B6873EB6F4CEB2 /* SAParallaxViewControllerSwift-dummy.m */,
+				DE3E7653855C077B7BF2D1EE3B3F3040 /* SAParallaxViewControllerSwift-prefix.pch */,
+				70A01A9182A305DFC494E4EBFD0842C3 /* SAParallaxViewControllerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "SAParallaxViewControllerSwiftExample/Pods/Target Support Files/SAParallaxViewControllerSwift";
 			sourceTree = "<group>";
 		};
 		AE090ED2E5645FE4D7D151EF5A2A84CF /* Support Files */ = {
@@ -339,10 +318,31 @@
 			path = "../Target Support Files/MisterFusion";
 			sourceTree = "<group>";
 		};
-		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
+		DE7EB834EBF6A89A3481C8F64005AA04 /* SAParallaxViewControllerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
+				68676DBD434AC6F1EBC004A5A40FA96F /* SAParallaxViewControllerSwift */,
+				9E89BB60EF503FD4A7E3917600B93E35 /* Support Files */,
+			);
+			name = SAParallaxViewControllerSwift;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		DF8EA7CB96EB24AAA51B074B2459AC1E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				762B8C144F041374B69780F651DDAB80 /* Accelerate.framework */,
+				315A20DC19E54C49F0C7CACA75E8D2DE /* Foundation.framework */,
+				14C3A43C297776A3561127C0C7EE52BB /* QuartzCore.framework */,
+				53F1A2A461F12D26548008B7C7EA90DA /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EFC1FB00F9C68104E90FAE88ECE3B24E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27BCB7CB3CFA146C2294B67AF925B6C6 /* Pods-SAParallaxViewControllerSwiftExample */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -358,68 +358,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A788F289CB50860F12117DD3E23CDC7 /* Headers */ = {
+		7EEE16C8543010A5B8398FCB97E01419 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA8D966AA461A7A41CB3843F3907EAB3 /* SABlurImageView-umbrella.h in Headers */,
+				4F63ADC6C7A8772D7B044B9EBC15CA61 /* SAParallaxViewControllerSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2EF2C34AA34019A4C1643E3FE8D19DB /* Headers */ = {
+		A729589BD911EC3C05C0FFA0C66DA086 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421E57A50344ECEFBA244B04B563A84A /* Pods-umbrella.h in Headers */,
+				B923ACB0120674564300AA0AF3717491 /* SABlurImageView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3DBAEAE38A20E3AFCE16A4DFD4463A3 /* Headers */ = {
+		C60DCF9490386FA20B45C2A7609E920D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30857480BFE1228D601BA8774C9E4217 /* SAParallaxViewControllerSwift-umbrella.h in Headers */,
+				637C1428A79D52E39B7CC408F5C3FCA2 /* Pods-SAParallaxViewControllerSwiftExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5917681F892AAA43DD889C94EEE4A39A /* SABlurImageView */ = {
+		428C4B5EAD6022395B5CE25B3D703FCD /* Pods-SAParallaxViewControllerSwiftExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1A09B43CCCB738B4D153269F2C7E029 /* Build configuration list for PBXNativeTarget "SABlurImageView" */;
+			buildConfigurationList = 83930C6FCC354C87891FA70B63A31862 /* Build configuration list for PBXNativeTarget "Pods-SAParallaxViewControllerSwiftExample" */;
 			buildPhases = (
-				A5E4274664B5AC9D32172566C1CE21EB /* Sources */,
-				A3E3CD1C119FCBD34161AD2F07A55AE0 /* Frameworks */,
-				9A788F289CB50860F12117DD3E23CDC7 /* Headers */,
+				341387F4F9FED216667E59C73A581E8B /* Sources */,
+				D2AB8ABBA3D33B5A285EDBF1FF3836C5 /* Frameworks */,
+				C60DCF9490386FA20B45C2A7609E920D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6F18FD738A9CA976EBEC281430916051 /* PBXTargetDependency */,
+				6C5536C53FBAB93768281CBEAF94D6A4 /* PBXTargetDependency */,
+				D47B7794E6CC5B46169815FE47D9193F /* PBXTargetDependency */,
 			);
-			name = SABlurImageView;
-			productName = SABlurImageView;
-			productReference = B6A719227F1303D07D515385A1EECDAA /* SABlurImageView.framework */;
+			name = "Pods-SAParallaxViewControllerSwiftExample";
+			productName = "Pods-SAParallaxViewControllerSwiftExample";
+			productReference = 0977CB9EC19BD22FCC0E025C41E8275F /* Pods_SAParallaxViewControllerSwiftExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		73DD3758F50FAAC6042F4C7762114858 /* Pods */ = {
+		7F3163F71C747EF8C4A82F962D53C1F3 /* SAParallaxViewControllerSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B63490A7337A8BA1F3D4F6E60DA5610 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = D05F74615497FBE6B6FE47F1F09D70CD /* Build configuration list for PBXNativeTarget "SAParallaxViewControllerSwift" */;
 			buildPhases = (
-				5DDA012AD9B07CF79CB16EA0F8518177 /* Sources */,
-				B2558F8177A9A473D7673DAA54D35ABD /* Frameworks */,
-				C2EF2C34AA34019A4C1643E3FE8D19DB /* Headers */,
+				D980FA749D3F99E58D5F86702BB2F381 /* Sources */,
+				572522B10D202ACE9BE51D6598B2582A /* Frameworks */,
+				7EEE16C8543010A5B8398FCB97E01419 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				50E1D94436B915FE6E7A042D7188B3F7 /* PBXTargetDependency */,
-				E807A93F4C4340AE6AEC55F6F55EBEE5 /* PBXTargetDependency */,
-				B4B27B7EC64CD1732AA2D28A1EA4D8AB /* PBXTargetDependency */,
+				CC4028E0A4E2817F56040B2DF09313EB /* PBXTargetDependency */,
+				2FF0B307A7B0588E0CB5FE14AAEA1C15 /* PBXTargetDependency */,
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = 4FBF7BB61888F568DFA3160D6320F6B6 /* Pods.framework */;
+			name = SAParallaxViewControllerSwift;
+			productName = SAParallaxViewControllerSwift;
+			productReference = C4F22D91FB96C88E5ECF1EDC93DCA862 /* SAParallaxViewControllerSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9FC843BD22328DEFBCAB1DA4A92108F7 /* MisterFusion */ = {
@@ -436,26 +438,24 @@
 			);
 			name = MisterFusion;
 			productName = MisterFusion;
-			productReference = F8B8784CD0F24718772FDC50BBB1B6FB /* MisterFusion.framework */;
+			productReference = 95F24BE3FBBF586A15F651A6C47A8BA4 /* MisterFusion.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A720D2ED1A0DBC5863BA58D0A5F850CC /* SAParallaxViewControllerSwift */ = {
+		E2067E23ACC7CB501D0BD318DB065F66 /* SABlurImageView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8AFEF3BD5CD32A34E9E93F5DE87B8120 /* Build configuration list for PBXNativeTarget "SAParallaxViewControllerSwift" */;
+			buildConfigurationList = 3753FB8EF71F26BF6643A4997C8F933F /* Build configuration list for PBXNativeTarget "SABlurImageView" */;
 			buildPhases = (
-				0D98B8BCB0B12E5553645D0C41486CE5 /* Sources */,
-				ABBF23B82CA4B1AA6251BFB1458F80C4 /* Frameworks */,
-				F3DBAEAE38A20E3AFCE16A4DFD4463A3 /* Headers */,
+				85C1E9A93202722A7764C13E5F9B898E /* Sources */,
+				B50220801A8BC1EFD24B937C82B9910F /* Frameworks */,
+				A729589BD911EC3C05C0FFA0C66DA086 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C1786611F4D366B2B53BAD784E565F86 /* PBXTargetDependency */,
-				13A549175D8B03E631342B4FD7688B8A /* PBXTargetDependency */,
 			);
-			name = SAParallaxViewControllerSwift;
-			productName = SAParallaxViewControllerSwift;
-			productReference = AE9E89BD5E27C037B439970E83D221E1 /* SAParallaxViewControllerSwift.framework */;
+			name = SABlurImageView;
+			productName = SABlurImageView;
+			productReference = 00C87AE02B77E31DF54035407BE4D055 /* SABlurImageView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -464,7 +464,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -475,39 +475,35 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 322CC3A151294A90E445EEBDD5FE5D35 /* Products */;
+			productRefGroup = 8D35D4F9CF945F9A5A06B5A7AB0790EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9FC843BD22328DEFBCAB1DA4A92108F7 /* MisterFusion */,
-				73DD3758F50FAAC6042F4C7762114858 /* Pods */,
-				5917681F892AAA43DD889C94EEE4A39A /* SABlurImageView */,
-				A720D2ED1A0DBC5863BA58D0A5F850CC /* SAParallaxViewControllerSwift */,
+				428C4B5EAD6022395B5CE25B3D703FCD /* Pods-SAParallaxViewControllerSwiftExample */,
+				E2067E23ACC7CB501D0BD318DB065F66 /* SABlurImageView */,
+				7F3163F71C747EF8C4A82F962D53C1F3 /* SAParallaxViewControllerSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0D98B8BCB0B12E5553645D0C41486CE5 /* Sources */ = {
+		341387F4F9FED216667E59C73A581E8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				945F68BCF0D1B46CE5E34DAC6C3450F7 /* SADetailViewController.swift in Sources */,
-				9119AEE5AB1FA42D76CD82A54817F03A /* SAParallaxContainerView.swift in Sources */,
-				D4AC08146B2F6FEC1A5CDE83DCC909DB /* SAParallaxViewCell.swift in Sources */,
-				FC61A40A4CDF77029C3FBCEDD8B2C5AF /* SAParallaxViewController.swift in Sources */,
-				DCC5C8EE5DD8B5AC82C20FAD718595FD /* SAParallaxViewControllerSwift-dummy.m in Sources */,
-				41E914D5AD8E4137E492F90202CD9C7C /* SAParallaxViewLayout.swift in Sources */,
-				EE19026ACA68D20E67910266756C0445 /* SATransitionContainerView.swift in Sources */,
-				3CC8579912C427E7E056CBE9F6E82219 /* SATransitionManager.swift in Sources */,
+				E360958DBB9311B7600F0A5490120781 /* Pods-SAParallaxViewControllerSwiftExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DDA012AD9B07CF79CB16EA0F8518177 /* Sources */ = {
+		85C1E9A93202722A7764C13E5F9B898E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90256570D119DB16B13F4FB6FBD29532 /* Pods-dummy.m in Sources */,
+				B51C4C66A327F83BC61F23F7218BA4A4 /* CATransition+Closure.swift in Sources */,
+				4EE338877999AE809640EA6AC536E1D2 /* SABlurImageView-dummy.m in Sources */,
+				4C504DCB0B741345F1E2ED3F240FED74 /* SABlurImageView.swift in Sources */,
+				ACE08002AC2339C6A578B06C241B092B /* UIImage+BlurEffect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,170 +517,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5E4274664B5AC9D32172566C1CE21EB /* Sources */ = {
+		D980FA749D3F99E58D5F86702BB2F381 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF711953587E935C127360EFC41C7FA /* CATransition+Closure.swift in Sources */,
-				638253443BB27CE1BB3F8B95563BD99E /* SABlurImageView-dummy.m in Sources */,
-				2650BDAEFB0A79C1754410F1BE415F76 /* SABlurImageView.swift in Sources */,
-				487950F5450F6A7E508A867F90C72F92 /* UIImage+BlurEffect.swift in Sources */,
+				4A4F6E619BC4169BFC98626E1E48300E /* SADetailViewController.swift in Sources */,
+				6568F1BAD5A7F2F47B46F8341E410645 /* SAParallaxContainerView.swift in Sources */,
+				F3A190B7B9C249A9B810A1C9C7262FF2 /* SAParallaxViewCell.swift in Sources */,
+				FBDCF6ADBC8DE785D4A91B32EF5F737B /* SAParallaxViewController.swift in Sources */,
+				C9A9DD74126DF7918E4A9810B37A8EAB /* SAParallaxViewControllerSwift-dummy.m in Sources */,
+				ADCF7019D39BC771B57D678CFE076E39 /* SAParallaxViewLayout.swift in Sources */,
+				B7085CC055AECCA149979F22FA347559 /* SATransitionContainerView.swift in Sources */,
+				DD7224DD148F487C9E3D69E7519BC8AC /* SATransitionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		13A549175D8B03E631342B4FD7688B8A /* PBXTargetDependency */ = {
+		2FF0B307A7B0588E0CB5FE14AAEA1C15 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SABlurImageView;
-			target = 5917681F892AAA43DD889C94EEE4A39A /* SABlurImageView */;
-			targetProxy = AE7920BCAB615307709233171852EBE8 /* PBXContainerItemProxy */;
+			target = E2067E23ACC7CB501D0BD318DB065F66 /* SABlurImageView */;
+			targetProxy = 116C25E677797267F2989C185DD58D47 /* PBXContainerItemProxy */;
 		};
-		50E1D94436B915FE6E7A042D7188B3F7 /* PBXTargetDependency */ = {
+		6C5536C53FBAB93768281CBEAF94D6A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SABlurImageView;
+			target = E2067E23ACC7CB501D0BD318DB065F66 /* SABlurImageView */;
+			targetProxy = E47096747986271B95F3C9152A2F6A81 /* PBXContainerItemProxy */;
+		};
+		6F18FD738A9CA976EBEC281430916051 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MisterFusion;
 			target = 9FC843BD22328DEFBCAB1DA4A92108F7 /* MisterFusion */;
-			targetProxy = A95BDDFF283DE8C8634366AE0AA02BAD /* PBXContainerItemProxy */;
+			targetProxy = 84DB09A06D45E36CB285012508CD680F /* PBXContainerItemProxy */;
 		};
-		B4B27B7EC64CD1732AA2D28A1EA4D8AB /* PBXTargetDependency */ = {
+		CC4028E0A4E2817F56040B2DF09313EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MisterFusion;
+			target = 9FC843BD22328DEFBCAB1DA4A92108F7 /* MisterFusion */;
+			targetProxy = 5ACCD4EB71053B2466BEC8D246270D9F /* PBXContainerItemProxy */;
+		};
+		D47B7794E6CC5B46169815FE47D9193F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SAParallaxViewControllerSwift;
-			target = A720D2ED1A0DBC5863BA58D0A5F850CC /* SAParallaxViewControllerSwift */;
-			targetProxy = E761DDC12A953CD56F1A189D53C710C1 /* PBXContainerItemProxy */;
-		};
-		C1786611F4D366B2B53BAD784E565F86 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MisterFusion;
-			target = 9FC843BD22328DEFBCAB1DA4A92108F7 /* MisterFusion */;
-			targetProxy = 602827D913315009058EFC1BAC76F355 /* PBXContainerItemProxy */;
-		};
-		E807A93F4C4340AE6AEC55F6F55EBEE5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SABlurImageView;
-			target = 5917681F892AAA43DD889C94EEE4A39A /* SABlurImageView */;
-			targetProxy = CBACBB849EE1CA14CE3FA2575F4EA93E /* PBXContainerItemProxy */;
+			target = 7F3163F71C747EF8C4A82F962D53C1F3 /* SAParallaxViewControllerSwift */;
+			targetProxy = 4001846FCC89FC3E917C7E70C7BC29D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0889D9F3D589C214DC308AC829B1E91A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		0A84E3C077DFDF0A259DD770FB7B2F29 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B91BD39B69D13EC5E189F4ABF286C0BD /* MisterFusion.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MisterFusion/MisterFusion-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MisterFusion/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MisterFusion/MisterFusion.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MisterFusion;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0FF3A633CD7A2DB2BB596E311E090EC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FE4C3897F95B137B768953C7D52A9A4 /* SAParallaxViewControllerSwift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SAParallaxViewControllerSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SAParallaxViewControllerSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		64424DAB5AB603F7C3DE9E530D663236 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FE4C3897F95B137B768953C7D52A9A4 /* SAParallaxViewControllerSwift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SAParallaxViewControllerSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SAParallaxViewControllerSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -698,11 +586,14 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -715,22 +606,27 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		BACC09BDC6039597319F307FDC35A293 /* Debug */ = {
+		36B29F69303016209017238440FFCDEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A202581E9DB12709BF071FA5CEDBF76D /* SABlurImageView.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SABlurImageView/SABlurImageView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SABlurImageView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -742,101 +638,51 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		BB9D8406934875C5E574A0219F10015A /* Release */ = {
+		403CAD1046140E2E6BBA8132F93735D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B91BD39B69D13EC5E189F4ABF286C0BD /* MisterFusion.xcconfig */;
+			baseConfigurationReference = 77626075C2B27D674B4FD66533FE053E /* SAParallaxViewControllerSwift.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MisterFusion/MisterFusion-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MisterFusion/Info.plist";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAParallaxViewControllerSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MisterFusion/MisterFusion.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MisterFusion;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DF73F5D81E73065C3B39B51F4E5E0514 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A202581E9DB12709BF071FA5CEDBF76D /* SABlurImageView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SABlurImageView/SABlurImageView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SABlurImageView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SABlurImageView/SABlurImageView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SABlurImageView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EDA9F7A8F0C9DB109A1FE68A5BFCC9B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
+				PRODUCT_NAME = SAParallaxViewControllerSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -850,10 +696,14 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -861,9 +711,210 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		493E59005A8D2DC5A804ACFC1D7C5A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11FFF4B8C819418E14488E7624A02FE9 /* Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Pods-SAParallaxViewControllerSwiftExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SAParallaxViewControllerSwiftExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D92BA3DBF2A60331DCEF682E7A168B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B91BD39B69D13EC5E189F4ABF286C0BD /* MisterFusion.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MisterFusion/MisterFusion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MisterFusion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MisterFusion/MisterFusion.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MisterFusion;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9DA46962C15F3B3CF21F32EE875FCA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1025317949119CBAC3F3012E835E690B /* Pods-SAParallaxViewControllerSwiftExample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Pods-SAParallaxViewControllerSwiftExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SAParallaxViewControllerSwiftExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB0A76CD27C494CE300816717FAA3B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77626075C2B27D674B4FD66533FE053E /* SAParallaxViewControllerSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAParallaxViewControllerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SAParallaxViewControllerSwift/SAParallaxViewControllerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SAParallaxViewControllerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D34529666AB03A85E79A4ED6F8EBB63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B91BD39B69D13EC5E189F4ABF286C0BD /* MisterFusion.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MisterFusion/MisterFusion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MisterFusion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MisterFusion/MisterFusion.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MisterFusion;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8232C85A2D4343905F292D0354602CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A202581E9DB12709BF071FA5CEDBF76D /* SABlurImageView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SABlurImageView/SABlurImageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SABlurImageView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SABlurImageView/SABlurImageView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SABlurImageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -873,35 +924,35 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
-				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B63490A7337A8BA1F3D4F6E60DA5610 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		3753FB8EF71F26BF6643A4997C8F933F /* Build configuration list for PBXNativeTarget "SABlurImageView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDA9F7A8F0C9DB109A1FE68A5BFCC9B1 /* Debug */,
-				0889D9F3D589C214DC308AC829B1E91A /* Release */,
+				36B29F69303016209017238440FFCDEB /* Debug */,
+				E8232C85A2D4343905F292D0354602CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8AFEF3BD5CD32A34E9E93F5DE87B8120 /* Build configuration list for PBXNativeTarget "SAParallaxViewControllerSwift" */ = {
+		83930C6FCC354C87891FA70B63A31862 /* Build configuration list for PBXNativeTarget "Pods-SAParallaxViewControllerSwiftExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64424DAB5AB603F7C3DE9E530D663236 /* Debug */,
-				0FF3A633CD7A2DB2BB596E311E090EC7 /* Release */,
+				493E59005A8D2DC5A804ACFC1D7C5A78 /* Debug */,
+				9DA46962C15F3B3CF21F32EE875FCA14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1A09B43CCCB738B4D153269F2C7E029 /* Build configuration list for PBXNativeTarget "SABlurImageView" */ = {
+		D05F74615497FBE6B6FE47F1F09D70CD /* Build configuration list for PBXNativeTarget "SAParallaxViewControllerSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BACC09BDC6039597319F307FDC35A293 /* Debug */,
-				DF73F5D81E73065C3B39B51F4E5E0514 /* Release */,
+				403CAD1046140E2E6BBA8132F93735D1 /* Debug */,
+				AB0A76CD27C494CE300816717FAA3B10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -909,8 +960,8 @@
 		D527E849301E62CDDB55A973DEBA607C /* Build configuration list for PBXNativeTarget "MisterFusion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A84E3C077DFDF0A259DD770FB7B2F29 /* Debug */,
-				BB9D8406934875C5E574A0219F10015A /* Release */,
+				D34529666AB03A85E79A4ED6F8EBB63B /* Debug */,
+				7D92BA3DBF2A60331DCEF682E7A168B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
