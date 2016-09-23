@@ -8,11 +8,11 @@
 
 import UIKit
 
-public class SAParallaxViewCell: UICollectionViewCell {
+open class SAParallaxViewCell: UICollectionViewCell {
     
-    public var containerView = SAParallaxContainerView()
+    open var containerView = SAParallaxContainerView()
     
-    private var previousImageOffset = CGPoint.zero
+    fileprivate var previousImageOffset = CGPoint.zero
     
     public convenience init() {
         self.init(frame: .zero)
@@ -29,34 +29,34 @@ public class SAParallaxViewCell: UICollectionViewCell {
         initialize()
     }
     
-    public override func prepareForReuse() {
+    open override func prepareForReuse() {
         containerView.removeFromSuperview()
         initialize()
     }
     
     //MARK: - SAParallaxViewCell Private Methods
-    private func initialize() {
+    fileprivate func initialize() {
         containerView.frame = bounds
         addSubview(containerView)
     }
     
     //MARK: - SAParallaxViewCell Public Methods
-    public func setImage(image: UIImage) {
+    open func setImage(_ image: UIImage) {
         containerView.setImage(image)
     }
     
-    public func setImageOffset(offset: CGPoint) {
-        if selected {
+    open func setImageOffset(_ offset: CGPoint) {
+        if isSelected {
             return
         }
         containerView.setImageOffset(offset)
     }
     
-    public func screenShot() -> UIImageView {
+    open func screenShot() -> UIImageView {
         
-        let scale = UIScreen.mainScreen().scale
+        let scale = UIScreen.main.scale
         UIGraphicsBeginImageContextWithOptions(self.frame.size, false, scale)
-        containerView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        containerView.layer.render(in: UIGraphicsGetCurrentContext()!)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         

@@ -1,9 +1,9 @@
 PODS:
-  - MisterFusion (1.4.0)
-  - SABlurImageView (2.2.0)
-  - SAParallaxViewControllerSwift (1.5.0):
-    - MisterFusion (~> 1.4.0)
-    - SABlurImageView (~> 2.2.0)
+  - MisterFusion (2.0.1)
+  - SABlurImageView (3.0.0)
+  - SAParallaxViewControllerSwift (2.0.0):
+    - MisterFusion
+    - SABlurImageView
 
 DEPENDENCIES:
   - SAParallaxViewControllerSwift (from `../`)
@@ -13,9 +13,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MisterFusion: ccb69d87569a4acaabda051d3c8db7ab4be2d5db
-  SABlurImageView: 897e22e803113fc8a23447c371d38dbe4db22dee
-  SAParallaxViewControllerSwift: 855c54d919539ea7d3ed6f7bd364b46d7e9aed6b
+  MisterFusion: d42cac7afe8318c282bcda93396eba0aef45d30e
+  SABlurImageView: 7003ca28ded502c984846374a117f88a287d9faf
+  SAParallaxViewControllerSwift: 04939b077ef0a563be74fed16cfc0688900a3c09
 
 PODFILE CHECKSUM: d35a45f146416c6f7fd66ee848bba9b490f4a723
 

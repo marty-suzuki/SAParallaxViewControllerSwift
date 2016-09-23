@@ -16,7 +16,7 @@ class ViewController: SAParallaxViewController {
         self.init(nibName: nil, bundle: nil)
     }
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
@@ -27,47 +27,43 @@ class ViewController: SAParallaxViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-}
 
-//MARK: - UICollectionViewDataSource
-extension ViewController {
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let rawCell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath)
+    //MARK: - UICollectionViewDataSource
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let rawCell = super.collectionView(collectionView, cellForItemAt: indexPath)
         guard let cell = rawCell as? SAParallaxViewCell else { return rawCell }
             
         for case let view as UILabel in cell.containerView.accessoryView.subviews {
             view.removeFromSuperview()
         }
-            
-        let index = indexPath.row % 6
+        
+        let index = (indexPath as NSIndexPath).row % 6
         let imageName = String(format: "image%d", index + 1)
         if let image = UIImage(named: imageName) {
             cell.setImage(image)
         }
         let label = UILabel(frame: cell.containerView.accessoryView.bounds)
-        label.textAlignment = .Center
+        label.textAlignment = .center
         label.text = titleList[index]
-        label.textColor = .whiteColor()
-        label.font = .systemFontOfSize(30)
+        label.textColor = .white
+        label.font = .systemFont(ofSize: 30)
         cell.containerView.accessoryView.addSubview(label)
         
         return cell
     }
-}
-
-//MARK: - UICollectionViewDelegate
-extension ViewController {
-    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        super.collectionView(collectionView, didSelectItemAtIndexPath: indexPath)
+    
+    //MARK: - UICollectionViewDelegate
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        super.collectionView(collectionView, didSelectItemAt: indexPath)
         
-        guard let cells = collectionView.visibleCells() as? [SAParallaxViewCell] else { return }
+        guard let cells = collectionView.visibleCells as? [SAParallaxViewCell] else { return }
         let containerView = SATransitionContainerView(frame: view.bounds)
-        containerView.setViews(cells: cells, view: view)
+        containerView.setViews(cells, view: view)
         
         let viewController = DetailViewController()
         viewController.transitioningDelegate = self
         viewController.trantisionContainerView = containerView
         
-        self.presentViewController(viewController, animated: true, completion: nil)
+        present(viewController, animated: true, completion: nil)
     }
 }

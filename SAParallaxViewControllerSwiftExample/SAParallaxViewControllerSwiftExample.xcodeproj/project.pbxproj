@@ -15,7 +15,7 @@
 		37E219111A7A997800896D72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E2190F1A7A997800896D72 /* LaunchScreen.xib */; };
 		37E2191D1A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2191C1A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.swift */; };
 		37E219301A7D315600896D72 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E2192F1A7D315600896D72 /* Accelerate.framework */; };
-		48A361B6C8D8D1972978126E /* Pods_SAParallaxViewControllerSwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97FD0CB5DC8AB58305661383 /* Pods_SAParallaxViewControllerSwiftExample.framework */; };
+		A91EB7053D61C2052CA260F1 /* Pods_SAParallaxViewControllerSwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D9FFE3052060F412E8A405 /* Pods_SAParallaxViewControllerSwiftExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +41,11 @@
 		37E2191B1A7A997800896D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37E2191C1A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAParallaxViewControllerSwiftExampleTests.swift; sourceTree = "<group>"; };
 		37E2192F1A7D315600896D72 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		4C2DB1CD0A87ABF588D49BB3 /* Pods-SAParallaxViewControllerSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAParallaxViewControllerSwiftExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Pods-SAParallaxViewControllerSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
-		938CC249C566E4844A722CF8 /* Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
-		97FD0CB5DC8AB58305661383 /* Pods_SAParallaxViewControllerSwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAParallaxViewControllerSwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7B25543FE9ED785555A345 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		58D9FFE3052060F412E8A405 /* Pods_SAParallaxViewControllerSwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAParallaxViewControllerSwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6846F36077588499286D9E35 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		87741A1EE37DC1820C468AB5 /* Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
+		8E49D96A1DEA3C70BE3650CB /* Pods-SAParallaxViewControllerSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAParallaxViewControllerSwiftExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Pods-SAParallaxViewControllerSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
 		D13D477417D91DE1AEF9A6A7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -53,7 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E219301A7D315600896D72 /* Accelerate.framework in Frameworks */,
-				48A361B6C8D8D1972978126E /* Pods_SAParallaxViewControllerSwiftExample.framework in Frameworks */,
+				A91EB7053D61C2052CA260F1 /* Pods_SAParallaxViewControllerSwiftExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +69,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AE1A7A90750D44545B58D27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B7B25543FE9ED785555A345 /* Pods.debug.xcconfig */,
+				6846F36077588499286D9E35 /* Pods.release.xcconfig */,
+				87741A1EE37DC1820C468AB5 /* Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig */,
+				8E49D96A1DEA3C70BE3650CB /* Pods-SAParallaxViewControllerSwiftExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3717D09B1A7E8052000A1E0B /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +94,8 @@
 				37E219031A7A997800896D72 /* SAParallaxViewControllerSwiftExample */,
 				37E219191A7A997800896D72 /* SAParallaxViewControllerSwiftExampleTests */,
 				37E219021A7A997800896D72 /* Products */,
+				2AE1A7A90750D44545B58D27 /* Pods */,
 				DC461D79E954703062E3993E /* Frameworks */,
-				B939327CCF8B8A9344B023ED /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,20 +148,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B939327CCF8B8A9344B023ED /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				938CC249C566E4844A722CF8 /* Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig */,
-				4C2DB1CD0A87ABF588D49BB3 /* Pods-SAParallaxViewControllerSwiftExample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		DC461D79E954703062E3993E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D13D477417D91DE1AEF9A6A7 /* Pods.framework */,
-				97FD0CB5DC8AB58305661383 /* Pods_SAParallaxViewControllerSwiftExample.framework */,
+				58D9FFE3052060F412E8A405 /* Pods_SAParallaxViewControllerSwiftExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,12 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37E219201A7A997800896D72 /* Build configuration list for PBXNativeTarget "SAParallaxViewControllerSwiftExample" */;
 			buildPhases = (
-				B88F8818EC8C5AE9A9876271 /* [CP] Check Pods Manifest.lock */,
+				945A196D7B0ADDC065ECE3D2 /* [CP] Check Pods Manifest.lock */,
 				37E218FD1A7A997800896D72 /* Sources */,
 				37E218FE1A7A997800896D72 /* Frameworks */,
 				37E218FF1A7A997800896D72 /* Resources */,
-				E64E9E3473C63630ADD7E61A /* [CP] Embed Pods Frameworks */,
-				DADF0B1AC4D75CF5BDB3EA88 /* [CP] Copy Pods Resources */,
+				72F9C588FC91E918C4A860E5 /* [CP] Embed Pods Frameworks */,
+				26B6F49F1C4DB721AA3A1AA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,7 +206,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "鈴木大貴";
 				TargetAttributes = {
 					37E219001A7A997800896D72 = {
@@ -256,22 +260,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B88F8818EC8C5AE9A9876271 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DADF0B1AC4D75CF5BDB3EA88 /* [CP] Copy Pods Resources */ = {
+		26B6F49F1C4DB721AA3A1AA5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,7 +275,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Pods-SAParallaxViewControllerSwiftExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E64E9E3473C63630ADD7E61A /* [CP] Embed Pods Frameworks */ = {
+		72F9C588FC91E918C4A860E5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,6 +288,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAParallaxViewControllerSwiftExample/Pods-SAParallaxViewControllerSwiftExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		945A196D7B0ADDC065ECE3D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -375,6 +379,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -417,6 +422,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -432,7 +438,7 @@
 		};
 		37E219211A7A997800896D72 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 938CC249C566E4844A722CF8 /* Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig */;
+			baseConfigurationReference = 87741A1EE37DC1820C468AB5 /* Pods-SAParallaxViewControllerSwiftExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SAParallaxViewControllerSwiftExample/Info.plist;
@@ -440,13 +446,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "szk-atmosphere.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		37E219221A7A997800896D72 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C2DB1CD0A87ABF588D49BB3 /* Pods-SAParallaxViewControllerSwiftExample.release.xcconfig */;
+			baseConfigurationReference = 8E49D96A1DEA3C70BE3650CB /* Pods-SAParallaxViewControllerSwiftExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SAParallaxViewControllerSwiftExample/Info.plist;
@@ -454,7 +460,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "szk-atmosphere.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -471,7 +478,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "szk-atmosphere.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAParallaxViewControllerSwiftExample.app/SAParallaxViewControllerSwiftExample";
 			};
 			name = Debug;
@@ -485,7 +492,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "szk-atmosphere.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAParallaxViewControllerSwiftExample.app/SAParallaxViewControllerSwiftExample";
 			};
 			name = Release;

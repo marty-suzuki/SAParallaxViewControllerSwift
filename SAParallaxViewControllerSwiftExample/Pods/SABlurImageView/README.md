@@ -21,7 +21,7 @@ You can use blur effect and it's animation easily to call only two methods.
 - [x] 0.0 to 1.0 parameter blur
 - [x] Support Swift2
 - [x] Support Swift2.3
-- [x] Support Swift3 (If you want to use it in Swift3, please use [3.0.0-beta](https://github.com/szk-atmosphere/SABlurImageView/tree/3.0.0-beta))
+- [x] Support Swift3
 
 ## Installation
 
@@ -67,17 +67,9 @@ If you want to use 0.0 to 1.0 parameter
 	imageView?.blur(0.5)
 ```
 
-## Installation
-
-SABlurImageView is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "SABlurImageView"
-```
 ## Requirements
 
-- Xcode 7.0 or greater
+- Xcode 8.0beta or greater
 - iOS7.0(manually only) or greater
 - QuartzCore
 - Accelerate

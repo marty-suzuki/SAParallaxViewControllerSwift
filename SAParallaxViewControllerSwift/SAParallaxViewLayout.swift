@@ -8,9 +8,9 @@
 
 import UIKit
 
-public class SAParallaxViewLayout: UICollectionViewFlowLayout {
+open class SAParallaxViewLayout: UICollectionViewFlowLayout {
     
-    private let kDefaultHeight: CGFloat = 220.0
+    fileprivate static let defaultHeight: CGFloat = 220
     
     public override init() {
         super.init()
@@ -22,20 +22,20 @@ public class SAParallaxViewLayout: UICollectionViewFlowLayout {
         initialize()
     }
     
-    private func initialize() {
+    fileprivate func initialize() {
         minimumInteritemSpacing = 0.0
         minimumLineSpacing = 0.0
         sectionInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
-        let width = UIScreen.mainScreen().bounds.size.width
-        let height = width / 320.0 * kDefaultHeight
+        let width = UIScreen.main.bounds.size.width
+        let height = width / 320.0 * SAParallaxViewLayout.defaultHeight
         itemSize = CGSize(width: width, height: height)
     }
     
-    public override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        return super.layoutAttributesForElementsInRect(rect)
+    open override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        return super.layoutAttributesForElements(in: rect)
     }
     
-    public override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
-        return super.layoutAttributesForItemAtIndexPath(indexPath)
+    open override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        return super.layoutAttributesForItem(at: indexPath)
     }
 }

@@ -8,41 +8,41 @@
 
 import UIKit
 
-public class SATransitionManager: NSObject, UIViewControllerAnimatedTransitioning {
-    public var animationDuration = 0.25
-    
+open class SATransitionManager: NSObject, UIViewControllerAnimatedTransitioning {
+    open var animationDuration = 0.25
+
     //MARK: - UIViewControllerAnimatedTransitioning
-    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    open func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return animationDuration
     }
     
-    public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+    open func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         guard
-            let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey),
-            let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)
+            let toViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to),
+            let fromViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)
         else { return }
     
-        let containerView = transitionContext.containerView()
-        let duration = transitionDuration(transitionContext)
+        let containerView = transitionContext.containerView
+        let duration = transitionDuration(using: transitionContext)
         
         switch (toViewController, fromViewController) {
         case (let _ as SAParallaxViewController, let fromVC as SADetailViewController):
             guard let transitionContainer = fromVC.trantisionContainerView else { break }
             containerView.addSubview(transitionContainer)
             
-            UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+            UIView.animate(withDuration: duration, delay: 0.0, options: .curveEaseIn, animations: {
                 
                 transitionContainer.closeAnimation()
                 
             }, completion: { (finished) in
                 
-                UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+                UIView.animate(withDuration: duration, delay: 0.0, options: .curveEaseIn, animations: {
                     
                     transitionContainer.containerView?.blurContainerView.alpha = 1.0
                     
                     }, completion: { (finished) in
                         
-                        let cancelled = transitionContext.transitionWasCancelled()
+                        let cancelled = transitionContext.transitionWasCancelled
                         if cancelled {
                             transitionContainer.removeFromSuperview()
                         } else {
@@ -54,23 +54,23 @@ public class SATransitionManager: NSObject, UIViewControllerAnimatedTransitionin
             })
             return
             
-        case (let toVC as SADetailViewController, let fromVC as SAParallaxViewController):
+        case (let toVC as SADetailViewController, let _ as SAParallaxViewController):
             guard let transitionContainer = toVC.trantisionContainerView else { break }
             containerView.addSubview(transitionContainer)
             
-            UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+            UIView.animate(withDuration: duration, delay: 0.0, options: .curveEaseIn, animations: {
                 
                 transitionContainer.containerView?.blurContainerView.alpha = 0.0
                 
             }, completion: { (finished) in
                 
-                UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseIn, animations: {
+                UIView.animate(withDuration: duration, delay: 0.0, options: .curveEaseIn, animations: {
                     
                     transitionContainer.openAnimation()
                     
                     }, completion: { (finished) in
                         
-                        let cancelled = transitionContext.transitionWasCancelled()
+                        let cancelled = transitionContext.transitionWasCancelled
                         if cancelled {
                             transitionContainer.removeFromSuperview()
                         } else {
