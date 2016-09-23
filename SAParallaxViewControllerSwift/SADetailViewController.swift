@@ -11,8 +11,10 @@ import SABlurImageView
 
 public class SADetailViewController: UIViewController {
 
-    static private let HeaderViewHeight: CGFloat = 44
-    
+    private struct Const {
+        static let HeaderViewHeight: CGFloat = 44
+    }
+        
     public var trantisionContainerView: SATransitionContainerView?
     public var imageView = SABlurImageView()
     
@@ -38,7 +40,7 @@ public class SADetailViewController: UIViewController {
             view.addSubview(imageView)
         }
         
-        let headerContainerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: width, height: self.dynamicType.HeaderViewHeight))
+        let headerContainerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: width, height: Const.HeaderViewHeight))
         headerContainerView.alpha = 0.0
         headerContainerView.clipsToBounds = true
         view.addSubview(headerContainerView)
@@ -59,10 +61,11 @@ public class SADetailViewController: UIViewController {
         headerContainerView.addSubview(headerView)
         self.headerView = headerView
         
-        let closeButton = UIButton(frame: CGRect(x: 0.0, y: 0.0, width: self.dynamicType.HeaderViewHeight, height: self.dynamicType.HeaderViewHeight))
-        closeButton.setTitle("X", forState: .Normal)
+        let closeButton = UIButton(frame: CGRect(x: 0.0, y: 0.0, width: Const.HeaderViewHeight, height: Const.HeaderViewHeight))
+        closeButton.setTitle("×", forState: UIControlState())
+        closeButton.titleLabel?.font = .systemFontOfSize(Const.HeaderViewHeight)
         closeButton.titleLabel?.textColor = .whiteColor()
-        closeButton.addTarget(self, action: "closeAction:", forControlEvents: .TouchUpInside)
+        closeButton.addTarget(self, action: #selector(SADetailViewController.closeAction(_:)), forControlEvents: .TouchUpInside)
         headerView.addSubview(closeButton)
         self.closeButton = closeButton
     }

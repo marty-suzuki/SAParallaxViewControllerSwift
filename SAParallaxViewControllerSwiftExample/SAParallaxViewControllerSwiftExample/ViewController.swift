@@ -10,6 +10,8 @@ import UIKit
 import SAParallaxViewControllerSwift
 
 class ViewController: SAParallaxViewController {
+    let titleList: [String] = ["Girl with Room", "Beautiful sky", "Music Festival", "Fashion show", "Beautiful beach", "Pizza and beer"]
+    
     convenience init() {
         self.init(nibName: nil, bundle: nil)
     }
@@ -30,29 +32,24 @@ class ViewController: SAParallaxViewController {
 //MARK: - UICollectionViewDataSource
 extension ViewController {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath)
-        
-        if let cell = cell as? SAParallaxViewCell {
+        let rawCell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath)
+        guard let cell = rawCell as? SAParallaxViewCell else { return rawCell }
             
-            for view in cell.containerView.accessoryView.subviews {
-                if let view = view as? UILabel {
-                    view.removeFromSuperview()
-                }
-            }
-            
-            let index = indexPath.row % 6
-            let imageName = String(format: "image%d", index + 1)
-            if let image = UIImage(named: imageName) {
-                cell.setImage(image)
-            }
-            let title = ["Girl with Room", "Beautiful sky", "Music Festival", "Fashion show", "Beautiful beach", "Pizza and beer"]
-            let label = UILabel(frame: cell.containerView.accessoryView.bounds)
-            label.textAlignment = .Center
-            label.text = title[index]
-            label.textColor = .whiteColor()
-            label.font = .systemFontOfSize(30)
-            cell.containerView.accessoryView.addSubview(label)
+        for case let view as UILabel in cell.containerView.accessoryView.subviews {
+            view.removeFromSuperview()
         }
+            
+        let index = indexPath.row % 6
+        let imageName = String(format: "image%d", index + 1)
+        if let image = UIImage(named: imageName) {
+            cell.setImage(image)
+        }
+        let label = UILabel(frame: cell.containerView.accessoryView.bounds)
+        label.textAlignment = .Center
+        label.text = titleList[index]
+        label.textColor = .whiteColor()
+        label.font = .systemFontOfSize(30)
+        cell.containerView.accessoryView.addSubview(label)
         
         return cell
     }
@@ -63,15 +60,14 @@ extension ViewController {
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         super.collectionView(collectionView, didSelectItemAtIndexPath: indexPath)
         
-        if let cells = collectionView.visibleCells() as? [SAParallaxViewCell] {
-            let containerView = SATransitionContainerView(frame: view.bounds)
-            containerView.setViews(cells: cells, view: view)
-            
-            let viewController = DetailViewController()
-            viewController.transitioningDelegate = self
-            viewController.trantisionContainerView = containerView
-            
-            self.presentViewController(viewController, animated: true, completion: nil)
-        }
+        guard let cells = collectionView.visibleCells() as? [SAParallaxViewCell] else { return }
+        let containerView = SATransitionContainerView(frame: view.bounds)
+        containerView.setViews(cells: cells, view: view)
+        
+        let viewController = DetailViewController()
+        viewController.transitioningDelegate = self
+        viewController.trantisionContainerView = containerView
+        
+        self.presentViewController(viewController, animated: true, completion: nil)
     }
 }

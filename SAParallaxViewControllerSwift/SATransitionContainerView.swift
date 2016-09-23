@@ -10,8 +10,8 @@ import UIKit
 
 public class SATransitionContainerView: UIView {
 
-    public var views = [UIView]()
-    public var viewInitialPositions = [CGPoint]()
+    public var views: [UIView] = []
+    public var viewInitialPositions: [CGPoint] = []
     public var imageViewInitialFrame: CGRect = .zero
     public var blurImageViewInitialFrame: CGRect = .zero
     public var containerViewInitialFrame: CGRect = .zero
@@ -64,30 +64,32 @@ public class SATransitionContainerView: UIView {
     }
     
     public func openAnimation() {
-        if let yPositionContainer = containerView?.frame.origin.y, containerViewHeight = containerView?.frame.size.height {
-            let height = frame.size.height
-            
-            let distanceToTop = yPositionContainer
-            let distanceToBottom = height - (yPositionContainer + containerViewHeight)
-            
-            views.forEach {
-                if $0 != containerView {
-                    var frame = $0.frame
-                    if frame.origin.y < yPositionContainer {
-                        frame.origin.y -= distanceToTop
-                    } else {
-                        frame.origin.y += distanceToBottom
-                    }
-                    $0.frame = frame
+        guard
+            let yPositionContainer = containerView?.frame.origin.y,
+            let containerViewHeight = containerView?.frame.size.height
+        else { return }
+        let height = frame.size.height
+        
+        let distanceToTop = yPositionContainer
+        let distanceToBottom = height - (yPositionContainer + containerViewHeight)
+        
+        views.forEach {
+            if $0 != containerView {
+                var frame = $0.frame
+                if frame.origin.y < yPositionContainer {
+                    frame.origin.y -= distanceToTop
                 } else {
-                    guard let containerView = containerView else { return }
-                    containerView.frame = bounds
-                    containerView.imageView.frame = containerView.imageView.bounds
-                    var rect = containerView.blurContainerView.frame
-                    rect.origin.y = height - rect.size.height
-                    containerView.blurContainerView.frame = rect
+                    frame.origin.y += distanceToBottom
                 }
+                $0.frame = frame
+                return
             }
+            guard let containerView = containerView else { return }
+            containerView.frame = bounds
+            containerView.imageView.frame = containerView.imageView.bounds
+            var rect = containerView.blurContainerView.frame
+            rect.origin.y = height - rect.size.height
+            containerView.blurContainerView.frame = rect
         }
     }
     
@@ -96,15 +98,15 @@ public class SATransitionContainerView: UIView {
             if $0.element != containerView {
                 let point = self.viewInitialPositions[$0.index]
                 $0.element.frame.origin = point
-            } else {
-                containerView?.frame = containerViewInitialFrame
-                containerView?.imageView.frame = imageViewInitialFrame
-                containerView?.blurImageView.frame = blurImageViewInitialFrame
-                guard let containerView = containerView else { return }
-                var rect = containerView.blurContainerView.frame
-                rect.origin.y = containerView.frame.size.height - rect.size.height
-                containerView.blurContainerView.frame = rect
+                return
             }
+            containerView?.frame = containerViewInitialFrame
+            containerView?.imageView.frame = imageViewInitialFrame
+            containerView?.blurImageView.frame = blurImageViewInitialFrame
+            guard let containerView = containerView else { return }
+            var rect = containerView.blurContainerView.frame
+            rect.origin.y = containerView.frame.size.height - rect.size.height
+            containerView.blurContainerView.frame = rect
         }
     }
 }
