@@ -11,12 +11,12 @@ Pod::Spec.new do |s|
   s.name             = "SAParallaxViewControllerSwift"
   s.version          = "2.0.0"
   s.summary          = "SAParallaxViewControllerSwift realizes parallax scrolling with blur effect. In addition, it realizes seamless opening transition."
-  s.homepage         = "https://github.com/szk-atmosphere/SAParallaxViewControllerSwift"
+  s.homepage         = "https://github.com/marty-suzuki/SAParallaxViewControllerSwift"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Taiki Suzuki" => "s1180183@gmail.com" }
-  s.source           = { :git => "https://github.com/szk-atmosphere/SAParallaxViewControllerSwift.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/SzkAtmosphere'
+  s.source           = { :git => "https://github.com/marty-suzuki/SAParallaxViewControllerSwift.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/marty_suzuki'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'SABlurImageView'
-  # s.dependency 'MisterFusion'
+  s.dependency 'SABlurImageView'
+  s.dependency 'MisterFusion'
 end

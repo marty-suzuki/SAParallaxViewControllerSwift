@@ -17,7 +17,8 @@ SAParallaxViewControllerSwift realizes parallax scrolling with blur effect. In a
 - [x] Parallax scrolling
 - [x] Parallax scrolling with blur accessory view
 - [x] Seamlees opening transition
-- [x] Support Swift3 (If you want to use it in Swift3, please use [2.0.0-beta](https://github.com/szk-atmosphere/SAParallaxViewControllerSwift/tree/2.0.0-beta))
+- [x] Support Swift2.3
+- [x] Support Swift3
 
 ## Installation
 
@@ -26,9 +27,7 @@ SAParallaxViewControllerSwift realizes parallax scrolling with blur effect. In a
 SAParallaxViewControllerSwift is available through [CocoaPods](http://cocoapods.org). If you have cocoapods 0.36 beta or greater, you can install
 it, simply add the following line to your Podfile:
 
-    pod "SAParallaxViewControllerSwift", :git => 'https://github.com/szk-atmosphere/SAParallaxViewControllerSwift.git', :tag => '2.0.0-beta'
-    pod 'SABlurImageView', :git => 'https://github.com/szk-atmosphere/SABlurImageView.git', :tag => '3.0.0-beta'
-    pod 'MisterFusion', :git => 'https://github.com/szk-atmosphere/MisterFusion.git', :tag => '2.0.0-beta'
+    pod "SAParallaxViewControllerSwift"
 
 #### Manually
 
@@ -65,7 +64,7 @@ If you want to use `UICollectionViewDataSource`, implement extension like this. 
 ```swift
 extension ViewController: UICollectionViewDataSource {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = super.collectionView(collectionView, cellForItemAt: indexPath) as SAParallaxViewCell
+        let cell = super.collectionView(collectionView, cellForItemAt: indexPath) as! SAParallaxViewCell
 
         let index = indexPath.row % 6
         let imageName = String(format: "image%d", index + 1)
@@ -94,16 +93,15 @@ extension ViewController: UICollectionViewDelegate {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         super.collectionView(collectionView, didSelectItemAt: indexPath)
 
-        if let cells = collectionView.visibleCells() as? [SAParallaxViewCell] {
-            let containerView = SATransitionContainerView(frame: view.bounds)
-            containerView.setViews(cells: cells, view: view)
+        guard let cells = collectionView.visibleCells as? [SAParallaxViewCell] else { return }
+        let containerView = SATransitionContainerView(frame: view.bounds)
+        containerView.setViews(cells, view: view)
 
-            let viewController = DetailViewController()
-            viewController.transitioningDelegate = self
-            viewController.trantisionContainerView = containerView
+        let viewController = DetailViewController()
+        viewController.transitioningDelegate = self
+        viewController.trantisionContainerView = containerView
 
-            self.presentViewController(viewController, animated: true, completion: nil)
-        }
+        present(viewController, animated: true, completion: nil)
     }
 }
 ```

@@ -1,7 +1,8 @@
-platform :ios, "8.0"
-target 'SAParallaxViewControllerSwiftExample' do
-    pod 'SAParallaxViewControllerSwift', :path => '../'
-    pod 'SABlurImageView', :git => 'https://github.com/szk-atmosphere/SABlurImageView.git', :tag => '3.0.0-beta'
-    pod 'MisterFusion', :git => 'https://github.com/szk-atmosphere/MisterFusion.git', :tag => '2.0.0-beta'
-end
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+# Uncomment this line if you're using Swift
 use_frameworks!
+
+target 'SAParallaxViewControllerSwiftExample' do
+pod 'SAParallaxViewControllerSwift', :path => '../'
+end
